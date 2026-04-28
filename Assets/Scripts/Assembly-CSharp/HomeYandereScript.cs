@@ -157,7 +157,7 @@ public class HomeYandereScript : MonoBehaviour
             component.CrossFade("f02_idleShort_00");
         }
     }
-    else if (HomeDarkness.color.a == 0f)
+    else if (HomeDarkness != null && HomeDarkness.color.a == 0f)
     {
         AudioSource component2 = GetComponent<AudioSource>();
         if (Timer == 0f)

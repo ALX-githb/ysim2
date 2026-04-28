@@ -304,16 +304,18 @@ public class SettingsScript : MonoBehaviour
 	public void LowerAllSettings()
 	{
 		OptionGlobals.ParticleCount = 1;
-			OptionGlobals.DisableOutlines = true;
-			QualitySettings.antiAliasing = 0;
-			OptionGlobals.DisablePostAliasing = true;
-			OptionGlobals.DisableBloom = true;
-			OptionGlobals.LowDetailStudents = 1;
-			OptionGlobals.DrawDistance = 50;
-			OptionGlobals.DisableShadows = true;
-			OptionGlobals.DisableFarAnimations = true;
-			OptionGlobals.RimLight = false;
-			OptionGlobals.DepthOfField = false;
+		OptionGlobals.DisableOutlines = true;
+		QualitySettings.antiAliasing = 0;
+		OptionGlobals.DisablePostAliasing = true;
+		OptionGlobals.DisableBloom = true;
+		OptionGlobals.LowDetailStudents = 1;
+		OptionGlobals.DrawDistance = 50;
+		OptionGlobals.DisableShadows = true;
+		OptionGlobals.DisableFarAnimations = true;
+		OptionGlobals.RimLight = false;
+		OptionGlobals.DepthOfField = false;
+		if (QualityManager != null)
+		{
 			QualityManager.UpdateFog();
 			QualityManager.UpdateAnims();
 			QualityManager.UpdateBloom();
@@ -324,6 +326,7 @@ public class SettingsScript : MonoBehaviour
 			QualityManager.UpdateDrawDistance();
 			QualityManager.UpdateLowDetailStudents();
 			QualityManager.UpdateOutlines();
-			UpdateText();
+		}
+		UpdateText();
 	}
 }
