@@ -5,16 +5,13 @@ name: iOS Build (unsigned IPA)
 # No Mac required. Free Apple ID works (7-day expiry, 3-app limit).
 #
 # Prerequisites (one-time setup):
-#   1. Generate a Unity activation file:
-#      - Run the "Acquire Unity activation file (.alf)" workflow
-#      - Download the .alf artifact
-#      - Upload to https://license.unity3d.com/manual
-#      - Download the resulting .ulf file
-#      - Copy contents to GitHub secret UNITY_LICENSE
+#   1. Get your Unity serial number from https://id.unity.com/
+#      - Go to Licenses → Your licenses → Find your Unity Personal license
+#      - Copy the serial number (e.g., F4-DJ3U-2SJZ-UWPC-KTSM-XXXX)
 #   2. Add secrets in repo Settings → Secrets and variables → Actions:
-#      - UNITY_LICENSE: your .ulf file contents
 #      - UNITY_EMAIL: your Unity account email
 #      - UNITY_PASSWORD: your Unity account password
+#      - UNITY_SERIAL: your Unity serial number
 #
 # To trigger a build:
 #   - Click the "Run workflow" button on this workflow page
@@ -56,12 +53,21 @@ jobs:
             Library-
 
       # =====================================================================
-      # 3. Build Unity iOS Xcode project
+      # 3. Activate Unity license (new method for Unity 6000.x)
+      # =====================================================================
+      - name: Activate Unity license
+        uses: game-ci/unity-activate@v4
+        env:
+          UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
+          UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
+          UNITY_SERIAL: ${{ secrets.UNITY_SERIAL }}
+
+      # =====================================================================
+      # 4. Build Unity iOS Xcode project
       # =====================================================================
       - name: Build Unity iOS Xcode project
         uses: game-ci/unity-builder@v4
         env:
-          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
           UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
           UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
         with:
