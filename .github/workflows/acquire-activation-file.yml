@@ -5,7 +5,7 @@ name: Acquire Unity activation file (.alf)
 #
 # Steps:
 #   1. Run this workflow (Actions tab → Acquire Unity activation file → Run workflow)
-#   2. Download the "Unity_v6000.4.0f1.alf" artifact
+#   2. Download the "unity-activation-file" artifact
 #   3. Upload the .alf file to https://license.unity3d.com/manual
 #   4. Pick "Unity Personal Edition" → Download the resulting .ulf file
 #   5. Open the .ulf file in a text editor, copy ENTIRE contents
@@ -18,16 +18,44 @@ on:
 jobs:
   request-activation-file:
     name: Request Unity activation file
+    # Use the official GameCI Unity Docker image which has Unity preinstalled.
     runs-on: ubuntu-latest
-    steps:
-      - name: Request manual activation file
-        uses: game-ci/unity-request-activation-file@v2
-        id: get-activation-file
-        with:
-          unityVersion: 6000.4.0f1
+    container:
+      image: unityci/editor:ubuntu-6000.4.0f1-base-3
+      options: --user root
 
-      - name: Expose as artifact
+    steps:
+      - name: Generate Unity activation file
+        run: |
+          set +e
+          # Unity exits non-zero after creating the .alf file — that's expected
+          /opt/unity/Editor/Unity \
+            -batchmode \
+            -nographics \
+            -logFile /dev/stdout \
+            -createManualActivationFile \
+            -username "$UNITY_EMAIL" \
+            -password "$UNITY_PASSWORD"
+
+          echo "==== Looking for .alf file ===="
+          ALF_FILE=$(find . /root /home -name "Unity_v*.alf" 2>/dev/null | head -n 1)
+
+          if [ -z "$ALF_FILE" ]; then
+            echo "ERROR: no .alf file produced"
+            exit 1
+          fi
+
+          echo "Found: $ALF_FILE"
+          mkdir -p /tmp/alf
+          cp "$ALF_FILE" /tmp/alf/
+          ls -la /tmp/alf/
+        env:
+          UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
+          UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
+
+      - name: Upload activation file artifact
         uses: actions/upload-artifact@v4
         with:
-          name: ${{ steps.get-activation-file.outputs.filePath }}
-          path: ${{ steps.get-activation-file.outputs.filePath }}
+          name: unity-activation-file
+          path: /tmp/alf/*.alf
+          retention-days: 7
