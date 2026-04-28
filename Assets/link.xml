@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  link.xml
+  Tells Unity's IL2CPP managed-code stripper NOT to remove the listed assemblies/types.
+  Without this, JSON deserialization (JsonFx), VRM/glTF parsing (UniGLTF/VRM10),
+  Pathfinding serialization, and ControlFreak2 reflection lookups will throw on iOS.
+
+  Erring on the side of "preserve all" for assemblies known to use heavy reflection.
+  This adds a small amount to app size but eliminates an entire class of iOS-only
+  runtime crashes that don't reproduce in the Editor.
+
+  Reference: https://docs.unity3d.com/Manual/ManagedCodeStripping.html
+-->
+<linker>
+
+  <!-- All gameplay code. JsonFx uses reflection on private fields of these types
+       to deserialize Students.json / Topics.json / Credits.json at runtime. -->
+  <assembly fullname="Assembly-CSharp" preserve="all"/>
+
+  <!-- Anything in Plugins/ folder (NGUI, Pathfinding, ControlFreak2, AmplifyMotion). -->
+  <assembly fullname="Assembly-CSharp-firstpass" preserve="all"/>
+
+  <!-- VRM 1.0 runtime: parses .vrm files at runtime, reflection on every node type. -->
+  <assembly fullname="VRM10" preserve="all"/>
+  <assembly fullname="VRMShaders.VRM10.MToon10.Runtime" preserve="all"/>
+  <assembly fullname="VRMShaders.VRM10.Format.Runtime" preserve="all"/>
+
+  <!-- UniGLTF: glTF 2.0 importer used by VRM10. Reflects on extension classes. -->
+  <assembly fullname="UniGLTF" preserve="all"/>
+  <assembly fullname="UniGLTF.Utils" preserve="all"/>
+  <assembly fullname="UniHumanoid" preserve="all"/>
+
+  <!-- BetterStreamingAssets: file table built via reflection at startup. -->
+  <assembly fullname="Better.StreamingAssets" preserve="all"/>
+
+  <!-- Newtonsoft.Json: any contract resolver attribute or [JsonProperty] field
+       can be stripped if not preserved. -->
+  <assembly fullname="Newtonsoft.Json" preserve="all"/>
+
+  <!-- Unity's own networking module (used by deprecated WWW + UnityWebRequest). -->
+  <assembly fullname="UnityEngine.UnityWebRequestModule" preserve="all"/>
+  <assembly fullname="UnityEngine.UnityWebRequestWWWModule" preserve="all"/>
+
+  <!-- ControlFreak 2: input bindings resolved by name at runtime. -->
+  <assembly fullname="ControlFreak2-Runtime" preserve="all"/>
+
+</linker>

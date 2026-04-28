@@ -1,0 +1,169 @@
+name: iOS Build (unsigned IPA)
+
+# Builds an unsigned iOS IPA from Unity on GitHub Actions macOS runner.
+# Download the IPA artifact and sideload with AltStore/Sideloadly on Windows.
+# No Mac required. Free Apple ID works (7-day expiry, 3-app limit).
+#
+# Prerequisites (one-time setup):
+#   1. Generate a Unity activation file:
+#      - Run the "Acquire Unity activation file (.alf)" workflow
+#      - Download the .alf artifact
+#      - Upload to https://license.unity3d.com/manual
+#      - Download the resulting .ulf file
+#      - Copy contents to GitHub secret UNITY_LICENSE
+#   2. Add secrets in repo Settings → Secrets and variables → Actions:
+#      - UNITY_LICENSE: your .ulf file contents
+#      - UNITY_EMAIL: your Unity account email
+#      - UNITY_PASSWORD: your Unity account password
+#
+# To trigger a build:
+#   - Click the "Run workflow" button on this workflow page
+#   - Wait ~30-60 min for first build (caching speeds up future builds to ~10-15 min)
+#   - Download the "YandereSimulator-iOS-unsigned-ipa" artifact
+#   - Sideload with AltStore or Sideloadly
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+jobs:
+  build-ios:
+    name: Build Unity iOS → Xcode → unsigned IPA
+    runs-on: macos-latest
+
+    steps:
+      # =====================================================================
+      # 1. Checkout code
+      # =====================================================================
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          lfs: true
+
+      # =====================================================================
+      # 2. Cache Unity Library folder
+      #    Key includes hashes of Assets, Packages, ProjectSettings
+      #    so cache invalidates when those change. Restore-keys allow
+      #    partial matches when exact key misses.
+      # =====================================================================
+      - name: Cache Unity Library
+        uses: actions/cache@v3
+        with:
+          path: Library
+          key: Library-iOS-${{ hashFiles('Assets/**', 'Packages/**', 'ProjectSettings/**') }}
+          restore-keys: |
+            Library-iOS-
+            Library-
+
+      # =====================================================================
+      # 3. Build Unity iOS Xcode project
+      # =====================================================================
+      - name: Build Unity iOS Xcode project
+        uses: game-ci/unity-builder@v4
+        env:
+          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
+          UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
+          UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
+        with:
+          unityVersion: 6000.4.0f1
+          targetPlatform: iOS
+          buildName: YandereSimulator
+          allowDirtyBuild: true
+
+      # =====================================================================
+      # 4. Show what GameCI produced (always runs so we can debug)
+      # =====================================================================
+      - name: List build output
+        if: always()
+        run: |
+          echo "==== Top-level ===="
+          ls -la
+          echo "==== build/ (recursive, 3 levels) ===="
+          find build -maxdepth 3 -type d 2>/dev/null || true
+          echo "==== Searching for any .xcodeproj ===="
+          find . -name "*.xcodeproj" -type d 2>/dev/null || true
+
+      # =====================================================================
+      # 5. Compile the Xcode project → unsigned .app
+      # =====================================================================
+      - name: Build .app with xcodebuild (unsigned)
+        run: |
+          set -e
+
+          # Auto-discover the Xcode project — GameCI's output path can vary
+          XCODEPROJ=$(find build -name "Unity-iPhone.xcodeproj" -type d 2>/dev/null | head -n 1)
+
+          if [ -z "${XCODEPROJ}" ]; then
+            echo "ERROR: No Unity-iPhone.xcodeproj found anywhere under build/"
+            echo "==== Full build/ listing ===="
+            find build -maxdepth 5 2>/dev/null || true
+            exit 1
+          fi
+
+          echo "Found Xcode project at: ${XCODEPROJ}"
+
+          mkdir -p build_output
+
+          xcodebuild \
+            -project "${XCODEPROJ}" \
+            -scheme Unity-iPhone \
+            -configuration Release \
+            -sdk iphoneos \
+            -derivedDataPath build_output \
+            -destination 'generic/platform=iOS' \
+            CODE_SIGNING_ALLOWED=NO \
+            CODE_SIGN_IDENTITY="" \
+            PROVISIONING_PROFILE="" \
+            DEVELOPMENT_TEAM="" \
+            ONLY_ACTIVE_ARCH=NO \
+            build
+
+      # =====================================================================
+      # 6. Wrap the .app into an unsigned .ipa
+      #    .ipa = a zip with Payload/<App>.app inside
+      #
+      # IMPORTANT: Strip ALL _CodeSignature folders (including nested ones in
+      # UnityFramework.framework and UnityRuntime.framework) so that
+      # sideloaders (AltStore/Sideloadly) re-sign everything cleanly with
+      # the user's free Apple ID cert. Otherwise iOS rejects with
+      # 0xe8008017 "A signed resource has been added, modified, or deleted."
+      # =====================================================================
+      - name: Package unsigned .ipa
+        run: |
+          set -e
+          APP_PATH=$(find build_output/Build/Products/Release-iphoneos -maxdepth 1 -name "*.app" | head -n 1)
+
+          if [ -z "${APP_PATH}" ]; then
+            echo "ERROR: No .app produced by xcodebuild"
+            find build_output -name "*.app" || true
+            exit 1
+          fi
+
+          echo "Found .app: ${APP_PATH}"
+
+          mkdir -p Payload
+          cp -R "${APP_PATH}" Payload/
+
+          echo "==== Stripping nested _CodeSignature folders ===="
+          find Payload -type d -name "_CodeSignature" -print -exec rm -rf {} + 2>/dev/null || true
+
+          echo "==== Removing any embedded.mobileprovision (none expected) ===="
+          find Payload -type f -name "embedded.mobileprovision" -print -delete 2>/dev/null || true
+
+          echo "==== Final .app contents ===="
+          find Payload -maxdepth 4 -type d
+
+          zip -qr YandereSimulator-unsigned.ipa Payload
+          rm -rf Payload
+
+          ls -lh YandereSimulator-unsigned.ipa
+
+      # =====================================================================
+      # 7. Upload as a downloadable artifact
+      # =====================================================================
+      - name: Upload IPA artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: YandereSimulator-iOS-unsigned-ipa
+          path: YandereSimulator-unsigned.ipa
+          retention-days: 7

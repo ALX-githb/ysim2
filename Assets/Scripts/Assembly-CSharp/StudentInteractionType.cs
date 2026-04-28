@@ -1,0 +1,25 @@
+public enum StudentInteractionType
+{
+	Idle = 0,
+	Forgiving = 1,
+	ReceivingCompliment = 2,
+	Gossiping = 3,
+	Bye = 4,
+	GivingTask = 5,
+	FollowingPlayer = 6,
+	GoingAway = 7,
+	DistractingTarget = 8,
+	PersonalGrudge = 9,
+	ClubInfo = 10,
+	ClubJoin = 11,
+	ClubQuit = 12,
+	ClubBye = 13,
+	ClubActivity = 14,
+	ClubUnwelcome = 15,
+	ClubKick = 16,
+	NamingCrush = 17,
+	ChangingAppearance = 18,
+	Court = 19,
+	Gift = 20,
+	Feeding = 21
+}

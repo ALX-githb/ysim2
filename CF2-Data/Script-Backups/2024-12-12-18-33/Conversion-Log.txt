@@ -1,0 +1,1472 @@
+Converting script [1 / 141]	[\Scripts\Assembly-CSharp\AboutScript.cs]
+	Fragments : 1
+		[ 0] : Line:   36	InputMethod   GetButtonDown       	("A")
+
+Converting script [2 / 141]	[\Scripts\Assembly-CSharp\AppearanceWindowScript.cs]
+	Fragments : 2
+		[ 0] : Line:   71	InputMethod   GetButtonDown       	("A")
+		[ 1] : Line:  233	InputMethod   GetButtonUp         	("A")
+
+Converting script [3 / 141]	[\Scripts\Assembly-CSharp\ArmDetectorScript.cs]
+	Fragments : 2
+		[ 0] : Line:  169	InputMethod   GetButtonDown       	("A")
+		[ 1] : Line:  269	InputMethod   GetButtonDown       	("A")
+
+Converting script [4 / 141]	[\Scripts\Assembly-CSharp\AspectUtility.cs]
+	Fragments : 1
+		[ 0] : Line:   57	InputProperty mousePosition       
+
+Converting script [5 / 141]	[\Scripts\Assembly-CSharp\AttackManagerScript.cs]
+	Fragments : 1
+		[ 0] : Line:  607	InputMethod   GetButtonDown       	("X")
+
+Converting script [6 / 141]	[\Scripts\Assembly-CSharp\AudioSoftwareScript.cs]
+	Fragments : 5
+		[ 0] : Line:   29	Other mod.	[Screen.SetActive(false)]
+		[ 1] : Line:   52	Other mod.	[Screen.SetActive(true)]
+		[ 2] : Line:   57	Other mod.	[Screen.transform]
+		[ 3] : Line:   57	Other mod.	[Screen.transform]
+		[ 4] : Line:   83	Other mod.	[Screen.SetActive(false)]
+
+Converting script [7 / 141]	[\Scripts\Assembly-CSharp\BucketPourScript.cs]
+	Fragments : 2
+		[ 0] : Line:   90	InputMethod   GetButtonDown       	("B")
+		[ 1] : Line:   98	InputMethod   GetButtonDown       	("B")
+
+Converting script [8 / 141]	[\Scripts\Assembly-CSharp\BucketScript.cs]
+	Fragments : 2
+		[ 0] : Line:  159	InputMethod   GetButtonDown       	("RB")
+		[ 1] : Line:  361	InputMethod   GetKeyDown          	(KeyCode.B)
+
+Converting script [9 / 141]	[\Scripts\Assembly-CSharp\BuildingDestructionScript.cs]
+	Fragments : 1
+		[ 0] : Line:   13	InputMethod   GetKeyDown          	(KeyCode.Space)
+
+Converting script [10 / 141]	[\Scripts\Assembly-CSharp\CalendarScript.cs]
+	Fragments : 9
+		[ 0] : Line:  104	InputMethod   GetButtonDown       	("A")
+		[ 1] : Line:  108	InputMethod   GetButtonDown       	("Y")
+		[ 2] : Line:  112	InputMethod   GetButtonDown       	("B")
+		[ 3] : Line:  117	InputMethod   GetKeyDown          	(KeyCode.Z)
+		[ 4] : Line:  177	InputMethod   GetKeyDown          	(KeyCode.Alpha1)
+		[ 5] : Line:  181	InputMethod   GetKeyDown          	(KeyCode.Alpha2)
+		[ 6] : Line:  185	InputMethod   GetKeyDown          	(KeyCode.Alpha3)
+		[ 7] : Line:  189	InputMethod   GetKeyDown          	(KeyCode.Alpha4)
+		[ 8] : Line:  193	InputMethod   GetKeyDown          	(KeyCode.Alpha5)
+
+Converting script [11 / 141]	[\Scripts\Assembly-CSharp\CameraMoveScript.cs]
+	Fragments : 1
+		[ 0] : Line:   31	InputMethod   GetKeyDown          	(KeyCode.Space)
+
+Converting script [12 / 141]	[\Scripts\Assembly-CSharp\CardboardBoxScript.cs]
+	Fragments : 1
+		[ 0] : Line:   28	InputMethod   GetButtonDown       	("RB")
+
+Converting script [13 / 141]	[\Scripts\Assembly-CSharp\ChallengeScript.cs]
+	Fragments : 5
+		[ 0] : Line:   61	InputMethod   GetKey              	(KeyCode.RightArrow)
+		[ 1] : Line:   65	InputMethod   GetKey              	(KeyCode.LeftArrow)
+		[ 2] : Line:   69	InputMethod   GetAxis             	("Horizontal")
+		[ 3] : Line:   97	InputMethod   GetButtonDown       	("A")
+		[ 4] : Line:  101	InputMethod   GetButtonDown       	("B")
+
+Converting script [14 / 141]	[\Scripts\Assembly-CSharp\ChangeTextureScript.cs]
+	Fragments : 1
+		[ 0] : Line:   13	InputMethod   GetKeyDown          	(KeyCode.Space)
+
+Converting script [15 / 141]	[\Scripts\Assembly-CSharp\CheckmarkScript.cs]
+	Fragments : 1
+		[ 0] : Line:   21	InputMethod   GetKeyDown          	(KeyCode.Space)
+
+Converting script [16 / 141]	[\Scripts\Assembly-CSharp\ChoiceScript.cs]
+	Fragments : 1
+		[ 0] : Line:   46	InputMethod   GetButtonDown       	("A")
+
+Converting script [17 / 141]	[\Scripts\Assembly-CSharp\ClassScript.cs]
+	Fragments : 4
+		[ 0] : Line:   94	InputMethod   GetKeyDown          	(KeyCode.Backslash)
+		[ 1] : Line:   98	InputMethod   GetKeyDown          	(KeyCode.P)
+		[ 2] : Line:  139	InputMethod   GetButtonDown       	("A")
+		[ 3] : Line:  237	InputMethod   GetButtonDown       	("A")
+
+Converting script [18 / 141]	[\Scripts\Assembly-CSharp\ClockScript.cs]
+	Fragments : 1
+		[ 0] : Line:  318	InputMethod   GetButtonDown       	("Start")
+
+Converting script [19 / 141]	[\Scripts\Assembly-CSharp\ClubManagerScript.cs]
+	Fragments : 1
+		[ 0] : Line:  208	InputMethod   GetButtonDown       	("A")
+
+Converting script [20 / 141]	[\Scripts\Assembly-CSharp\ClubWindowScript.cs]
+	Fragments : 3
+		[ 0] : Line:   66	InputMethod   GetButtonDown       	("A")
+		[ 1] : Line:   95	InputMethod   GetButtonDown       	("B")
+		[ 2] : Line:  117	InputMethod   GetButtonDown       	("X")
+
+Converting script [21 / 141]	[\Scripts\Assembly-CSharp\CombatMinigameScript.cs]
+	Fragments : 5
+		[ 0] : Line:  127	InputMethod   GetButtonDown       	("A")
+		[ 1] : Line:  127	InputMethod   GetButtonDown       	("B")
+		[ 2] : Line:  127	InputMethod   GetButtonDown       	("X")
+		[ 3] : Line:  127	InputMethod   GetButtonDown       	("Y")
+		[ 4] : Line:  135	InputMethod   GetButtonDown       	(CurrentButton)
+
+Converting script [22 / 141]	[\Scripts\Assembly-CSharp\ComputerGamesScript.cs]
+	Fragments : 2
+		[ 0] : Line:   71	InputMethod   GetButtonDown       	("A")
+		[ 1] : Line:   79	InputMethod   GetButtonDown       	("B")
+
+Converting script [23 / 141]	[\Scripts\Assembly-CSharp\ConfessionManagerScript.cs]
+	Fragments : 4
+		[ 0] : Line:  270	InputMethod   GetKeyDown          	(KeyCode.Space)
+		[ 1] : Line:  295	InputMethod   GetKeyDown          	(KeyCode.Space)
+		[ 2] : Line:  414	InputMethod   GetKeyDown          	("-")
+		[ 3] : Line:  420	InputMethod   GetKeyDown          	("=")
+
+Converting script [24 / 141]	[\Scripts\Assembly-CSharp\ConfessionSceneScript.cs]
+	Fragments : 1
+		[ 0] : Line:  140	InputMethod   GetButtonDown       	("A")
+
+Converting script [25 / 141]	[\Scripts\Assembly-CSharp\CookingEventScript.cs]
+	Fragments : 1
+		[ 0] : Line:   90	InputMethod   GetKeyDown          	(KeyCode.Space)
+
+Converting script [26 / 141]	[\Scripts\Assembly-CSharp\CounselorScript.cs]
+	Fragments : 5
+		[ 0] : Line:  226	InputMethod   GetButtonDown       	("A")
+		[ 1] : Line:  273	InputMethod   GetButtonDown       	("A")
+		[ 2] : Line:  332	InputMethod   GetButtonDown       	("A")
+		[ 3] : Line:  353	InputMethod   GetButtonDown       	("A")
+		[ 4] : Line:  363	InputMethod   GetButtonDown       	("A")
+
+Converting script [27 / 141]	[\Scripts\Assembly-CSharp\CreditsScript.cs]
+	Fragments : 3
+		[ 0] : Line:   95	InputMethod   GetButtonDown       	("B")
+		[ 1] : Line:  109	InputMethod   GetKeyDown          	(KeyCode.Minus)
+		[ 2] : Line:  110	InputMethod   GetKeyDown          	(KeyCode.Equals)
+
+Converting script [28 / 141]	[\Scripts\Assembly-CSharp\CustomizationScript.cs]
+	Fragments : 10
+		[ 0] : Line:  443	InputMethod   GetButtonDown       	("A")
+		[ 1] : Line:  447	InputMethod   GetButtonDown       	("B")
+		[ 2] : Line:  451	InputMethod   GetButtonDown       	("X")
+		[ 3] : Line:  472	InputMethod   GetAxis             	("Mouse X")
+		[ 4] : Line:  484	InputMethod   GetButtonDown       	("A")
+		[ 5] : Line:  604	InputMethod   GetButtonDown       	("A")
+		[ 6] : Line:  608	InputMethod   GetButtonDown       	("B")
+		[ 7] : Line:  634	InputMethod   GetButtonDown       	("A")
+		[ 8] : Line:  686	InputMethod   GetButtonDown       	("A")
+		[ 9] : Line:  690	InputMethod   GetButtonDown       	("B")
+
+Converting script [29 / 141]	[\Scripts\Assembly-CSharp\CutsceneManagerScript.cs]
+	Fragments : 1
+		[ 0] : Line:   47	InputMethod   GetButtonDown       	("A")
+
+Converting script [30 / 141]	[\Scripts\Assembly-CSharp\DatingMinigameScript.cs]
+	Fragments : 10
+		[ 0] : Line:  378	InputMethod   GetButtonDown       	("A")
+		[ 1] : Line:  436	InputMethod   GetButtonDown       	("A")
+		[ 2] : Line:  506	InputMethod   GetButtonDown       	("B")
+		[ 3] : Line:  534	InputMethod   GetButtonDown       	("A")
+		[ 4] : Line:  564	InputMethod   GetButtonDown       	("B")
+		[ 5] : Line:  582	InputMethod   GetButtonDown       	("A")
+		[ 6] : Line:  616	InputMethod   GetButtonDown       	("B")
+		[ 7] : Line:  648	InputMethod   GetButtonDown       	("A")
+		[ 8] : Line:  670	InputMethod   GetButtonDown       	("B")
+		[ 9] : Line:  681	InputMethod   GetButtonDown       	("A")
+
+Converting script [31 / 141]	[\Scripts\Assembly-CSharp\DebugMenuScript.cs]
+	Fragments : 51
+		[ 0] : Line:   86	InputMethod   GetKeyDown          	(KeyCode.Backslash)
+		[ 1] : Line:   98	InputMethod   GetKeyDown          	(KeyCode.F1)
+		[ 2] : Line:  104	InputMethod   GetKeyDown          	(KeyCode.F2)
+		[ 3] : Line:  110	InputMethod   GetKeyDown          	(KeyCode.F3)
+		[ 4] : Line:  116	InputMethod   GetKeyDown          	(KeyCode.F4)
+		[ 5] : Line:  122	InputMethod   GetKeyDown          	(KeyCode.F5)
+		[ 6] : Line:  128	InputMethod   GetKeyDown          	(KeyCode.F6)
+		[ 7] : Line:  136	InputMethod   GetKeyDown          	(KeyCode.F12)
+		[ 8] : Line:  140	InputMethod   GetKeyDown          	(KeyCode.Alpha1)
+		[ 9] : Line:  145	InputMethod   GetKeyDown          	(KeyCode.Alpha2)
+		[10] : Line:  150	InputMethod   GetKeyDown          	(KeyCode.Alpha3)
+		[11] : Line:  155	InputMethod   GetKeyDown          	(KeyCode.Alpha4)
+		[12] : Line:  160	InputMethod   GetKeyDown          	(KeyCode.Alpha5)
+		[13] : Line:  165	InputMethod   GetKeyDown          	(KeyCode.Alpha6)
+		[14] : Line:  171	InputMethod   GetKeyDown          	(KeyCode.Alpha7)
+		[15] : Line:  177	InputMethod   GetKeyDown          	(KeyCode.Alpha8)
+		[16] : Line:  183	InputMethod   GetKeyDown          	(KeyCode.Alpha9)
+		[17] : Line:  233	InputMethod   GetKeyDown          	(KeyCode.Alpha0)
+		[18] : Line:  238	InputMethod   GetKeyDown          	(KeyCode.A)
+		[19] : Line:  254	InputMethod   GetKeyDown          	(KeyCode.C)
+		[20] : Line:  262	InputMethod   GetKeyDown          	(KeyCode.D)
+		[21] : Line:  283	InputMethod   GetKeyDown          	(KeyCode.F)
+		[22] : Line:  288	InputMethod   GetKeyDown          	(KeyCode.G)
+		[23] : Line:  335	InputMethod   GetKeyDown          	(KeyCode.K)
+		[24] : Line:  341	InputMethod   GetKeyDown          	(KeyCode.L)
+		[25] : Line:  347	InputMethod   GetKeyDown          	(KeyCode.M)
+		[26] : Line:  352	InputMethod   GetKeyDown          	(KeyCode.O)
+		[27] : Line:  357	InputMethod   GetKeyDown          	(KeyCode.P)
+		[28] : Line:  362	InputMethod   GetKeyDown          	(KeyCode.Q)
+		[29] : Line:  367	InputMethod   GetKeyDown          	(KeyCode.R)
+		[30] : Line:  381	InputMethod   GetKeyDown          	(KeyCode.S)
+		[31] : Line:  391	InputMethod   GetKeyDown          	(KeyCode.T)
+		[32] : Line:  396	InputMethod   GetKeyDown          	(KeyCode.U)
+		[33] : Line:  407	InputMethod   GetKeyDown          	(KeyCode.Z)
+		[34] : Line:  409	InputMethod   GetKey              	(KeyCode.LeftShift)
+		[35] : Line:  436	InputMethod   GetKeyDown          	(KeyCode.X)
+		[36] : Line:  441	InputMethod   GetKeyDown          	(KeyCode.Backspace)
+		[37] : Line:  448	InputMethod   GetKeyDown          	(KeyCode.BackQuote)
+		[38] : Line:  453	InputMethod   GetKeyDown          	(KeyCode.Space)
+		[39] : Line:  476	InputMethod   GetKeyDown          	(KeyCode.LeftAlt)
+		[40] : Line:  485	InputMethod   GetKeyDown          	(KeyCode.LeftControl)
+		[41] : Line:  497	InputMethod   GetKeyDown          	(KeyCode.RightControl)
+		[42] : Line:  503	InputMethod   GetKeyDown          	(KeyCode.Equals)
+		[43] : Line:  509	InputMethod   GetKeyDown          	(KeyCode.Return)
+		[44] : Line:  526	InputMethod   GetKeyDown          	(KeyCode.B)
+		[45] : Line:  531	InputMethod   GetKeyDown          	(KeyCode.Pause)
+		[46] : Line:  536	InputMethod   GetKeyDown          	(KeyCode.W)
+		[47] : Line:  541	InputMethod   GetKeyDown          	(KeyCode.H)
+		[48] : Line:  550	InputMethod   GetKey              	(KeyCode.BackQuote)
+		[49] : Line:  565	InputMethod   GetKeyUp            	(KeyCode.BackQuote)
+		[50] : Line:  570	InputMethod   GetKeyDown          	(KeyCode.Backslash)
+
+Converting script [32 / 141]	[\Scripts\Assembly-CSharp\DelinquentScript.cs]
+	Fragments : 2
+		[ 0] : Line:  384	InputMethod   GetKeyDown          	(KeyCode.V)
+		[ 1] : Line:  388	InputMethod   GetKeyDown          	(KeyCode.Space)
+
+Converting script [33 / 141]	[\Scripts\Assembly-CSharp\DemonScript.cs]
+	Fragments : 1
+		[ 0] : Line:   66	InputMethod   GetButtonDown       	("A")
+
+Converting script [34 / 141]	[\Scripts\Assembly-CSharp\DialogueWheelScript.cs]
+	Fragments : 38
+		[ 0] : Line:  142	InputMethod   GetAxis             	("Mouse X")
+		[ 1] : Line:  143	InputMethod   GetAxis             	("Mouse Y")
+		[ 2] : Line:  163	InputMethod   GetAxis             	("Vertical")
+		[ 3] : Line:  163	InputMethod   GetAxis             	("Vertical")
+		[ 4] : Line:  163	InputMethod   GetAxis             	("Horizontal")
+		[ 5] : Line:  163	InputMethod   GetAxis             	("Horizontal")
+		[ 6] : Line:  167	InputMethod   GetAxis             	("Vertical")
+		[ 7] : Line:  167	InputMethod   GetAxis             	("Horizontal")
+		[ 8] : Line:  167	InputMethod   GetAxis             	("Horizontal")
+		[ 9] : Line:  171	InputMethod   GetAxis             	("Vertical")
+		[10] : Line:  171	InputMethod   GetAxis             	("Horizontal")
+		[11] : Line:  175	InputMethod   GetAxis             	("Vertical")
+		[12] : Line:  175	InputMethod   GetAxis             	("Horizontal")
+		[13] : Line:  179	InputMethod   GetAxis             	("Vertical")
+		[14] : Line:  179	InputMethod   GetAxis             	("Horizontal")
+		[15] : Line:  179	InputMethod   GetAxis             	("Horizontal")
+		[16] : Line:  183	InputMethod   GetAxis             	("Vertical")
+		[17] : Line:  183	InputMethod   GetAxis             	("Horizontal")
+		[18] : Line:  187	InputMethod   GetAxis             	("Vertical")
+		[19] : Line:  187	InputMethod   GetAxis             	("Horizontal")
+		[20] : Line:  209	InputMethod   GetAxis             	("Vertical")
+		[21] : Line:  209	InputMethod   GetAxis             	("Vertical")
+		[22] : Line:  209	InputMethod   GetAxis             	("Horizontal")
+		[23] : Line:  209	InputMethod   GetAxis             	("Horizontal")
+		[24] : Line:  213	InputMethod   GetAxis             	("Vertical")
+		[25] : Line:  213	InputMethod   GetAxis             	("Horizontal")
+		[26] : Line:  213	InputMethod   GetAxis             	("Horizontal")
+		[27] : Line:  217	InputMethod   GetAxis             	("Vertical")
+		[28] : Line:  217	InputMethod   GetAxis             	("Vertical")
+		[29] : Line:  217	InputMethod   GetAxis             	("Horizontal")
+		[30] : Line:  221	InputMethod   GetAxis             	("Vertical")
+		[31] : Line:  221	InputMethod   GetAxis             	("Horizontal")
+		[32] : Line:  221	InputMethod   GetAxis             	("Horizontal")
+		[33] : Line:  225	InputMethod   GetAxis             	("Vertical")
+		[34] : Line:  225	InputMethod   GetAxis             	("Vertical")
+		[35] : Line:  225	InputMethod   GetAxis             	("Horizontal")
+		[36] : Line:  266	InputMethod   GetButtonDown       	("A")
+		[37] : Line:  536	InputProperty mousePosition       
+
+Converting script [35 / 141]	[\Scripts\Assembly-CSharp\DontLetSenpaiNoticeYouScript.cs]
+	Fragments : 1
+		[ 0] : Line:   32	InputMethod   GetButtonDown       	("A")
+
+Converting script [36 / 141]	[\Scripts\Assembly-CSharp\DropsScript.cs]
+	Fragments : 2
+		[ 0] : Line:   75	InputMethod   GetButtonDown       	("A")
+		[ 1] : Line:  117	InputMethod   GetButtonDown       	("B")
+
+Converting script [37 / 141]	[\Scripts\Assembly-CSharp\DumpsterHandleScript.cs]
+	Fragments : 5
+		[ 0] : Line:   60	InputMethod   GetAxis             	("Horizontal")
+		[ 1] : Line:   60	InputMethod   GetAxis             	("DpadX")
+		[ 2] : Line:   64	InputMethod   GetAxis             	("Horizontal")
+		[ 3] : Line:   64	InputMethod   GetAxis             	("DpadX")
+		[ 4] : Line:   88	InputMethod   GetButtonDown       	("B")
+
+Converting script [38 / 141]	[\Scripts\Assembly-CSharp\EditorManagerScript.cs]
+	Fragments : 2
+		[ 0] : Line:   58	InputMethod   GetButtonDown       	("B")
+		[ 1] : Line:   77	InputMethod   GetButtonDown       	("A")
+
+Converting script [39 / 141]	[\Scripts\Assembly-CSharp\EndOfDayScript.cs]
+	Fragments : 2
+		[ 0] : Line:  102	InputMethod   GetButtonDown       	("A")
+		[ 1] : Line:  142	InputMethod   GetKeyDown          	(KeyCode.Backspace)
+
+Converting script [40 / 141]	[\Scripts\Assembly-CSharp\EventEditorScript.cs]
+	Fragments : 1
+		[ 0] : Line:   34	InputMethod   GetButtonDown       	("B")
+
+Converting script [41 / 141]	[\Scripts\Assembly-CSharp\ExpressionMaskScript.cs]
+	Fragments : 1
+		[ 0] : Line:   11	InputMethod   GetKeyDown          	(KeyCode.Space)
+
+Converting script [42 / 141]	[\Scripts\Assembly-CSharp\FavorMenuScript.cs]
+	Fragments : 2
+		[ 0] : Line:   33	InputMethod   GetButtonDown       	("A")
+		[ 1] : Line:   65	InputMethod   GetButtonDown       	("B")
+
+Converting script [43 / 141]	[\Scripts\Assembly-CSharp\FootprintSpawnerScript.cs]
+	Fragments : 1
+		[ 0] : Line:   76	InputMethod   GetButton           	("LB")
+
+Converting script [44 / 141]	[\Scripts\Assembly-CSharp\FunScript.cs]
+	Fragments : 3
+		[ 0] : Line:  142	InputMethod   GetKeyDown          	("=")
+		[ 1] : Line:  168	InputMethod   GetButtonDown       	("B")
+		[ 2] : Line:  181	InputMethod   GetButtonDown       	("A")
+
+Converting script [45 / 141]	[\Scripts\Assembly-CSharp\GazerEyesScript.cs]
+	Fragments : 3
+		[ 0] : Line:   89	InputMethod   GetAxis             	("Vertical")
+		[ 1] : Line:   90	InputMethod   GetAxis             	("Horizontal")
+		[ 2] : Line:   97	InputMethod   GetButton           	("LB")
+
+Converting script [46 / 141]	[\Scripts\Assembly-CSharp\GentlemanScript.cs]
+	Fragments : 1
+		[ 0] : Line:   11	InputMethod   GetButtonDown       	("RB")
+
+Converting script [47 / 141]	[\Scripts\Assembly-CSharp\HeartbrokenCursorScript.cs]
+	Fragments : 1
+		[ 0] : Line:   67	InputMethod   GetButtonDown       	("A")
+
+Converting script [48 / 141]	[\Scripts\Assembly-CSharp\HeartbrokenScript.cs]
+	Fragments : 2
+		[ 0] : Line:  122	Other mod.	[Cursor.Options]
+		[ 1] : Line:  312	Other mod.	[Cursor.Selected]
+
+Converting script [49 / 141]	[\Scripts\Assembly-CSharp\HomeCameraScript.cs]
+	Fragments : 6
+		[ 0] : Line:  153	InputMethod   GetButtonDown       	("A")
+		[ 1] : Line:  244	InputMethod   GetKeyDown          	(KeyCode.Y)
+		[ 2] : Line:  248	InputMethod   GetKeyDown          	(KeyCode.M)
+		[ 3] : Line:  252	InputMethod   GetKeyDown          	(KeyCode.BackQuote)
+		[ 4] : Line:  257	InputMethod   GetKeyDown          	(KeyCode.Equals)
+		[ 5] : Line:  261	InputMethod   GetKeyDown          	(KeyCode.Minus)
+
+Converting script [50 / 141]	[\Scripts\Assembly-CSharp\HomeCorkboardScript.cs]
+	Fragments : 1
+		[ 0] : Line:   29	InputMethod   GetButtonDown       	("B")
+
+Converting script [51 / 141]	[\Scripts\Assembly-CSharp\HomeExitScript.cs]
+	Fragments : 2
+		[ 0] : Line:   57	InputMethod   GetButtonDown       	("A")
+		[ 1] : Line:   67	InputMethod   GetButtonDown       	("B")
+
+Converting script [52 / 141]	[\Scripts\Assembly-CSharp\HomeInternetScript.cs]
+	Fragments : 5
+		[ 0] : Line:  201	InputMethod   GetButtonDown       	("A")
+		[ 1] : Line:  269	InputMethod   GetButtonDown       	("B")
+		[ 2] : Line:  296	InputMethod   GetButtonDown       	("X")
+		[ 3] : Line:  317	InputMethod   GetButtonDown       	("A")
+		[ 4] : Line:  410	InputMethod   GetKeyDown          	(KeyCode.Space)
+
+Converting script [53 / 141]	[\Scripts\Assembly-CSharp\HomeMangaScript.cs]
+	Fragments : 6
+		[ 0] : Line:  128	InputMethod   GetButtonDown       	("A")
+		[ 1] : Line:  133	InputMethod   GetKeyDown          	(KeyCode.S)
+		[ 2] : Line:  147	InputMethod   GetButtonDown       	("B")
+		[ 3] : Line:  154	InputMethod   GetKeyDown          	(KeyCode.Space)
+		[ 4] : Line:  163	InputMethod   GetButtonDown       	("A")
+		[ 5] : Line:  181	InputMethod   GetButtonDown       	("B")
+
+Converting script [54 / 141]	[\Scripts\Assembly-CSharp\HomePantyChangerScript.cs]
+	Fragments : 2
+		[ 0] : Line:   90	InputMethod   GetButtonDown       	("A")
+		[ 1] : Line:   95	InputMethod   GetButtonDown       	("B")
+
+Converting script [55 / 141]	[\Scripts\Assembly-CSharp\HomePrisonerScript.cs]
+	Fragments : 3
+		[ 0] : Line:  218	InputMethod   GetKeyDown          	(KeyCode.X)
+		[ 1] : Line:  231	InputMethod   GetButtonDown       	("A")
+		[ 2] : Line:  266	InputMethod   GetButtonDown       	("B")
+
+Converting script [56 / 141]	[\Scripts\Assembly-CSharp\HomeSenpaiShrineScript.cs]
+	Fragments : 1
+		[ 0] : Line:   96	InputMethod   GetButtonDown       	("B")
+
+Converting script [57 / 141]	[\Scripts\Assembly-CSharp\HomeSleepScript.cs]
+	Fragments : 2
+		[ 0] : Line:   17	InputMethod   GetButtonDown       	("A")
+		[ 1] : Line:   24	InputMethod   GetButtonDown       	("B")
+
+Converting script [58 / 141]	[\Scripts\Assembly-CSharp\HomeVideoGamesScript.cs]
+	Fragments : 3
+		[ 0] : Line:   48	InputMethod   GetKeyDown          	(KeyCode.Y)
+		[ 1] : Line:   80	InputMethod   GetButtonDown       	("A")
+		[ 2] : Line:   90	InputMethod   GetButtonDown       	("B")
+
+Converting script [59 / 141]	[\Scripts\Assembly-CSharp\HomeYandereScript.cs]
+	Fragments : 12
+		[ 0] : Line:  118	InputMethod   GetAxis             	("Vertical")
+		[ 1] : Line:  119	InputMethod   GetAxis             	("Horizontal")
+		[ 2] : Line:  132	InputMethod   GetButton           	("LB")
+		[ 3] : Line:  173	InputMethod   GetKeyDown          	(KeyCode.H)
+		[ 4] : Line:  177	InputMethod   GetKeyDown          	(KeyCode.K)
+		[ 5] : Line:  184	InputMethod   GetKeyDown          	(KeyCode.Y)
+		[ 6] : Line:  189	InputMethod   GetKeyDown          	(KeyCode.F1)
+		[ 7] : Line:  195	InputMethod   GetKeyDown          	(KeyCode.F2)
+		[ 8] : Line:  201	InputMethod   GetKeyDown          	(KeyCode.F3)
+		[ 9] : Line:  207	InputMethod   GetKeyDown          	(KeyCode.F4)
+		[10] : Line:  213	InputMethod   GetKeyDown          	(KeyCode.F5)
+		[11] : Line:  219	InputMethod   GetKeyDown          	(KeyCode.F6)
+
+Converting script [60 / 141]	[\Scripts\Assembly-CSharp\HomeZoomScript.cs]
+	Fragments : 1
+		[ 0] : Line:   12	InputMethod   GetKeyDown          	(KeyCode.Z)
+
+Converting script [61 / 141]	[\Scripts\Assembly-CSharp\InputDeviceScript.cs]
+	Fragments : 40
+		[ 0] : Line:   17	InputProperty mousePosition       
+		[ 1] : Line:   18	InputProperty mousePosition       
+		[ 2] : Line:   20	InputProperty anyKey              
+		[ 3] : Line:   20	InputMethod   GetMouseButton      	(0)
+		[ 4] : Line:   20	InputMethod   GetMouseButton      	(1)
+		[ 5] : Line:   20	InputMethod   GetMouseButton      	(2)
+		[ 6] : Line:   24	InputMethod   GetKey              	(KeyCode.Joystick1Button0)
+		[ 7] : Line:   24	InputMethod   GetKey              	(KeyCode.Joystick1Button1)
+		[ 8] : Line:   24	InputMethod   GetKey              	(KeyCode.Joystick1Button2)
+		[ 9] : Line:   24	InputMethod   GetKey              	(KeyCode.Joystick1Button3)
+		[10] : Line:   24	InputMethod   GetKey              	(KeyCode.Joystick1Button4)
+		[11] : Line:   24	InputMethod   GetKey              	(KeyCode.Joystick1Button5)
+		[12] : Line:   24	InputMethod   GetKey              	(KeyCode.Joystick1Button6)
+		[13] : Line:   24	InputMethod   GetKey              	(KeyCode.Joystick1Button7)
+		[14] : Line:   24	InputMethod   GetKey              	(KeyCode.Joystick1Button8)
+		[15] : Line:   24	InputMethod   GetKey              	(KeyCode.Joystick1Button9)
+		[16] : Line:   24	InputMethod   GetKey              	(KeyCode.Joystick1Button10)
+		[17] : Line:   24	InputMethod   GetKey              	(KeyCode.Joystick1Button11)
+		[18] : Line:   24	InputMethod   GetKey              	(KeyCode.Joystick1Button12)
+		[19] : Line:   24	InputMethod   GetKey              	(KeyCode.Joystick1Button13)
+		[20] : Line:   24	InputMethod   GetKey              	(KeyCode.Joystick1Button14)
+		[21] : Line:   24	InputMethod   GetKey              	(KeyCode.Joystick1Button15)
+		[22] : Line:   24	InputMethod   GetKey              	(KeyCode.Joystick1Button16)
+		[23] : Line:   24	InputMethod   GetKey              	(KeyCode.Joystick1Button17)
+		[24] : Line:   24	InputMethod   GetKey              	(KeyCode.Joystick1Button18)
+		[25] : Line:   24	InputMethod   GetKey              	(KeyCode.Joystick1Button19)
+		[26] : Line:   24	InputMethod   GetAxis             	("DpadX")
+		[27] : Line:   24	InputMethod   GetAxis             	("DpadX")
+		[28] : Line:   24	InputMethod   GetAxis             	("DpadY")
+		[29] : Line:   24	InputMethod   GetAxis             	("DpadY")
+		[30] : Line:   28	InputMethod   GetKey              	(KeyCode.W)
+		[31] : Line:   28	InputMethod   GetKey              	(KeyCode.A)
+		[32] : Line:   28	InputMethod   GetKey              	(KeyCode.S)
+		[33] : Line:   28	InputMethod   GetKey              	(KeyCode.D)
+		[34] : Line:   28	InputMethod   GetAxis             	("Vertical")
+		[35] : Line:   28	InputMethod   GetAxis             	("Vertical")
+		[36] : Line:   28	InputMethod   GetAxis             	("Horizontal")
+		[37] : Line:   28	InputMethod   GetAxis             	("Horizontal")
+		[38] : Line:   41	InputMethod   GetAxis             	("Horizontal")
+		[39] : Line:   42	InputMethod   GetAxis             	("Vertical")
+
+Converting script [62 / 141]	[\Scripts\Assembly-CSharp\InputManagerScript.cs]
+	Fragments : 28
+		[ 0] : Line:   35	InputMethod   GetAxis             	("DpadY")
+		[ 1] : Line:   40	InputMethod   GetAxis             	("DpadY")
+		[ 2] : Line:   50	InputMethod   GetKey              	(KeyCode.W)
+		[ 3] : Line:   50	InputMethod   GetKey              	(KeyCode.S)
+		[ 4] : Line:   52	InputMethod   GetAxis             	("Vertical")
+		[ 5] : Line:   57	InputMethod   GetAxis             	("Vertical")
+		[ 6] : Line:   68	InputMethod   GetAxis             	("DpadX")
+		[ 7] : Line:   73	InputMethod   GetAxis             	("DpadX")
+		[ 8] : Line:   83	InputMethod   GetKey              	(KeyCode.A)
+		[ 9] : Line:   83	InputMethod   GetKey              	(KeyCode.D)
+		[10] : Line:   85	InputMethod   GetAxis             	("Horizontal")
+		[11] : Line:   90	InputMethod   GetAxis             	("Horizontal")
+		[12] : Line:  101	InputMethod   GetAxis             	("Horizontal")
+		[13] : Line:  101	InputMethod   GetAxis             	("Horizontal")
+		[14] : Line:  101	InputMethod   GetAxis             	("DpadX")
+		[15] : Line:  101	InputMethod   GetAxis             	("DpadX")
+		[16] : Line:  106	InputMethod   GetAxis             	("Vertical")
+		[17] : Line:  106	InputMethod   GetAxis             	("Vertical")
+		[18] : Line:  106	InputMethod   GetAxis             	("DpadY")
+		[19] : Line:  106	InputMethod   GetAxis             	("DpadY")
+		[20] : Line:  111	InputMethod   GetKeyDown          	(KeyCode.W)
+		[21] : Line:  111	InputMethod   GetKeyDown          	(KeyCode.UpArrow)
+		[22] : Line:  116	InputMethod   GetKeyDown          	(KeyCode.S)
+		[23] : Line:  116	InputMethod   GetKeyDown          	(KeyCode.DownArrow)
+		[24] : Line:  121	InputMethod   GetKeyDown          	(KeyCode.A)
+		[25] : Line:  121	InputMethod   GetKeyDown          	(KeyCode.LeftArrow)
+		[26] : Line:  126	InputMethod   GetKeyDown          	(KeyCode.D)
+		[27] : Line:  126	InputMethod   GetKeyDown          	(KeyCode.RightArrow)
+
+Converting script [63 / 141]	[\Scripts\Assembly-CSharp\IntroCircleScript.cs]
+	Fragments : 1
+		[ 0] : Line:   45	InputMethod   GetKeyDown          	(KeyCode.Space)
+
+Converting script [64 / 141]	[\Scripts\Assembly-CSharp\IntroScript.cs]
+	Fragments : 1
+		[ 0] : Line:   49	InputMethod   GetButton           	("X")
+
+Converting script [65 / 141]	[\Scripts\Assembly-CSharp\InventoryTestScript.cs]
+	Fragments : 1
+		[ 0] : Line:   23	InputMethod   GetButtonDown       	("A")
+
+Converting script [66 / 141]	[\Scripts\Assembly-CSharp\JukeboxScript.cs]
+	Fragments : 27
+		[ 0] : Line:  202	InputMethod   GetKeyDown          	(KeyCode.M)
+		[ 1] : Line:  223	InputMethod   GetKeyDown          	(KeyCode.N)
+		[ 2] : Line:  227	InputMethod   GetKeyDown          	(KeyCode.B)
+		[ 3] : Line:  289	InputMethod   GetKeyDown          	(KeyCode.T)
+		[ 4] : Line:  289	InputMethod   GetKeyDown          	(KeyCode.Alpha4)
+		[ 5] : Line:  295	InputMethod   GetKeyDown          	(KeyCode.P)
+		[ 6] : Line:  301	InputMethod   GetKeyDown          	(KeyCode.H)
+		[ 7] : Line:  307	InputMethod   GetKeyDown          	(KeyCode.B)
+		[ 8] : Line:  313	InputMethod   GetKeyDown          	(KeyCode.X)
+		[ 9] : Line:  313	InputMethod   GetKeyDown          	(KeyCode.Z)
+		[10] : Line:  319	InputMethod   GetKeyDown          	(KeyCode.G)
+		[11] : Line:  325	InputMethod   GetKeyDown          	(KeyCode.L)
+		[12] : Line:  331	InputMethod   GetKeyDown          	(KeyCode.S)
+		[13] : Line:  337	InputMethod   GetKeyDown          	(KeyCode.K)
+		[14] : Line:  343	InputMethod   GetKeyDown          	(KeyCode.C)
+		[15] : Line:  349	InputMethod   GetKeyDown          	(KeyCode.F)
+		[16] : Line:  355	InputMethod   GetKeyDown          	(KeyCode.O)
+		[17] : Line:  361	InputMethod   GetKeyDown          	(KeyCode.U)
+		[18] : Line:  367	InputMethod   GetKeyDown          	(KeyCode.Q)
+		[19] : Line:  373	InputMethod   GetKeyDown          	(KeyCode.Y)
+		[20] : Line:  379	InputMethod   GetKeyDown          	(KeyCode.E)
+		[21] : Line:  379	InputMethod   GetKeyDown          	(KeyCode.M)
+		[22] : Line:  379	InputMethod   GetKeyDown          	(KeyCode.Alpha1)
+		[23] : Line:  379	InputMethod   GetKeyDown          	(KeyCode.Alpha2)
+		[24] : Line:  379	InputMethod   GetKeyDown          	(KeyCode.Alpha7)
+		[25] : Line:  385	InputMethod   GetKeyDown          	(KeyCode.Alpha6)
+		[26] : Line:  391	InputMethod   GetKeyDown          	(KeyCode.D)
+
+Converting script [67 / 141]	[\Scripts\Assembly-CSharp\LargeTextScript.cs]
+	Fragments : 1
+		[ 0] : Line:   18	InputMethod   GetKeyDown          	(KeyCode.Space)
+
+Converting script [68 / 141]	[\Scripts\Assembly-CSharp\LivingRoomCutsceneScript.cs]
+	Fragments : 5
+		[ 0] : Line:  177	InputMethod   GetButtonDown       	("A")
+		[ 1] : Line:  230	InputMethod   GetKeyDown          	(KeyCode.Space)
+		[ 2] : Line:  286	InputMethod   GetButtonDown       	("X")
+		[ 3] : Line:  343	InputMethod   GetKeyDown          	(KeyCode.Minus)
+		[ 4] : Line:  347	InputMethod   GetKeyDown          	(KeyCode.Equals)
+
+Converting script [69 / 141]	[\Scripts\Assembly-CSharp\LowRepGameOverScript.cs]
+	Fragments : 9
+		[ 0] : Line:   66	InputMethod   GetButtonDown       	("A")
+		[ 1] : Line:   79	InputMethod   GetButtonDown       	("A")
+		[ 2] : Line:   93	InputMethod   GetButtonDown       	("A")
+		[ 3] : Line:  105	InputMethod   GetButtonDown       	("A")
+		[ 4] : Line:  119	InputMethod   GetButtonDown       	("A")
+		[ 5] : Line:  131	InputMethod   GetButtonDown       	("A")
+		[ 6] : Line:  146	InputMethod   GetButtonDown       	("A")
+		[ 7] : Line:  163	InputMethod   GetButtonDown       	("A")
+		[ 8] : Line:  175	InputMethod   GetButtonDown       	("A")
+
+Converting script [70 / 141]	[\Scripts\Assembly-CSharp\MissionModeMenuScript.cs]
+	Fragments : 19
+		[ 0] : Line:  275	InputMethod   GetButtonDown       	("A")
+		[ 1] : Line:  330	InputMethod   GetButtonDown       	("A")
+		[ 2] : Line:  392	Other mod.	[Cursor.visible]
+		[ 3] : Line:  474	InputMethod   GetButtonDown       	("A")
+		[ 4] : Line:  478	InputMethod   GetButtonDown       	("B")
+		[ 5] : Line:  480	Other mod.	[Cursor.visible]
+		[ 6] : Line:  489	InputMethod   GetButtonDown       	("X")
+		[ 7] : Line:  503	InputMethod   GetButtonDown       	("Y")
+		[ 8] : Line:  560	InputMethod   GetButtonDown       	("A")
+		[ 9] : Line:  620	InputMethod   GetButtonDown       	("B")
+		[10] : Line:  622	Other mod.	[Cursor.visible]
+		[11] : Line:  641	InputMethod   GetButtonDown       	("X")
+		[12] : Line:  687	InputMethod   GetButtonDown       	("Y")
+		[13] : Line:  736	InputProperty anyKey              
+		[14] : Line:  809	InputMethod   GetButtonDown       	("A")
+		[15] : Line:  939	InputMethod   GetButtonDown       	("B")
+		[16] : Line:  941	Other mod.	[Cursor.visible]
+		[17] : Line: 1009	InputMethod   GetButtonDown       	("A")
+		[18] : Line: 1053	InputMethod   GetButtonDown       	("A")
+
+Converting script [71 / 141]	[\Scripts\Assembly-CSharp\MissionModeScript.cs]
+	Fragments : 4
+		[ 0] : Line:  448	InputMethod   GetButtonDown       	("A")
+		[ 1] : Line:  754	InputMethod   GetButtonDown       	("A")
+		[ 2] : Line:  760	InputMethod   GetButtonDown       	("B")
+		[ 3] : Line:  766	InputMethod   GetButtonDown       	("X")
+
+Converting script [72 / 141]	[\Scripts\Assembly-CSharp\ModelSwapScript.cs]
+	Fragments : 1
+		[ 0] : Line:   12	InputMethod   GetKeyDown          	(KeyCode.Z)
+
+Converting script [73 / 141]	[\Scripts\Assembly-CSharp\MopScript.cs]
+	Fragments : 2
+		[ 0] : Line:   62	InputMethod   GetButtonDown       	("A")
+		[ 1] : Line:   86	InputMethod   GetButtonDown       	("A")
+
+Converting script [74 / 141]	[\Scripts\Assembly-CSharp\MusicMenuScript.cs]
+	Fragments : 2
+		[ 0] : Line:   36	InputMethod   GetButtonDown       	("A")
+		[ 1] : Line:   40	InputMethod   GetButtonDown       	("B")
+
+Converting script [75 / 141]	[\Scripts\Assembly-CSharp\NemesisScript.cs]
+	Fragments : 1
+		[ 0] : Line:  174	InputMethod   GetButton           	("LB")
+
+Converting script [76 / 141]	[\Scripts\Assembly-CSharp\NGUIMath.cs]
+	Fragments : 1
+		[ 0] : Line: 1032	Other mod.	[Screen.dpi]
+
+Converting script [77 / 141]	[\Scripts\Assembly-CSharp\NoteWindowScript.cs]
+	Fragments : 5
+		[ 0] : Line:  115	InputMethod   GetButtonDown       	("A")
+		[ 1] : Line:  122	InputMethod   GetButtonDown       	("B")
+		[ 2] : Line:  134	InputMethod   GetButtonDown       	("X")
+		[ 3] : Line:  173	InputMethod   GetButtonDown       	("A")
+		[ 4] : Line:  190	InputMethod   GetButtonDown       	("B")
+
+Converting script [78 / 141]	[\Scripts\Assembly-CSharp\NyanDroidScript.cs]
+	Fragments : 1
+		[ 0] : Line:   47	InputMethod   GetButtonDown       	("RB")
+
+Converting script [79 / 141]	[\Scripts\Assembly-CSharp\OfferHelpScript.cs]
+	Fragments : 1
+		[ 0] : Line:   89	InputMethod   GetButtonDown       	("A")
+
+Converting script [80 / 141]	[\Scripts\Assembly-CSharp\PassTimeScript.cs]
+	Fragments : 8
+		[ 0] : Line:   25	InputMethod   GetKeyDown          	(KeyCode.A)
+		[ 1] : Line:   25	InputMethod   GetKeyDown          	(KeyCode.LeftArrow)
+		[ 2] : Line:   34	InputMethod   GetKeyDown          	(KeyCode.D)
+		[ 3] : Line:   34	InputMethod   GetKeyDown          	(KeyCode.RightArrow)
+		[ 4] : Line:   43	InputMethod   GetKeyDown          	(KeyCode.W)
+		[ 5] : Line:   43	InputMethod   GetKeyDown          	(KeyCode.UpArrow)
+		[ 6] : Line:   47	InputMethod   GetKeyDown          	(KeyCode.S)
+		[ 7] : Line:   47	InputMethod   GetKeyDown          	(KeyCode.DownArrow)
+
+Converting script [81 / 141]	[\Scripts\Assembly-CSharp\PathfindingTestScript.cs]
+	Fragments : 2
+		[ 0] : Line:    9	InputMethod   GetKeyDown          	(KeyCode.LeftArrow)
+		[ 1] : Line:   13	InputMethod   GetKeyDown          	(KeyCode.RightArrow)
+
+Converting script [82 / 141]	[\Scripts\Assembly-CSharp\PauseScreenScript.cs]
+	Fragments : 18
+		[ 0] : Line:  164	InputMethod   GetButtonDown       	("Start")
+		[ 1] : Line:  281	InputMethod   GetKeyDown          	(KeyCode.W)
+		[ 2] : Line:  281	InputMethod   GetKeyDown          	(KeyCode.UpArrow)
+		[ 3] : Line:  286	InputMethod   GetKeyDown          	(KeyCode.S)
+		[ 4] : Line:  286	InputMethod   GetKeyDown          	(KeyCode.DownArrow)
+		[ 5] : Line:  291	InputMethod   GetKeyDown          	(KeyCode.D)
+		[ 6] : Line:  291	InputMethod   GetKeyDown          	(KeyCode.RightArrow)
+		[ 7] : Line:  296	InputMethod   GetKeyDown          	(KeyCode.A)
+		[ 8] : Line:  296	InputMethod   GetKeyDown          	(KeyCode.LeftArrow)
+		[ 9] : Line:  309	InputMethod   GetButtonDown       	("A")
+		[10] : Line:  443	InputMethod   GetButtonDown       	("Start")
+		[11] : Line:  443	InputMethod   GetButtonDown       	("B")
+		[12] : Line:  447	InputMethod   GetButtonUp         	("B")
+		[13] : Line:  456	InputMethod   GetButtonDown       	("A")
+		[14] : Line:  473	InputMethod   GetButtonDown       	("B")
+		[15] : Line:  487	InputMethod   GetButtonDown       	("A")
+		[16] : Line:  491	InputMethod   GetButtonDown       	("B")
+		[17] : Line:  509	InputMethod   GetButtonUp         	("A")
+
+Converting script [83 / 141]	[\Scripts\Assembly-CSharp\PeekScript.cs]
+	Fragments : 1
+		[ 0] : Line:   50	InputMethod   GetButtonDown       	("B")
+
+Converting script [84 / 141]	[\Scripts\Assembly-CSharp\PhoneScript.cs]
+	Fragments : 2
+		[ 0] : Line:  114	InputMethod   GetButtonDown       	("A")
+		[ 1] : Line:  128	InputMethod   GetButtonDown       	("X")
+
+Converting script [85 / 141]	[\Scripts\Assembly-CSharp\PhotoGalleryScript.cs]
+	Fragments : 80
+		[ 0] : Line:  180	Other mod.	[Cursor.transform]
+		[ 1] : Line:  184	Other mod.	[Cursor.transform]
+		[ 2] : Line:  184	Other mod.	[Cursor.transform]
+		[ 3] : Line:  184	Other mod.	[Cursor.transform]
+		[ 4] : Line:  194	Other mod.	[Cursor.transform]
+		[ 5] : Line:  198	Other mod.	[Cursor.transform]
+		[ 6] : Line:  198	Other mod.	[Cursor.transform]
+		[ 7] : Line:  198	Other mod.	[Cursor.transform]
+		[ 8] : Line:  206	Other mod.	[Cursor.gameObject]
+		[ 9] : Line:  217	InputMethod   GetButtonDown       	("A")
+		[10] : Line:  257	InputMethod   GetButtonDown       	("B")
+		[11] : Line:  271	InputMethod   GetButtonDown       	("X")
+		[12] : Line:  288	InputMethod   GetButtonDown       	("Y")
+		[13] : Line:  291	Other mod.	[Cursor.gameObject]
+		[14] : Line:  296	InputMethod   GetButtonDown       	("Y")
+		[15] : Line:  340	InputMethod   GetButtonDown       	("A")
+		[16] : Line:  359	InputMethod   GetButtonDown       	("B")
+		[17] : Line:  366	Other mod.	[Cursor.Highlight]
+		[18] : Line:  366	Other mod.	[Cursor.Highlight]
+		[19] : Line:  366	Other mod.	[Cursor.Highlight]
+		[20] : Line:  385	InputMethod   GetMouseButton      	(1)
+		[21] : Line:  393	InputMethod   GetButton           	("LB")
+		[22] : Line:  397	InputMethod   GetButton           	("RB")
+		[23] : Line:  401	InputMethod   GetButton           	("Y")
+		[24] : Line:  409	InputMethod   GetButton           	("X")
+		[25] : Line:  418	InputMethod   GetAxis             	("Horizontal")
+		[26] : Line:  418	InputMethod   GetAxis             	("Vertical")
+		[27] : Line:  420	InputMethod   GetButtonDown       	("A")
+		[28] : Line:  422	Other mod.	[Cursor.transform]
+		[29] : Line:  423	Other mod.	[Cursor.gameObject]
+		[30] : Line:  432	InputMethod   GetAxis             	("Horizontal")
+		[31] : Line:  433	InputMethod   GetAxis             	("Vertical")
+		[32] : Line:  461	InputMethod   GetButtonDown       	("A")
+		[33] : Line:  469	Other mod.	[Cursor.transform]
+		[34] : Line:  470	Other mod.	[Cursor.gameObject]
+		[35] : Line:  480	Other mod.	[Cursor.transform]
+		[36] : Line:  480	Other mod.	[Cursor.transform]
+		[37] : Line:  481	InputMethod   GetAxis             	("Horizontal")
+		[38] : Line:  481	InputMethod   GetAxis             	("Vertical")
+		[39] : Line:  482	Other mod.	[Cursor.transform]
+		[40] : Line:  482	Other mod.	[Cursor.transform]
+		[41] : Line:  483	InputMethod   GetButtonDown       	("A")
+		[42] : Line:  483	Other mod.	[Cursor.Photograph]
+		[43] : Line:  485	Other mod.	[Cursor.Highlight]
+		[44] : Line:  485	Other mod.	[Cursor.Highlight]
+		[45] : Line:  485	Other mod.	[Cursor.Highlight]
+		[46] : Line:  486	Other mod.	[Cursor.Photograph]
+		[47] : Line:  487	Other mod.	[Cursor.gameObject]
+		[48] : Line:  491	InputMethod   GetButtonDown       	("Y")
+		[49] : Line:  498	Other mod.	[Cursor.gameObject]
+		[50] : Line:  505	InputMethod   GetButtonDown       	("B")
+		[51] : Line:  507	Other mod.	[Cursor.Photograph]
+		[52] : Line:  509	Other mod.	[Cursor.Photograph]
+		[53] : Line:  511	Other mod.	[Cursor.transform]
+		[54] : Line:  511	Other mod.	[Cursor.transform]
+		[55] : Line:  512	Other mod.	[Cursor.Highlight]
+		[56] : Line:  512	Other mod.	[Cursor.Highlight]
+		[57] : Line:  512	Other mod.	[Cursor.Highlight]
+		[58] : Line:  514	Other mod.	[Cursor.gameObject]
+		[59] : Line:  518	InputMethod   GetButtonDown       	("X")
+		[60] : Line:  520	Other mod.	[Cursor.Photograph]
+		[61] : Line:  522	Other mod.	[Cursor.Highlight]
+		[62] : Line:  522	Other mod.	[Cursor.Highlight]
+		[63] : Line:  522	Other mod.	[Cursor.Highlight]
+		[64] : Line:  523	Other mod.	[Cursor.Photograph]
+		[65] : Line:  524	Other mod.	[Cursor.Photograph]
+		[66] : Line:  526	Other mod.	[Cursor.Photograph]
+		[67] : Line:  529	Other mod.	[Cursor.Tack]
+		[68] : Line:  531	Other mod.	[Cursor.CircleHighlight]
+		[69] : Line:  531	Other mod.	[Cursor.CircleHighlight]
+		[70] : Line:  531	Other mod.	[Cursor.CircleHighlight]
+		[71] : Line:  532	Other mod.	[Cursor.Tack]
+		[72] : Line:  533	Other mod.	[Cursor.Tack]
+		[73] : Line:  535	Other mod.	[Cursor.Tack]
+		[74] : Line:  575	InputProperty mousePosition       
+		[75] : Line:  575	InputProperty mousePosition       
+		[76] : Line:  597	InputProperty mousePosition       
+		[77] : Line:  597	InputProperty mousePosition       
+		[78] : Line:  686	Other mod.	[Cursor.Photograph]
+		[79] : Line:  693	Other mod.	[Cursor.Tack]
+
+Converting script [86 / 141]	[\Scripts\Assembly-CSharp\PickpocketMinigameScript.cs]
+	Fragments : 5
+		[ 0] : Line:   76	InputMethod   GetButtonDown       	("A")
+		[ 1] : Line:   76	InputMethod   GetButtonDown       	("B")
+		[ 2] : Line:   76	InputMethod   GetButtonDown       	("X")
+		[ 3] : Line:   76	InputMethod   GetButtonDown       	("Y")
+		[ 4] : Line:   82	InputMethod   GetButtonDown       	(CurrentButton)
+
+Converting script [87 / 141]	[\Scripts\Assembly-CSharp\PoliceScript.cs]
+	Fragments : 1
+		[ 0] : Line:  360	InputMethod   GetButtonDown       	("A")
+
+Converting script [88 / 141]	[\Scripts\Assembly-CSharp\PortraitScript.cs]
+	Fragments : 4
+		[ 0] : Line:   33	InputMethod   GetKeyDown          	(KeyCode.Alpha1)
+		[ 1] : Line:   40	InputMethod   GetKeyDown          	(KeyCode.Alpha2)
+		[ 2] : Line:   47	InputMethod   GetKeyDown          	(KeyCode.Alpha3)
+		[ 3] : Line:   54	InputMethod   GetKeyDown          	(KeyCode.Space)
+
+Converting script [89 / 141]	[\Scripts\Assembly-CSharp\PoseModeScript.cs]
+	Fragments : 33
+		[ 0] : Line:   86	InputMethod   GetButtonDown       	("A")
+		[ 1] : Line:  142	InputMethod   GetButtonDown       	("B")
+		[ 2] : Line:  149	InputMethod   GetButtonDown       	("A")
+		[ 3] : Line:  168	InputMethod   GetButtonDown       	("B")
+		[ 4] : Line:  180	InputMethod   GetButtonDown       	("A")
+		[ 5] : Line:  223	InputMethod   GetButtonDown       	("B")
+		[ 6] : Line:  235	InputMethod   GetAxis             	("Horizontal")
+		[ 7] : Line:  235	InputMethod   GetAxis             	("Horizontal")
+		[ 8] : Line:  235	InputMethod   GetAxis             	("DpadX")
+		[ 9] : Line:  235	InputMethod   GetAxis             	("DpadX")
+		[10] : Line:  235	InputMethod   GetKey              	(KeyCode.RightArrow)
+		[11] : Line:  235	InputMethod   GetKey              	(KeyCode.LeftArrow)
+		[12] : Line:  294	InputMethod   GetButtonDown       	("A")
+		[13] : Line:  298	InputMethod   GetButtonDown       	("B")
+		[14] : Line:  476	InputMethod   GetAxis             	("Horizontal")
+		[15] : Line:  476	InputMethod   GetAxis             	("Horizontal")
+		[16] : Line:  476	InputMethod   GetAxis             	("DpadX")
+		[17] : Line:  476	InputMethod   GetAxis             	("DpadX")
+		[18] : Line:  476	InputMethod   GetKey              	(KeyCode.RightArrow)
+		[19] : Line:  476	InputMethod   GetKey              	(KeyCode.LeftArrow)
+		[20] : Line:  508	InputMethod   GetButtonDown       	("B")
+		[21] : Line:  519	InputMethod   GetButtonDown       	("X")
+		[22] : Line:  524	InputMethod   GetButtonDown       	("Y")
+		[23] : Line:  529	InputMethod   GetButtonDown       	("A")
+		[24] : Line:  534	InputMethod   GetButtonDown       	("B")
+		[25] : Line:  558	InputMethod   GetButtonDown       	("A")
+		[26] : Line:  899	InputMethod   GetAxis             	("Horizontal")
+		[27] : Line:  899	InputMethod   GetAxis             	("Horizontal")
+		[28] : Line:  901	InputMethod   GetAxis             	("Horizontal")
+		[29] : Line:  910	InputMethod   GetAxis             	("DpadX")
+		[30] : Line:  910	InputMethod   GetAxis             	("DpadX")
+		[31] : Line:  912	InputMethod   GetAxis             	("DpadX")
+		[32] : Line:  923	InputMethod   GetKey              	(KeyCode.RightArrow)
+
+Converting script [90 / 141]	[\Scripts\Assembly-CSharp\PrayScript.cs]
+	Fragments : 1
+		[ 0] : Line:  198	InputMethod   GetButtonDown       	("A")
+
+Converting script [91 / 141]	[\Scripts\Assembly-CSharp\PromoCameraScript.cs]
+	Fragments : 1
+		[ 0] : Line:   37	InputMethod   GetKeyDown          	(KeyCode.Space)
+
+Converting script [92 / 141]	[\Scripts\Assembly-CSharp\PromptScript.cs]
+	Fragments : 4
+		[ 0] : Line:  364	InputMethod   GetButton           	("A")
+		[ 1] : Line:  368	InputMethod   GetButton           	("B")
+		[ 2] : Line:  372	InputMethod   GetButton           	("X")
+		[ 3] : Line:  376	InputMethod   GetButton           	("Y")
+
+Converting script [93 / 141]	[\Scripts\Assembly-CSharp\RagdollScript.cs]
+	Fragments : 5
+		[ 0] : Line:  216	InputMethod   GetButtonDown       	("LB")
+		[ 1] : Line:  378	InputMethod   GetButtonUp         	("B")
+		[ 2] : Line:  510	InputMethod   GetAxis             	("Vertical")
+		[ 3] : Line:  511	InputMethod   GetAxis             	("Horizontal")
+		[ 4] : Line:  514	InputMethod   GetButton           	("LB")
+
+Converting script [94 / 141]	[\Scripts\Assembly-CSharp\RivalEditorScript.cs]
+	Fragments : 1
+		[ 0] : Line:   34	InputMethod   GetButtonDown       	("B")
+
+Converting script [95 / 141]	[\Scripts\Assembly-CSharp\RPG_Camera.cs]
+	Fragments : 8
+		[ 0] : Line:   86	Other mod.	[Cursor.lockState]
+		[ 1] : Line:   87	Other mod.	[Cursor.visible]
+		[ 2] : Line:  150	InputMethod   GetAxis             	("Mouse X")
+		[ 3] : Line:  153	InputMethod   GetAxis             	("Mouse Y")
+		[ 4] : Line:  155	InputMethod   GetAxis             	("Mouse Y")
+		[ 5] : Line:  160	InputMethod   GetAxis             	("Mouse Y")
+		[ 6] : Line:  174	InputMethod   GetAxis             	("Mouse ScrollWheel")
+		[ 7] : Line:  342	InputMethod   GetAxis             	("Horizontal")
+
+Converting script [96 / 141]	[\Scripts\Assembly-CSharp\RPG_Controller.cs]
+	Fragments : 11
+		[ 0] : Line:   50	InputMethod   GetButton           	("Horizontal Strafe")
+		[ 1] : Line:   52	InputMethod   GetAxis             	("Horizontal Strafe")
+		[ 2] : Line:   52	InputMethod   GetAxis             	("Horizontal Strafe")
+		[ 3] : Line:   54	InputMethod   GetButton           	("Vertical")
+		[ 4] : Line:   56	InputMethod   GetAxis             	("Vertical")
+		[ 5] : Line:   56	InputMethod   GetAxis             	("Vertical")
+		[ 6] : Line:   58	InputMethod   GetMouseButton      	(0)
+		[ 7] : Line:   58	InputMethod   GetMouseButton      	(1)
+		[ 8] : Line:   76	InputMethod   GetButtonDown       	("Jump")
+		[ 9] : Line:   85	InputMethod   GetAxis             	("Horizontal")
+		[10] : Line:   93	InputMethod   GetMouseButton      	(0)
+
+Converting script [97 / 141]	[\Scripts\Assembly-CSharp\SchemesScript.cs]
+	Fragments : 2
+		[ 0] : Line:   89	InputMethod   GetButtonDown       	("A")
+		[ 1] : Line:  132	InputMethod   GetButtonDown       	("B")
+
+Converting script [98 / 141]	[\Scripts\Assembly-CSharp\SentenceScript.cs]
+	Fragments : 1
+		[ 0] : Line:   13	InputMethod   GetButtonDown       	("A")
+
+Converting script [99 / 141]	[\Scripts\Assembly-CSharp\ServicesScript.cs]
+	Fragments : 2
+		[ 0] : Line:   91	InputMethod   GetButtonDown       	("A")
+		[ 1] : Line:  172	InputMethod   GetButtonDown       	("B")
+
+Converting script [100 / 141]	[\Scripts\Assembly-CSharp\SettingsScript.cs]
+	Fragments : 5
+		[ 0] : Line:   49	InputMethod   GetKeyDown          	(KeyCode.Space)
+		[ 1] : Line:   54	InputMethod   GetKeyDown          	(KeyCode.R)
+		[ 2] : Line:   59	InputMethod   GetKeyDown          	(KeyCode.B)
+		[ 3] : Line:  227	InputMethod   GetKeyDown          	(KeyCode.L)
+		[ 4] : Line:  252	InputMethod   GetButtonDown       	("B")
+
+Converting script [101 / 141]	[\Scripts\Assembly-CSharp\ShutterScript.cs]
+	Fragments : 5
+		[ 0] : Line:  344	InputMethod   GetButtonDown       	("A")
+		[ 1] : Line:  408	InputMethod   GetButtonDown       	("X")
+		[ 2] : Line:  443	InputMethod   GetButtonDown       	("B")
+		[ 3] : Line:  448	InputMethod   GetButtonDown       	("B")
+		[ 4] : Line:  457	InputMethod   GetButtonDown       	("A")
+
+Converting script [102 / 141]	[\Scripts\Assembly-CSharp\SlowMoScript.cs]
+	Fragments : 4
+		[ 0] : Line:    9	InputMethod   GetKeyDown          	(KeyCode.S)
+		[ 1] : Line:   13	InputMethod   GetKeyDown          	(KeyCode.Space)
+		[ 2] : Line:   17	InputMethod   GetKeyDown          	("-")
+		[ 3] : Line:   21	InputMethod   GetKeyDown          	("=")
+
+Converting script [103 / 141]	[\Scripts\Assembly-CSharp\SpeedrunTimerScript.cs]
+	Fragments : 1
+		[ 0] : Line:   25	InputMethod   GetKeyDown          	(KeyCode.Delete)
+
+Converting script [104 / 141]	[\Scripts\Assembly-CSharp\SponsorScript.cs]
+	Fragments : 1
+		[ 0] : Line:   31	InputProperty anyKeyDown          
+
+Converting script [105 / 141]	[\Scripts\Assembly-CSharp\SpyScript.cs]
+	Fragments : 2
+		[ 0] : Line:   56	InputMethod   GetButtonDown       	("A")
+		[ 1] : Line:   62	InputMethod   GetButtonDown       	("B")
+
+Converting script [106 / 141]	[\Scripts\Assembly-CSharp\StandScript.cs]
+	Fragments : 4
+		[ 0] : Line:   49	InputMethod   GetButtonDown       	("RB")
+		[ 1] : Line:   73	InputMethod   GetAxis             	("Vertical")
+		[ 2] : Line:   74	InputMethod   GetAxis             	("Horizontal")
+		[ 3] : Line:   80	InputMethod   GetButton           	("LB")
+
+Converting script [107 / 141]	[\Scripts\Assembly-CSharp\StatsScript.cs]
+	Fragments : 2
+		[ 0] : Line:  109	InputMethod   GetKeyDown          	(KeyCode.Backslash)
+		[ 1] : Line:  121	InputMethod   GetButtonDown       	("B")
+
+Converting script [108 / 141]	[\Scripts\Assembly-CSharp\StruggleBarScript.cs]
+	Fragments : 1
+		[ 0] : Line:   53	InputMethod   GetButtonDown       	(CurrentButton)
+
+Converting script [109 / 141]	[\Scripts\Assembly-CSharp\StudentEditorScript.cs]
+	Fragments : 1
+		[ 0] : Line:  213	InputMethod   GetButtonDown       	("B")
+
+Converting script [110 / 141]	[\Scripts\Assembly-CSharp\StudentInfoMenuScript.cs]
+	Fragments : 2
+		[ 0] : Line:  117	InputMethod   GetButtonDown       	("A")
+		[ 1] : Line:  180	InputMethod   GetButtonDown       	("B")
+
+Converting script [111 / 141]	[\Scripts\Assembly-CSharp\StudentInfoScript.cs]
+	Fragments : 6
+		[ 0] : Line:  221	InputMethod   GetButtonDown       	("A")
+		[ 1] : Line:  309	InputMethod   GetButtonDown       	("B")
+		[ 2] : Line:  338	InputMethod   GetButtonDown       	("X")
+		[ 3] : Line:  351	InputMethod   GetButtonDown       	("Y")
+		[ 4] : Line:  367	InputMethod   GetKeyDown          	(KeyCode.Equals)
+		[ 5] : Line:  372	InputMethod   GetKeyDown          	(KeyCode.Minus)
+
+Converting script [112 / 141]	[\Scripts\Assembly-CSharp\StudentManagerScript.cs]
+	Fragments : 3
+		[ 0] : Line:  602	Other mod.	[Cursor.lockState]
+		[ 1] : Line:  603	Other mod.	[Cursor.visible]
+		[ 2] : Line:  793	InputMethod   GetKeyDown          	(KeyCode.Space)
+
+Converting script [113 / 141]	[\Scripts\Assembly-CSharp\StudentScript.cs]
+	Fragments : 1
+		[ 0] : Line: 8244	InputMethod   GetButton           	("LB")
+
+Converting script [114 / 141]	[\Scripts\Assembly-CSharp\SuitorBoostScript.cs]
+	Fragments : 1
+		[ 0] : Line:  136	InputMethod   GetButtonDown       	("A")
+
+Converting script [115 / 141]	[\Scripts\Assembly-CSharp\TalkingScript.cs]
+	Fragments : 21
+		[ 0] : Line:  158	InputMethod   GetButtonDown       	("A")
+		[ 1] : Line:  203	InputMethod   GetButtonDown       	("A")
+		[ 2] : Line:  271	InputMethod   GetButtonDown       	("A")
+		[ 3] : Line:  299	InputMethod   GetButtonDown       	("A")
+		[ 4] : Line:  320	InputMethod   GetButtonDown       	("A")
+		[ 5] : Line:  385	InputMethod   GetButtonDown       	("A")
+		[ 6] : Line:  439	InputMethod   GetButtonDown       	("A")
+		[ 7] : Line:  507	InputMethod   GetButtonDown       	("A")
+		[ 8] : Line:  565	InputMethod   GetButtonDown       	("A")
+		[ 9] : Line:  583	InputMethod   GetButtonDown       	("A")
+		[10] : Line:  643	InputMethod   GetButtonDown       	("A")
+		[11] : Line:  689	InputMethod   GetButtonDown       	("A")
+		[12] : Line:  725	InputMethod   GetButtonDown       	("A")
+		[13] : Line:  765	InputMethod   GetButtonDown       	("A")
+		[14] : Line:  805	InputMethod   GetButtonDown       	("A")
+		[15] : Line:  825	InputMethod   GetButtonDown       	("A")
+		[16] : Line:  858	InputMethod   GetButtonDown       	("A")
+		[17] : Line:  882	InputMethod   GetButtonDown       	("A")
+		[18] : Line:  913	InputMethod   GetButtonDown       	("A")
+		[19] : Line:  947	InputMethod   GetButtonDown       	("A")
+		[20] : Line:  987	InputMethod   GetButtonDown       	("A")
+
+Converting script [116 / 141]	[\Scripts\Assembly-CSharp\TapePlayerMenuScript.cs]
+	Fragments : 7
+		[ 0] : Line:  189	InputMethod   GetButtonDown       	("A")
+		[ 1] : Line:  212	InputMethod   GetButtonDown       	("A")
+		[ 2] : Line:  220	InputMethod   GetButtonDown       	("B")
+		[ 3] : Line:  263	InputMethod   GetKey              	(KeyCode.RightArrow)
+		[ 4] : Line:  273	InputMethod   GetKey              	(KeyCode.LeftArrow)
+		[ 5] : Line:  520	InputMethod   GetButtonDown       	("A")
+		[ 6] : Line:  575	InputMethod   GetButtonDown       	("B")
+
+Converting script [117 / 141]	[\Scripts\Assembly-CSharp\TaskListScript.cs]
+	Fragments : 1
+		[ 0] : Line:   56	InputMethod   GetButtonDown       	("B")
+
+Converting script [118 / 141]	[\Scripts\Assembly-CSharp\TaskWindowScript.cs]
+	Fragments : 2
+		[ 0] : Line:   66	InputMethod   GetButtonDown       	("A")
+		[ 1] : Line:   77	InputMethod   GetButtonDown       	("B")
+
+Converting script [119 / 141]	[\Scripts\Assembly-CSharp\TextMessageManagerScript.cs]
+	Fragments : 1
+		[ 0] : Line:   23	InputMethod   GetButtonDown       	("B")
+
+Converting script [120 / 141]	[\Scripts\Assembly-CSharp\TimePortalScript.cs]
+	Fragments : 1
+		[ 0] : Line:   17	InputMethod   GetKeyDown          	(KeyCode.Space)
+
+Converting script [121 / 141]	[\Scripts\Assembly-CSharp\TitleMenuScript.cs]
+	Fragments : 6
+		[ 0] : Line:  202	InputMethod   GetButtonDown       	("A")
+		[ 1] : Line:  233	InputMethod   GetKeyDown          	(KeyCode.L)
+		[ 2] : Line:  240	InputMethod   GetKeyDown          	(KeyCode.Space)
+		[ 3] : Line:  287	InputMethod   GetButtonDown       	("B")
+		[ 4] : Line:  357	InputMethod   GetKeyDown          	(KeyCode.Minus)
+		[ 5] : Line:  361	InputMethod   GetKeyDown          	(KeyCode.Equals)
+
+Converting script [122 / 141]	[\Scripts\Assembly-CSharp\TitleSaveFilesScript.cs]
+	Fragments : 2
+		[ 0] : Line:   50	InputMethod   GetButtonDown       	("A")
+		[ 1] : Line:   73	InputMethod   GetButtonDown       	("X")
+
+Converting script [123 / 141]	[\Scripts\Assembly-CSharp\TitleSponsorScript.cs]
+	Fragments : 1
+		[ 0] : Line:   79	InputMethod   GetButtonDown       	("A")
+
+Converting script [124 / 141]	[\Scripts\Assembly-CSharp\TributeScript.cs]
+	Fragments : 1
+		[ 0] : Line:   18	InputMethod   GetKeyDown          	(Letter[ID])
+
+Converting script [125 / 141]	[\Scripts\Assembly-CSharp\VoidGoddessScript.cs]
+	Fragments : 16
+		[ 0] : Line:  144	InputMethod   GetButtonDown       	("A")
+		[ 1] : Line:  149	InputMethod   GetKeyDown          	(KeyCode.Alpha1)
+		[ 2] : Line:  157	InputMethod   GetKeyDown          	(KeyCode.Alpha2)
+		[ 3] : Line:  168	InputMethod   GetKeyDown          	(KeyCode.Alpha3)
+		[ 4] : Line:  176	InputMethod   GetKeyDown          	(KeyCode.Alpha4)
+		[ 5] : Line:  184	InputMethod   GetKeyDown          	(KeyCode.Alpha5)
+		[ 6] : Line:  192	InputMethod   GetKeyDown          	(KeyCode.Alpha6)
+		[ 7] : Line:  200	InputMethod   GetKeyDown          	(KeyCode.Alpha7)
+		[ 8] : Line:  208	InputMethod   GetKeyDown          	(KeyCode.Alpha8)
+		[ 9] : Line:  216	InputMethod   GetKeyDown          	(KeyCode.Alpha9)
+		[10] : Line:  224	InputMethod   GetKeyDown          	(KeyCode.Alpha0)
+		[11] : Line:  232	InputMethod   GetKeyDown          	("-")
+		[12] : Line:  240	InputMethod   GetKeyDown          	("=")
+		[13] : Line:  248	InputMethod   GetKeyDown          	(KeyCode.Backspace)
+		[14] : Line:  256	InputMethod   GetButtonDown       	("B")
+		[15] : Line:  263	InputMethod   GetKeyDown          	(KeyCode.Z)
+
+Converting script [126 / 141]	[\Scripts\Assembly-CSharp\WalkToSchoolManagerScript.cs]
+	Fragments : 4
+		[ 0] : Line:  198	InputMethod   GetButtonDown       	("A")
+		[ 1] : Line:  226	InputMethod   GetButtonDown       	("X")
+		[ 2] : Line:  243	InputMethod   GetKeyDown          	(KeyCode.Equals)
+		[ 3] : Line:  247	InputMethod   GetKeyDown          	(KeyCode.Minus)
+
+Converting script [127 / 141]	[\Scripts\Assembly-CSharp\WarningScript.cs]
+	Fragments : 1
+		[ 0] : Line:   59	InputProperty anyKey              
+
+Converting script [128 / 141]	[\Scripts\Assembly-CSharp\WeaponManagerScript.cs]
+	Fragments : 1
+		[ 0] : Line:   74	InputMethod   GetKeyDown          	(KeyCode.Z)
+
+Converting script [129 / 141]	[\Scripts\Assembly-CSharp\WeaponMenuScript.cs]
+	Fragments : 14
+		[ 0] : Line:  100	InputMethod   GetKeyDown          	(KeyCode.Alpha1)
+		[ 1] : Line:  100	InputMethod   GetKeyDown          	(KeyCode.Alpha2)
+		[ 2] : Line:  100	InputMethod   GetKeyDown          	(KeyCode.Alpha3)
+		[ 3] : Line:  100	InputMethod   GetKeyDown          	(KeyCode.Alpha4)
+		[ 4] : Line:  100	InputMethod   GetKeyDown          	(KeyCode.Alpha5)
+		[ 5] : Line:  107	InputMethod   GetKeyDown          	(KeyCode.Alpha1)
+		[ 6] : Line:  120	InputMethod   GetKeyDown          	(KeyCode.Alpha2)
+		[ 7] : Line:  125	InputMethod   GetKeyDown          	(KeyCode.Alpha3)
+		[ 8] : Line:  130	InputMethod   GetKeyDown          	(KeyCode.Alpha4)
+		[ 9] : Line:  140	InputMethod   GetKeyDown          	(KeyCode.Alpha5)
+		[10] : Line:  152	InputMethod   GetAxis             	("DpadY")
+		[11] : Line:  167	InputMethod   GetButtonDown       	("A")
+		[12] : Line:  202	InputMethod   GetButtonDown       	("B")
+		[13] : Line:  248	InputMethod   GetButton           	("Y")
+
+Converting script [130 / 141]	[\Scripts\Assembly-CSharp\WeaponScript.cs]
+	Fragments : 1
+		[ 0] : Line:  186	InputMethod   GetButtonDown       	("RB")
+
+Converting script [131 / 141]	[\Scripts\Assembly-CSharp\WelcomeScript.cs]
+	Fragments : 5
+		[ 0] : Line:   41	Other mod.	[Cursor.lockState]
+		[ 1] : Line:   42	Other mod.	[Cursor.visible]
+		[ 2] : Line:   57	InputMethod   GetKeyDown          	(KeyCode.W)
+		[ 3] : Line:   58	InputProperty anyKeyDown          
+		[ 4] : Line:   66	InputProperty anyKeyDown          
+
+Converting script [132 / 141]	[\Scripts\Assembly-CSharp\YandereKunScript.cs]
+	Fragments : 1
+		[ 0] : Line:  381	InputMethod   GetKeyDown          	(KeyCode.Space)
+
+Converting script [133 / 141]	[\Scripts\Assembly-CSharp\YandereScript.cs]
+	Fragments : 137
+		[ 0] : Line: 1473	InputMethod   GetKeyDown          	(KeyCode.LeftAlt)
+		[ 1] : Line: 1493	InputMethod   GetButtonUp         	("A")
+		[ 2] : Line: 1493	InputMethod   GetKeyDown          	(KeyCode.Escape)
+		[ 3] : Line: 1577	InputMethod   GetAxis             	("Vertical")
+		[ 4] : Line: 1578	InputMethod   GetAxis             	("Horizontal")
+		[ 5] : Line: 1598	InputMethod   GetButton           	("LB")
+		[ 6] : Line: 1730	InputMethod   GetAxis             	("Mouse Y")
+		[ 7] : Line: 1753	InputMethod   GetAxis             	("Mouse X")
+		[ 8] : Line: 1757	InputMethod   GetButton           	("A")
+		[ 9] : Line: 1757	InputMethod   GetButton           	("B")
+		[10] : Line: 1757	InputMethod   GetButton           	("X")
+		[11] : Line: 1757	InputMethod   GetButton           	("Y")
+		[12] : Line: 1757	InputMethod   GetAxis             	("LT")
+		[13] : Line: 1757	InputMethod   GetMouseButton      	(1)
+		[14] : Line: 1759	InputMethod   GetButtonDown       	("LB")
+		[15] : Line: 1773	InputMethod   GetAxis             	("LT")
+		[16] : Line: 1813	InputMethod   GetButton           	("RB")
+		[17] : Line: 1817	InputMethod   GetButtonDown       	("RB")
+		[18] : Line: 1827	InputMethod   GetButtonDown       	("X")
+		[19] : Line: 1836	InputMethod   GetButtonDown       	("Y")
+		[20] : Line: 1870	InputMethod   GetButtonUp         	("RB")
+		[21] : Line: 1885	InputMethod   GetButtonUp         	("RB")
+		[22] : Line: 1982	InputMethod   GetButton           	("LB")
+		[23] : Line: 1986	InputMethod   GetButtonDown       	("RS")
+		[24] : Line: 2000	InputMethod   GetButton           	("RS")
+		[25] : Line: 2013	InputMethod   GetButtonUp         	("RS")
+		[26] : Line: 2020	InputMethod   GetButtonDown       	("RS")
+		[27] : Line: 2026	InputMethod   GetButtonUp         	("RS")
+		[28] : Line: 2038	InputMethod   GetAxis             	("DpadY")
+		[29] : Line: 2038	InputMethod   GetAxis             	("Mouse ScrollWheel")
+		[30] : Line: 2038	InputMethod   GetKey              	(KeyCode.Tab)
+		[31] : Line: 2038	InputMethod   GetKey              	(KeyCode.LeftShift)
+		[32] : Line: 2040	InputMethod   GetKey              	(KeyCode.Tab)
+		[33] : Line: 2044	InputMethod   GetKey              	(KeyCode.LeftShift)
+		[34] : Line: 2048	InputMethod   GetAxis             	("DpadY")
+		[35] : Line: 2049	InputMethod   GetAxis             	("Mouse ScrollWheel")
+		[36] : Line: 2059	InputMethod   GetAxis             	("RT")
+		[37] : Line: 2059	InputMethod   GetMouseButtonDown  	(0)
+		[38] : Line: 2059	InputMethod   GetButtonDown       	("RB")
+		[39] : Line: 2067	InputMethod   GetAxis             	("LT")
+		[40] : Line: 2067	InputMethod   GetMouseButton      	(1)
+		[41] : Line: 2071	InputMethod   GetKey              	(KeyCode.LeftAlt)
+		[42] : Line: 2097	InputMethod   GetAxis             	("DpadY")
+		[43] : Line: 2112	InputMethod   GetKey              	(KeyCode.Alpha1)
+		[44] : Line: 2136	InputMethod   GetAxis             	("DpadX")
+		[45] : Line: 2145	InputMethod   GetKey              	(KeyCode.Alpha2)
+		[46] : Line: 2158	InputMethod   GetAxis             	("DpadX")
+		[47] : Line: 2167	InputMethod   GetKey              	(KeyCode.Alpha3)
+		[48] : Line: 2176	InputMethod   GetButtonDown       	("LS")
+		[49] : Line: 2176	InputMethod   GetKeyDown          	(KeyCode.T)
+		[50] : Line: 2388	InputMethod   GetAxis             	("Vertical")
+		[51] : Line: 2389	InputMethod   GetAxis             	("Horizontal")
+		[52] : Line: 2413	InputMethod   GetAxis             	("Vertical")
+		[53] : Line: 2414	InputMethod   GetAxis             	("Horizontal")
+		[54] : Line: 2468	InputMethod   GetButtonDown       	("RB")
+		[55] : Line: 2525	InputMethod   GetAxis             	("Horizontal")
+		[56] : Line: 2525	InputMethod   GetAxis             	("DpadX")
+		[57] : Line: 2529	InputMethod   GetAxis             	("Horizontal")
+		[58] : Line: 2529	InputMethod   GetAxis             	("DpadX")
+		[59] : Line: 2586	InputMethod   GetAxis             	("DpadY")
+		[60] : Line: 2593	InputMethod   GetKeyUp            	(KeyCode.Alpha1)
+		[61] : Line: 2738	InputMethod   GetAxis             	("Vertical")
+		[62] : Line: 2742	InputMethod   GetAxis             	("Vertical")
+		[63] : Line: 2746	InputMethod   GetAxis             	("Horizontal")
+		[64] : Line: 2750	InputMethod   GetAxis             	("Horizontal")
+		[65] : Line: 2760	InputMethod   GetButtonDown       	("B")
+		[66] : Line: 2785	InputMethod   GetButtonUp         	("RB")
+		[67] : Line: 2945	InputMethod   GetButtonDown       	("B")
+		[68] : Line: 2986	InputMethod   GetButtonDown       	("A")
+		[69] : Line: 3223	InputMethod   GetButtonDown       	("X")
+		[70] : Line: 3227	InputMethod   GetButtonDown       	("Y")
+		[71] : Line: 3589	InputMethod   GetButtonDown       	("A")
+		[72] : Line: 3615	InputMethod   GetButtonDown       	("A")
+		[73] : Line: 3641	InputMethod   GetButtonDown       	("A")
+		[74] : Line: 3667	InputMethod   GetButtonDown       	("A")
+		[75] : Line: 3693	InputMethod   GetButtonDown       	("A")
+		[76] : Line: 3719	InputMethod   GetButtonDown       	("A")
+		[77] : Line: 3745	InputMethod   GetButtonDown       	("A")
+		[78] : Line: 3771	InputMethod   GetButtonDown       	("A")
+		[79] : Line: 3797	InputMethod   GetButtonDown       	("A")
+		[80] : Line: 3830	InputMethod   GetButtonDown       	("A")
+		[81] : Line: 3860	InputMethod   GetButtonDown       	("A")
+		[82] : Line: 3952	InputMethod   GetButtonDown       	("B")
+		[83] : Line: 4225	InputMethod   GetKeyDown          	(KeyCode.Escape)
+		[84] : Line: 4229	InputMethod   GetKeyDown          	(KeyCode.P)
+		[85] : Line: 4274	InputMethod   GetKeyDown          	(KeyCode.H)
+		[86] : Line: 4276	InputMethod   GetButton           	("LB")
+		[87] : Line: 4286	InputMethod   GetKey              	(KeyCode.H)
+		[88] : Line: 4286	InputMethod   GetKeyDown          	(KeyCode.LeftArrow)
+		[89] : Line: 4291	InputMethod   GetKeyDown          	(KeyCode.O)
+		[90] : Line: 4297	InputMethod   GetButton           	("LB")
+		[91] : Line: 4307	InputMethod   GetKey              	(KeyCode.O)
+		[92] : Line: 4307	InputMethod   GetKeyDown          	(KeyCode.LeftArrow)
+		[93] : Line: 4318	InputMethod   GetKeyDown          	("-")
+		[94] : Line: 4329	InputMethod   GetKeyDown          	("=")
+		[95] : Line: 4345	InputMethod   GetKey              	(KeyCode.Period)
+		[96] : Line: 4355	InputMethod   GetKey              	(KeyCode.Comma)
+		[97] : Line: 4372	InputMethod   GetKeyDown          	(KeyCode.Slash)
+		[98] : Line: 4381	InputMethod   GetKeyDown          	(KeyCode.P)
+		[99] : Line: 4385	InputMethod   GetKeyDown          	(KeyCode.Z)
+		[100] : Line: 4389	InputMethod   GetKeyDown          	(KeyCode.B)
+		[101] : Line: 4393	InputMethod   GetKeyDown          	(KeyCode.C)
+		[102] : Line: 4397	InputMethod   GetKeyDown          	(KeyCode.H)
+		[103] : Line: 4402	InputMethod   GetKeyDown          	(KeyCode.T)
+		[104] : Line: 4407	InputMethod   GetKeyDown          	(KeyCode.G)
+		[105] : Line: 4413	InputMethod   GetKeyDown          	(KeyCode.J)
+		[106] : Line: 4417	InputMethod   GetKeyDown          	(KeyCode.K)
+		[107] : Line: 4423	InputMethod   GetKeyDown          	(KeyCode.L)
+		[108] : Line: 4427	InputMethod   GetKeyDown          	(KeyCode.N)
+		[109] : Line: 4431	InputMethod   GetKeyDown          	(KeyCode.S)
+		[110] : Line: 4437	InputMethod   GetKeyDown          	(KeyCode.F)
+		[111] : Line: 4442	InputMethod   GetKeyDown          	(KeyCode.X)
+		[112] : Line: 4447	InputMethod   GetKeyDown          	(KeyCode.O)
+		[113] : Line: 4452	InputMethod   GetKeyDown          	(KeyCode.U)
+		[114] : Line: 4457	InputMethod   GetKeyDown          	(KeyCode.Y)
+		[115] : Line: 4462	InputMethod   GetKeyDown          	(KeyCode.E)
+		[116] : Line: 4467	InputMethod   GetKeyDown          	(KeyCode.Q)
+		[117] : Line: 4472	InputMethod   GetKeyDown          	(KeyCode.W)
+		[118] : Line: 4474	InputMethod   GetKeyDown          	(KeyCode.R)
+		[119] : Line: 4479	InputMethod   GetKeyDown          	(KeyCode.V)
+		[120] : Line: 4484	InputMethod   GetKeyDown          	(KeyCode.Alpha2)
+		[121] : Line: 4489	InputMethod   GetKeyDown          	(KeyCode.Alpha7)
+		[122] : Line: 4494	InputMethod   GetKeyDown          	(KeyCode.Alpha8)
+		[123] : Line: 4499	InputMethod   GetKeyDown          	("[5]")
+		[124] : Line: 4504	InputMethod   GetKeyDown          	(KeyCode.A)
+		[125] : Line: 4509	InputMethod   GetKeyDown          	(KeyCode.I)
+		[126] : Line: 4514	InputMethod   GetKeyDown          	(KeyCode.D)
+		[127] : Line: 4519	InputMethod   GetKeyDown          	(KeyCode.M)
+		[128] : Line: 4524	InputMethod   GetKeyDown          	(KeyCode.Alpha1)
+		[129] : Line: 4529	InputMethod   GetKeyDown          	(KeyCode.Alpha3)
+		[130] : Line: 4534	InputMethod   GetKeyDown          	(KeyCode.Alpha4)
+		[131] : Line: 4539	InputMethod   GetKeyDown          	(KeyCode.Alpha6)
+		[132] : Line: 4544	InputMethod   GetKeyDown          	(KeyCode.Space)
+		[133] : Line: 4550	InputMethod   GetKeyDown          	(KeyCode.Z)
+		[134] : Line: 4627	InputMethod   GetButton           	("LB")
+		[135] : Line: 4706	InputMethod   GetButtonDown       	("Start")
+		[136] : Line: 4706	InputMethod   GetKeyDown          	(KeyCode.Escape)
+
+Converting script [134 / 141]	[\Scripts\Assembly-CSharp\YanvaniaCameraScript.cs]
+	Fragments : 1
+		[ 0] : Line:   24	InputMethod   GetAxis             	("Mouse ScrollWheel")
+
+Converting script [135 / 141]	[\Scripts\Assembly-CSharp\YanvaniaDraculaScript.cs]
+	Fragments : 1
+		[ 0] : Line:  301	InputMethod   GetKeyDown          	(KeyCode.Alpha4)
+
+Converting script [136 / 141]	[\Scripts\Assembly-CSharp\YanvaniaIntroScript.cs]
+	Fragments : 1
+		[ 0] : Line:   76	InputMethod   GetKeyDown          	(KeyCode.Alpha1)
+
+Converting script [137 / 141]	[\Scripts\Assembly-CSharp\YanvaniaTextBoxScript.cs]
+	Fragments : 4
+		[ 0] : Line:  116	InputMethod   GetButtonDown       	("A")
+		[ 1] : Line:  116	InputMethod   GetKeyDown          	(KeyCode.Z)
+		[ 2] : Line:  116	InputMethod   GetKeyDown          	(KeyCode.X)
+		[ 3] : Line:  239	InputMethod   GetKeyDown          	(KeyCode.Alpha3)
+
+Converting script [138 / 141]	[\Scripts\Assembly-CSharp\YanvaniaTitleScript.cs]
+	Fragments : 11
+		[ 0] : Line:   74	InputMethod   GetKeyDown          	(KeyCode.M)
+		[ 1] : Line:   80	InputMethod   GetKeyDown          	(KeyCode.End)
+		[ 2] : Line:   85	InputMethod   GetKeyDown          	(KeyCode.BackQuote)
+		[ 3] : Line:   95	InputMethod   GetButtonDown       	("A")
+		[ 4] : Line:  122	InputMethod   GetButtonDown       	("B")
+		[ 5] : Line:  140	InputProperty anyKeyDown          
+		[ 6] : Line:  156	InputMethod   GetKeyDown          	(KeyCode.Equals)
+		[ 7] : Line:  160	InputMethod   GetKeyDown          	(KeyCode.Minus)
+		[ 8] : Line:  182	InputMethod   GetButtonDown       	("A")
+		[ 9] : Line:  202	InputMethod   GetButtonDown       	("A")
+		[10] : Line:  247	InputMethod   GetButtonDown       	("B")
+
+Converting script [139 / 141]	[\Scripts\Assembly-CSharp\YanvaniaTryAgainScript.cs]
+	Fragments : 3
+		[ 0] : Line:   47	InputMethod   GetButtonDown       	("A")
+		[ 1] : Line:   47	InputMethod   GetKeyDown          	(KeyCode.Z)
+		[ 2] : Line:   47	InputMethod   GetKeyDown          	(KeyCode.X)
+
+Converting script [140 / 141]	[\Scripts\Assembly-CSharp\YanvaniaYanmontScript.cs]
+	Fragments : 29
+		[ 0] : Line:  218	InputMethod   GetAxis             	("VaniaHorizontal")
+		[ 1] : Line:  222	InputMethod   GetAxis             	("VaniaHorizontal")
+		[ 2] : Line:  240	InputMethod   GetAxis             	("VaniaHorizontal")
+		[ 3] : Line:  242	InputMethod   GetAxis             	("VaniaHorizontal")
+		[ 4] : Line:  246	InputMethod   GetAxis             	("VaniaHorizontal")
+		[ 5] : Line:  263	InputMethod   GetAxis             	("VaniaHorizontal")
+		[ 6] : Line:  268	InputMethod   GetAxis             	("VaniaHorizontal")
+		[ 7] : Line:  278	InputMethod   GetAxis             	("VaniaVertical")
+		[ 8] : Line:  293	InputMethod   GetAxis             	("VaniaVertical")
+		[ 9] : Line:  301	InputMethod   GetAxis             	("VaniaVertical")
+		[10] : Line:  301	InputMethod   GetButton           	("X")
+		[11] : Line:  356	InputMethod   GetKey              	(KeyCode.LeftShift)
+		[12] : Line:  372	InputMethod   GetButton           	("VaniaJump")
+		[13] : Line:  517	InputMethod   GetButtonDown       	("VaniaAttack")
+		[14] : Line:  555	InputMethod   GetAxis             	("VaniaHorizontal")
+		[15] : Line:  555	InputMethod   GetAxis             	("VaniaHorizontal")
+		[16] : Line:  555	InputMethod   GetAxis             	("VaniaVertical")
+		[17] : Line:  555	InputMethod   GetAxis             	("VaniaVertical")
+		[18] : Line:  569	InputMethod   GetAxis             	("VaniaVertical")
+		[19] : Line:  585	InputMethod   GetAxis             	("VaniaVertical")
+		[20] : Line:  601	InputMethod   GetAxis             	("VaniaHorizontal")
+		[21] : Line:  620	InputMethod   GetAxis             	("VaniaHorizontal")
+		[22] : Line:  642	InputMethod   GetButton           	("VaniaAttack")
+		[23] : Line:  654	InputMethod   GetButton           	("VaniaAttack")
+		[24] : Line:  735	InputMethod   GetKeyDown          	(KeyCode.BackQuote)
+		[25] : Line:  739	InputMethod   GetKeyDown          	(KeyCode.Alpha2)
+		[26] : Line:  744	InputMethod   GetKeyDown          	(KeyCode.Alpha5)
+		[27] : Line:  749	InputMethod   GetKeyDown          	(KeyCode.Equals)
+		[28] : Line:  753	InputMethod   GetKeyDown          	(KeyCode.Minus)
+
+Converting script [141 / 141]	[\Scripts\Assembly-CSharp\ZoomScript.cs]
+	Fragments : 1
+		[ 0] : Line:   76	InputMethod   GetAxis             	("Mouse ScrollWheel")
+
+
+141 scripts modified!
+Overwriting actual scripts...
+	[0 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\AboutScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\AboutScript.cs]
+	[1 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\AppearanceWindowScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\AppearanceWindowScript.cs]
+	[2 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\ArmDetectorScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\ArmDetectorScript.cs]
+	[3 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\AspectUtility.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\AspectUtility.cs]
+	[4 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\AttackManagerScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\AttackManagerScript.cs]
+	[5 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\AudioSoftwareScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\AudioSoftwareScript.cs]
+	[6 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\BucketPourScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\BucketPourScript.cs]
+	[7 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\BucketScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\BucketScript.cs]
+	[8 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\BuildingDestructionScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\BuildingDestructionScript.cs]
+	[9 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\CalendarScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\CalendarScript.cs]
+	[10 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\CameraMoveScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\CameraMoveScript.cs]
+	[11 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\CardboardBoxScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\CardboardBoxScript.cs]
+	[12 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\ChallengeScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\ChallengeScript.cs]
+	[13 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\ChangeTextureScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\ChangeTextureScript.cs]
+	[14 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\CheckmarkScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\CheckmarkScript.cs]
+	[15 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\ChoiceScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\ChoiceScript.cs]
+	[16 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\ClassScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\ClassScript.cs]
+	[17 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\ClockScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\ClockScript.cs]
+	[18 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\ClubManagerScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\ClubManagerScript.cs]
+	[19 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\ClubWindowScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\ClubWindowScript.cs]
+	[20 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\CombatMinigameScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\CombatMinigameScript.cs]
+	[21 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\ComputerGamesScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\ComputerGamesScript.cs]
+	[22 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\ConfessionManagerScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\ConfessionManagerScript.cs]
+	[23 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\ConfessionSceneScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\ConfessionSceneScript.cs]
+	[24 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\CookingEventScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\CookingEventScript.cs]
+	[25 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\CounselorScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\CounselorScript.cs]
+	[26 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\CreditsScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\CreditsScript.cs]
+	[27 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\CustomizationScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\CustomizationScript.cs]
+	[28 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\CutsceneManagerScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\CutsceneManagerScript.cs]
+	[29 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\DatingMinigameScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\DatingMinigameScript.cs]
+	[30 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\DebugMenuScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\DebugMenuScript.cs]
+	[31 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\DelinquentScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\DelinquentScript.cs]
+	[32 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\DemonScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\DemonScript.cs]
+	[33 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\DialogueWheelScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\DialogueWheelScript.cs]
+	[34 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\DontLetSenpaiNoticeYouScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\DontLetSenpaiNoticeYouScript.cs]
+	[35 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\DropsScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\DropsScript.cs]
+	[36 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\DumpsterHandleScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\DumpsterHandleScript.cs]
+	[37 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\EditorManagerScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\EditorManagerScript.cs]
+	[38 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\EndOfDayScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\EndOfDayScript.cs]
+	[39 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\EventEditorScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\EventEditorScript.cs]
+	[40 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\ExpressionMaskScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\ExpressionMaskScript.cs]
+	[41 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\FavorMenuScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\FavorMenuScript.cs]
+	[42 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\FootprintSpawnerScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\FootprintSpawnerScript.cs]
+	[43 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\FunScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\FunScript.cs]
+	[44 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\GazerEyesScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\GazerEyesScript.cs]
+	[45 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\GentlemanScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\GentlemanScript.cs]
+	[46 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\HeartbrokenCursorScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\HeartbrokenCursorScript.cs]
+	[47 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\HeartbrokenScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\HeartbrokenScript.cs]
+	[48 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\HomeCameraScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\HomeCameraScript.cs]
+	[49 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\HomeCorkboardScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\HomeCorkboardScript.cs]
+	[50 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\HomeExitScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\HomeExitScript.cs]
+	[51 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\HomeInternetScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\HomeInternetScript.cs]
+	[52 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\HomeMangaScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\HomeMangaScript.cs]
+	[53 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\HomePantyChangerScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\HomePantyChangerScript.cs]
+	[54 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\HomePrisonerScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\HomePrisonerScript.cs]
+	[55 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\HomeSenpaiShrineScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\HomeSenpaiShrineScript.cs]
+	[56 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\HomeSleepScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\HomeSleepScript.cs]
+	[57 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\HomeVideoGamesScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\HomeVideoGamesScript.cs]
+	[58 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\HomeYandereScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\HomeYandereScript.cs]
+	[59 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\HomeZoomScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\HomeZoomScript.cs]
+	[60 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\InputDeviceScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\InputDeviceScript.cs]
+	[61 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\InputManagerScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\InputManagerScript.cs]
+	[62 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\IntroCircleScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\IntroCircleScript.cs]
+	[63 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\IntroScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\IntroScript.cs]
+	[64 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\InventoryTestScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\InventoryTestScript.cs]
+	[65 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\JukeboxScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\JukeboxScript.cs]
+	[66 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\LargeTextScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\LargeTextScript.cs]
+	[67 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\LivingRoomCutsceneScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\LivingRoomCutsceneScript.cs]
+	[68 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\LowRepGameOverScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\LowRepGameOverScript.cs]
+	[69 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\MissionModeMenuScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\MissionModeMenuScript.cs]
+	[70 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\MissionModeScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\MissionModeScript.cs]
+	[71 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\ModelSwapScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\ModelSwapScript.cs]
+	[72 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\MopScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\MopScript.cs]
+	[73 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\MusicMenuScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\MusicMenuScript.cs]
+	[74 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\NemesisScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\NemesisScript.cs]
+	[75 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\NGUIMath.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\NGUIMath.cs]
+	[76 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\NoteWindowScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\NoteWindowScript.cs]
+	[77 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\NyanDroidScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\NyanDroidScript.cs]
+	[78 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\OfferHelpScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\OfferHelpScript.cs]
+	[79 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\PassTimeScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\PassTimeScript.cs]
+	[80 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\PathfindingTestScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\PathfindingTestScript.cs]
+	[81 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\PauseScreenScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\PauseScreenScript.cs]
+	[82 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\PeekScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\PeekScript.cs]
+	[83 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\PhoneScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\PhoneScript.cs]
+	[84 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\PhotoGalleryScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\PhotoGalleryScript.cs]
+	[85 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\PickpocketMinigameScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\PickpocketMinigameScript.cs]
+	[86 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\PoliceScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\PoliceScript.cs]
+	[87 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\PortraitScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\PortraitScript.cs]
+	[88 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\PoseModeScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\PoseModeScript.cs]
+	[89 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\PrayScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\PrayScript.cs]
+	[90 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\PromoCameraScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\PromoCameraScript.cs]
+	[91 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\PromptScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\PromptScript.cs]
+	[92 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\RagdollScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\RagdollScript.cs]
+	[93 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\RivalEditorScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\RivalEditorScript.cs]
+	[94 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\RPG_Camera.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\RPG_Camera.cs]
+	[95 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\RPG_Controller.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\RPG_Controller.cs]
+	[96 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\SchemesScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\SchemesScript.cs]
+	[97 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\SentenceScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\SentenceScript.cs]
+	[98 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\ServicesScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\ServicesScript.cs]
+	[99 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\SettingsScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\SettingsScript.cs]
+	[100 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\ShutterScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\ShutterScript.cs]
+	[101 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\SlowMoScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\SlowMoScript.cs]
+	[102 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\SpeedrunTimerScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\SpeedrunTimerScript.cs]
+	[103 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\SponsorScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\SponsorScript.cs]
+	[104 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\SpyScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\SpyScript.cs]
+	[105 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\StandScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\StandScript.cs]
+	[106 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\StatsScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\StatsScript.cs]
+	[107 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\StruggleBarScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\StruggleBarScript.cs]
+	[108 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\StudentEditorScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\StudentEditorScript.cs]
+	[109 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\StudentInfoMenuScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\StudentInfoMenuScript.cs]
+	[110 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\StudentInfoScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\StudentInfoScript.cs]
+	[111 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\StudentManagerScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\StudentManagerScript.cs]
+	[112 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\StudentScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\StudentScript.cs]
+	[113 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\SuitorBoostScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\SuitorBoostScript.cs]
+	[114 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\TalkingScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\TalkingScript.cs]
+	[115 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\TapePlayerMenuScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\TapePlayerMenuScript.cs]
+	[116 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\TaskListScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\TaskListScript.cs]
+	[117 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\TaskWindowScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\TaskWindowScript.cs]
+	[118 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\TextMessageManagerScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\TextMessageManagerScript.cs]
+	[119 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\TimePortalScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\TimePortalScript.cs]
+	[120 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\TitleMenuScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\TitleMenuScript.cs]
+	[121 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\TitleSaveFilesScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\TitleSaveFilesScript.cs]
+	[122 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\TitleSponsorScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\TitleSponsorScript.cs]
+	[123 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\TributeScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\TributeScript.cs]
+	[124 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\VoidGoddessScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\VoidGoddessScript.cs]
+	[125 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\WalkToSchoolManagerScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\WalkToSchoolManagerScript.cs]
+	[126 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\WarningScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\WarningScript.cs]
+	[127 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\WeaponManagerScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\WeaponManagerScript.cs]
+	[128 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\WeaponMenuScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\WeaponMenuScript.cs]
+	[129 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\WeaponScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\WeaponScript.cs]
+	[130 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\WelcomeScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\WelcomeScript.cs]
+	[131 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\YandereKunScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\YandereKunScript.cs]
+	[132 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\YandereScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\YandereScript.cs]
+	[133 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\YanvaniaCameraScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\YanvaniaCameraScript.cs]
+	[134 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\YanvaniaDraculaScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\YanvaniaDraculaScript.cs]
+	[135 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\YanvaniaIntroScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\YanvaniaIntroScript.cs]
+	[136 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\YanvaniaTextBoxScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\YanvaniaTextBoxScript.cs]
+	[137 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\YanvaniaTitleScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\YanvaniaTitleScript.cs]
+	[138 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\YanvaniaTryAgainScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\YanvaniaTryAgainScript.cs]
+	[139 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\YanvaniaYanmontScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\YanvaniaYanmontScript.cs]
+	[140 / 141] from  [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/CF2-Data/Script-Backups/2024-12-12-18-33\Assets-After/\Scripts\Assembly-CSharp\ZoomScript.cs] to [C:/Users/pc/Desktop/Unity/Projects/YandereSimulator - AndroidDevelopement/Assets/\Scripts\Assembly-CSharp\ZoomScript.cs]
+
+Overwriting COMPLETED!
