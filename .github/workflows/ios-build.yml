@@ -46,7 +46,7 @@ jobs:
       - name: Download Assets.zip
         run: |
           curl -L -o Assets.zip https://github.com/ALX-githb/ysim2/releases/download/v1.0-assets/Assets.zip
-          unzip -q Assets.zip
+          unzip -o -q Assets.zip
           rm Assets.zip
 
       # =====================================================================
