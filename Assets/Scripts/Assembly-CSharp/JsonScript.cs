@@ -21,22 +21,45 @@ public class JsonScript : MonoBehaviour
 
     private void Start()
     {
-        // Initialisation de Better Streaming Assets
-        BetterStreamingAssets.Initialize();
-
-        // Charger les étudiants
-        students = StudentJson.LoadFromJson("Students.json");
-
-        // Vérifier la scène actuelle pour charger les données appropriées
-        if (SceneManager.GetActiveScene().name == "SchoolScene")
+        try
         {
-            topics = TopicJson.LoadFromJson("Topics.json");
-            StudentManagerScript studentManagerScript = Object.FindAnyObjectByType<StudentManagerScript>();
-            ReplaceDeadTeachers(studentManagerScript.FirstNames, studentManagerScript.LastNames);
+            // Initialisation de Better Streaming Assets
+            BetterStreamingAssets.Initialize();
+
+            // Charger les étudiants
+            students = StudentJson.LoadFromJson("Students.json");
+            if (students == null)
+            {
+                Debug.LogError("[JsonScript] Students.json failed to load — creating empty fallback array.");
+                students = new StudentJson[101];
+                for (int i = 0; i < students.Length; i++)
+                    students[i] = new StudentJson();
+            }
+
+            // Vérifier la scène actuelle pour charger les données appropriées
+            if (SceneManager.GetActiveScene().name == "SchoolScene")
+            {
+                topics = TopicJson.LoadFromJson("Topics.json");
+                StudentManagerScript studentManagerScript = Object.FindAnyObjectByType<StudentManagerScript>();
+                if (studentManagerScript != null)
+                    ReplaceDeadTeachers(studentManagerScript.FirstNames, studentManagerScript.LastNames);
+                else
+                    Debug.LogWarning("[JsonScript] StudentManagerScript not found in scene.");
+            }
+            else if (SceneManager.GetActiveScene().name == "CreditsScene")
+            {
+                credits = CreditJson.LoadFromJson("Credits.json");
+            }
         }
-        else if (SceneManager.GetActiveScene().name == "CreditsScene")
+        catch (System.Exception ex)
         {
-            credits = CreditJson.LoadFromJson("Credits.json");
+            Debug.LogError("[JsonScript] Start failed: " + ex);
+            if (students == null)
+            {
+                students = new StudentJson[101];
+                for (int i = 0; i < students.Length; i++)
+                    students[i] = new StudentJson();
+            }
         }
     }
 

@@ -465,6 +465,11 @@ public class StudentManagerScript : MonoBehaviour
 		SeatsTaken21[15] = true;
 		SeatsTaken12[15] = true;
 		SeatsTaken11[15] = true;
+		if (JSON == null || JSON.Students == null)
+		{
+			Debug.LogError("[StudentManagerScript] JSON or Students array is null! JSON loading may have failed.");
+			return;
+		}
 		for (ID = 1; ID < JSON.Students.Length; ID++)
 		{
 			if (!JSON.Students[ID].Success)
@@ -580,7 +585,14 @@ public class StudentManagerScript : MonoBehaviour
 		int batchCount = 0;
 		while (SpawnID < NPCsTotal + 1)
 		{
-			SpawnStudent(SpawnID);
+			try
+			{
+				SpawnStudent(SpawnID);
+			}
+			catch (System.Exception ex)
+			{
+				Debug.LogError($"[StudentManagerScript] SpawnStudent({SpawnID}) failed: {ex}");
+			}
 			SpawnID++;
 			batchCount++;
 			// Yield every 3 students to spread memory/CPU load across frames.

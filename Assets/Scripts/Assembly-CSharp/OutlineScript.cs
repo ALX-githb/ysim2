@@ -18,6 +18,12 @@ public class OutlineScript : MonoBehaviour
 
 	private void Update()
 	{
-		h.ConstantOnImmediate(color);
+		if (OptionGlobals.DisableOutlines)
+		{
+			if (h != null) h.ConstantOffImmediate();
+			return;
+		}
+		if (h != null)
+			h.ConstantOnImmediate(color);
 	}
 }
