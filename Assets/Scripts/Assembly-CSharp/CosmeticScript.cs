@@ -309,6 +309,18 @@ public class CosmeticScript : MonoBehaviour
 
 	public void Start()
 	{
+		try
+		{
+			StartInternal();
+		}
+		catch (System.Exception ex)
+		{
+			Debug.LogError($"[CosmeticScript] Start failed for StudentID={StudentID}: {ex}");
+		}
+	}
+
+	private void StartInternal()
+	{
 		CharacterAnimation = Character.GetComponent<Animation>();
 		if (Kidnapped)
 		{

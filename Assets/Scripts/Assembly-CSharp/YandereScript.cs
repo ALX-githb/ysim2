@@ -1271,10 +1271,16 @@ public class YandereScript : MonoBehaviour
 		CharacterAnimation["f02_yanderePose_00"].weight = 0f;
 		CharacterAnimation["f02_cameraPose_00"].weight = 0f;
 		CharacterAnimation["f02_gazerSnap_00"].speed = 2f;
-		ColorCorrectionCurves[] components = Camera.main.GetComponents<ColorCorrectionCurves>();
-		Vignetting[] components2 = Camera.main.GetComponents<Vignetting>();
-		YandereColorCorrection = components[1];
-		Vignette = components2[1];
+		Camera mainCam = Camera.main;
+		if (mainCam != null)
+		{
+			ColorCorrectionCurves[] components = mainCam.GetComponents<ColorCorrectionCurves>();
+			if (components != null && components.Length > 1)
+				YandereColorCorrection = components[1];
+			Vignetting[] components2 = mainCam.GetComponents<Vignetting>();
+			if (components2 != null && components2.Length > 1)
+				Vignette = components2[1];
+		}
 		ResetYandereEffects();
 		ResetSenpaiEffects();
 		Sanity = 100f;

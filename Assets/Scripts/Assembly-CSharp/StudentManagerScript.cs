@@ -576,18 +576,25 @@ public class StudentManagerScript : MonoBehaviour
 			SchoolGlobals.SchoolAtmosphereSet = true;
 			SchoolGlobals.SchoolAtmosphere = 1f;
 		}
-		Vignetting[] components = Camera.main.GetComponents<Vignetting>();
+		Camera mainCam = Camera.main;
+		if (mainCam == null) return;
+		Vignetting[] components = mainCam.GetComponents<Vignetting>();
 		float num = 1f - SchoolGlobals.SchoolAtmosphere;
 		if (!TakingPortraits)
 		{
-			SmartphoneSelectiveGreyscale.desaturation = num;
-			SelectiveGreyscale.desaturation = num;
-			components[2].intensity = num * 5f;
-			components[2].blur = num;
-			components[2].chromaticAberration = num * 5f;
+			if (SmartphoneSelectiveGreyscale != null)
+				SmartphoneSelectiveGreyscale.desaturation = num;
+			if (SelectiveGreyscale != null)
+				SelectiveGreyscale.desaturation = num;
+			if (components != null && components.Length > 2)
+			{
+				components[2].intensity = num * 5f;
+				components[2].blur = num;
+				components[2].chromaticAberration = num * 5f;
+			}
 			float num2 = 1f - num;
 			RenderSettings.fogColor = new Color(num2, num2, num2, 1f);
-			Camera.main.backgroundColor = new Color(num2, num2, num2, 1f);
+			mainCam.backgroundColor = new Color(num2, num2, num2, 1f);
 			RenderSettings.fogDensity = num * 0.1f;
 		}
 	}

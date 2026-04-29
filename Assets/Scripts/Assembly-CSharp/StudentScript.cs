@@ -1316,6 +1316,18 @@ public class StudentScript : MonoBehaviour
 
 	public void Start()
 	{
+		try
+		{
+			StartInternal();
+		}
+		catch (System.Exception ex)
+		{
+			Debug.LogError($"[StudentScript] Start failed for StudentID={StudentID}: {ex}");
+		}
+	}
+
+	private void StartInternal()
+	{
 		if (!Started)
 		{
 			CharacterAnimation = Character.GetComponent<Animation>();
@@ -2169,6 +2181,7 @@ public class StudentScript : MonoBehaviour
 
 	private void Update()
 	{
+		if (Yandere == null || CharacterAnimation == null) return;
 		if (!Stop)
 		{
 			DistanceToPlayer = Vector3.Distance(base.transform.position, Yandere.transform.position);
@@ -8300,6 +8313,7 @@ public class StudentScript : MonoBehaviour
 
 	private void LateUpdate()
 	{
+		if (CharacterAnimation == null) return;
 		CharacterAnimation.enabled = CharacterAnimation.cullingType != AnimationCullingType.BasedOnRenderers || !StudentManager.DisableFarAnims || DistanceToPlayer <= 15f;
 		if (EyeShrink > 1f)
 		{

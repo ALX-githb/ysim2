@@ -26,7 +26,8 @@ public class SceneLoader : MonoBehaviour
 		}
 		if (SchoolGlobals.SchoolAtmosphere < 0.5f || GameGlobals.LoveSick)
 		{
-			Camera.main.backgroundColor = new Color(0f, 0f, 0f, 1f);
+			if (Camera.main != null)
+				Camera.main.backgroundColor = new Color(0f, 0f, 0f, 1f);
 			loadingText.color = new Color(1f, 0f, 0f, 1f);
 			crashText.color = new Color(1f, 0f, 0f, 1f);
 			LightAnimation.SetActive(false);

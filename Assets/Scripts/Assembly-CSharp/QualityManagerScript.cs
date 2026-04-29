@@ -60,7 +60,10 @@ public class QualityManagerScript : MonoBehaviour
 
 	public void Start()
 	{
-		DepthOfField34[] components = Camera.main.GetComponents<DepthOfField34>();
+		Camera mainCam = Camera.main;
+		if (mainCam == null) return;
+		DepthOfField34[] components = mainCam.GetComponents<DepthOfField34>();
+		if (components == null || components.Length < 2) return;
 		ExperimentalDepthOfField34 = components[1];
 		ToggleExperiment();
 		if (OptionGlobals.ParticleCount == 0)
@@ -102,6 +105,7 @@ public class QualityManagerScript : MonoBehaviour
 		{
 			OptionGlobals.ParticleCount = 3;
 		}
+		if (EastRomanceBlossoms == null || Fountains == null || Fountains.Length < 4) return;
 		ParticleSystem.EmissionModule emission = EastRomanceBlossoms.emission;
 		ParticleSystem.EmissionModule emission2 = WestRomanceBlossoms.emission;
 		ParticleSystem.EmissionModule emission3 = CorridorBlossoms.emission;
@@ -248,20 +252,30 @@ public class QualityManagerScript : MonoBehaviour
 				component3.material.shader = NewHairShader;
 			}
 		}
-		Nemesis.Cosmetic.MyRenderer.materials[0].shader = NewBodyShader;
-		Nemesis.Cosmetic.MyRenderer.materials[1].shader = NewBodyShader;
-		Nemesis.Cosmetic.MyRenderer.materials[2].shader = NewBodyShader;
-		Nemesis.NemesisHair.GetComponent<Renderer>().material.shader = NewHairShader;
+		if (Nemesis != null && Nemesis.Cosmetic != null && Nemesis.Cosmetic.MyRenderer != null)
+		{
+			Nemesis.Cosmetic.MyRenderer.materials[0].shader = NewBodyShader;
+			Nemesis.Cosmetic.MyRenderer.materials[1].shader = NewBodyShader;
+			Nemesis.Cosmetic.MyRenderer.materials[2].shader = NewBodyShader;
+		}
+		if (Nemesis != null && Nemesis.NemesisHair != null)
+		{
+			Renderer nemHairR = Nemesis.NemesisHair.GetComponent<Renderer>();
+			if (nemHairR != null)
+				nemHairR.material.shader = NewHairShader;
+		}
 	}
 
 	public void UpdatePostAliasing()
 	{
-		PostAliasing.enabled = !OptionGlobals.DisablePostAliasing;
+		if (PostAliasing != null)
+			PostAliasing.enabled = !OptionGlobals.DisablePostAliasing;
 	}
 
 	public void UpdateBloom()
 	{
-		BloomEffect.enabled = !OptionGlobals.DisableBloom;
+		if (BloomEffect != null)
+			BloomEffect.enabled = !OptionGlobals.DisableBloom;
 	}
 
 	public void UpdateLowDetailStudents()
@@ -287,13 +301,16 @@ public class QualityManagerScript : MonoBehaviour
 		{
 			OptionGlobals.DrawDistance = OptionGlobals.DrawDistanceLimit;
 		}
-		Camera.main.farClipPlane = OptionGlobals.DrawDistance;
+		if (Camera.main != null)
+			Camera.main.farClipPlane = OptionGlobals.DrawDistance;
 		RenderSettings.fogEndDistance = OptionGlobals.DrawDistance;
-		Yandere.Smartphone.farClipPlane = OptionGlobals.DrawDistance;
+		if (Yandere != null && Yandere.Smartphone != null)
+			Yandere.Smartphone.farClipPlane = OptionGlobals.DrawDistance;
 	}
 
 	public void UpdateFog()
 	{
+		if (Yandere == null || Yandere.MainCamera == null) return;
 		if (!OptionGlobals.Fog)
 		{
 			Yandere.MainCamera.clearFlags = CameraClearFlags.Skybox;
@@ -309,7 +326,8 @@ public class QualityManagerScript : MonoBehaviour
 
 	public void UpdateShadows()
 	{
-		Sun.shadows = ((!OptionGlobals.DisableShadows) ? LightShadows.Soft : LightShadows.None);
+		if (Sun != null)
+			Sun.shadows = ((!OptionGlobals.DisableShadows) ? LightShadows.Soft : LightShadows.None);
 	}
 
 	public void UpdateAnims()
