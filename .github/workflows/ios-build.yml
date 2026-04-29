@@ -53,6 +53,26 @@ jobs:
           rm Assets.zip
 
       # =====================================================================
+      # 2b. Strip packages that need CocoaPods native frameworks
+      #     (Ads, Purchasing, Analytics) — no game scripts reference them.
+      #     This avoids linker errors for missing UnityAds.framework etc.
+      # =====================================================================
+      - name: Strip ads/purchasing/analytics packages
+        run: |
+          set -e
+          python3 -c "
+          import json, pathlib
+          p = pathlib.Path('Packages/manifest.json')
+          m = json.loads(p.read_text())
+          for pkg in ['com.unity.ads', 'com.unity.purchasing', 'com.unity.analytics']:
+            m['dependencies'].pop(pkg, None)
+            print(f'Removed {pkg}')
+          p.write_text(json.dumps(m, indent=2) + '\n')
+          "
+          echo "Remaining packages:"
+          cat Packages/manifest.json | head -n 20
+
+      # =====================================================================
       # 3. Cache Unity Library folder
       #    Key includes hashes of Assets, Packages, ProjectSettings
       #    so cache invalidates when those change. Restore-keys allow
