@@ -51,8 +51,10 @@ jobs:
           echo "Assets:"; du -sh Assets
           echo "ProjectSettings:"; ls ProjectSettings | head -n 5
           rm Assets.zip
-          # Restore .cs scripts from git (zip has older versions, git has our fixes)
-          git checkout -- "Assets/Scripts/" || true
+          # Restore ALL non-LFS git-tracked files (scripts, scenes, materials, settings)
+          # so that committed changes always take priority over the old zip contents.
+          git lfs ls-files -n > /tmp/lfs-files.txt 2>/dev/null || true
+          git ls-files | grep -vFf /tmp/lfs-files.txt | xargs git checkout -- 2>/dev/null || true
 
       # =====================================================================
       # 2b. Strip packages that need CocoaPods native frameworks
