@@ -46,7 +46,7 @@ namespace Pathfinding
 
 		public static void FindAllModifiers()
 		{
-			GraphModifier[] array = Object.FindObjectsOfType(typeof(GraphModifier)) as GraphModifier[];
+			GraphModifier[] array = Object.FindObjectsByType(typeof(GraphModifier), FindObjectsInactive.Exclude) as GraphModifier[];
 			for (int i = 0; i < array.Length; i++)
 			{
 				if (array[i].enabled)

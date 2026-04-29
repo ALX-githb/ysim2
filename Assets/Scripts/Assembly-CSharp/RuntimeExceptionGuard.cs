@@ -71,7 +71,7 @@ internal static class RuntimeExceptionGuard
 
         if (targetType == null) return;
 
-        Object[] all = Object.FindObjectsByType(targetType, FindObjectsSortMode.None);
+        Object[] all = Object.FindObjectsByType(targetType, FindObjectsInactive.Exclude);
         int disabled = 0;
         foreach (var obj in all)
         {

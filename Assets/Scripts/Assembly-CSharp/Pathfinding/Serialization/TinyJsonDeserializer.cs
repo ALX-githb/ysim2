@@ -205,7 +205,7 @@ namespace Pathfinding.Serialization
 					throw new Exception("Expected 'GUID' field");
 				}
 				string text4 = EatField();
-				UnityReferenceHelper[] array = UnityEngine.Object.FindObjectsOfType<UnityReferenceHelper>();
+				UnityReferenceHelper[] array = UnityEngine.Object.FindObjectsByType<UnityReferenceHelper>(FindObjectsInactive.Exclude);
 				foreach (UnityReferenceHelper unityReferenceHelper in array)
 				{
 					if (unityReferenceHelper.GetGUID() == text4)

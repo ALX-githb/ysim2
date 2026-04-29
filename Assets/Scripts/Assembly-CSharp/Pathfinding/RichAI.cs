@@ -579,7 +579,9 @@ namespace Pathfinding
 		{
 			if (unityThread && animCompatibility != null)
 			{
+#pragma warning disable CS0618
 				anim = animCompatibility;
+#pragma warning restore CS0618
 			}
 			return base.OnUpgradeSerializedData(version, unityThread);
 		}

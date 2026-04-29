@@ -858,7 +858,7 @@ public class UIWidget : UIRect
 		if (leftMat == null) return 1;
 		if (rightMat == null) return -1;
 
-		return (leftMat.GetInstanceID() < rightMat.GetInstanceID()) ? -1 : 1;
+		return (leftMat.GetEntityId() < rightMat.GetEntityId()) ? -1 : 1;
 	}
 
 	/// <summary>

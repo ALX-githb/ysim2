@@ -206,7 +206,7 @@ public class CalendarScript : MonoBehaviour
 		SchoolGlobals.SchoolAtmosphere = 0f;
 		LoveSick = true;
 		Camera.main.backgroundColor = new Color(0f, 0f, 0f, 1f);
-		GameObject[] array = UnityEngine.Object.FindObjectsByType<GameObject>(FindObjectsSortMode.None);
+		GameObject[] array = UnityEngine.Object.FindObjectsByType<GameObject>(FindObjectsInactive.Exclude);
 		GameObject[] array2 = array;
 		foreach (GameObject gameObject in array2)
 		{

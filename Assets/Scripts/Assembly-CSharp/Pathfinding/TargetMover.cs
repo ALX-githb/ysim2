@@ -21,7 +21,7 @@ namespace Pathfinding
 		public void Start()
 		{
 			cam = Camera.main;
-			ais = Object.FindObjectsOfType<MonoBehaviour>().OfType<IAstarAI>().ToArray();
+			ais = Object.FindObjectsByType<MonoBehaviour>(FindObjectsInactive.Exclude).OfType<IAstarAI>().ToArray();
 			base.useGUILayout = false;
 		}
 

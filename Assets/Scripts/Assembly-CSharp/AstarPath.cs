@@ -648,7 +648,7 @@ public class AstarPath : VersionedMonoBehaviour
 	{
 		base.Awake();
 		active = this;
-		if (UnityEngine.Object.FindObjectsByType(typeof(AstarPath), FindObjectsSortMode.None).Length > 1)
+		if (UnityEngine.Object.FindObjectsByType(typeof(AstarPath), FindObjectsInactive.Exclude).Length > 1)
 		{
 			UnityEngine.Debug.LogError("You should NOT have more than one AstarPath component in the scene at any time.\nThis can cause serious errors since the AstarPath component builds around a singleton pattern.");
 		}

@@ -498,10 +498,12 @@ namespace Pathfinding
 
 		protected override int OnUpgradeSerializedData(int version, bool unityThread)
 		{
+#pragma warning disable CS0618
 			if (unityThread && targetCompatibility != null)
 			{
 				target = targetCompatibility;
 			}
+#pragma warning restore CS0618
 			return 2;
 		}
 	}

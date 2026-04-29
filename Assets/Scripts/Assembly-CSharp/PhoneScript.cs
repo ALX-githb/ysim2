@@ -190,7 +190,7 @@ public class PhoneScript : MonoBehaviour
 
 	private void LoveSickColorSwap()
 	{
-		GameObject[] array = Object.FindObjectsByType<GameObject>(FindObjectsSortMode.None);
+		GameObject[] array = Object.FindObjectsByType<GameObject>(FindObjectsInactive.Exclude);
 		GameObject[] array2 = array;
 		foreach (GameObject gameObject in array2)
 		{

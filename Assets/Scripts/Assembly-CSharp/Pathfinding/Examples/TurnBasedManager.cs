@@ -32,7 +32,7 @@ namespace Pathfinding.Examples
 
 		private void Awake()
 		{
-			eventSystem = UnityEngine.Object.FindObjectOfType<EventSystem>();
+			eventSystem = UnityEngine.Object.FindFirstObjectByType<EventSystem>();
 		}
 
 		private void Update()

@@ -171,7 +171,9 @@ namespace Pathfinding.Legacy
 			{
 				Quaternion a = tr.rotation;
 				Quaternion b = Quaternion.LookRotation(dir);
-				Vector3 eulerAngles = Quaternion.Slerp(a, b, base.turningSpeed * Time.deltaTime).eulerAngles;
+	#pragma warning disable CS0618
+			Vector3 eulerAngles = Quaternion.Slerp(a, b, base.turningSpeed * Time.deltaTime).eulerAngles;
+#pragma warning restore CS0618
 				eulerAngles.z = 0f;
 				eulerAngles.x = 0f;
 				a = Quaternion.Euler(eulerAngles);

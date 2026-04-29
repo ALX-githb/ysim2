@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿#pragma warning disable CS0618
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 

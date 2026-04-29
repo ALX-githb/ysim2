@@ -30,7 +30,7 @@ namespace Pathfinding.Examples
 		public void Start()
 		{
 			cam = Camera.main;
-			RVOSimulator rVOSimulator = UnityEngine.Object.FindObjectOfType(typeof(RVOSimulator)) as RVOSimulator;
+			RVOSimulator rVOSimulator = UnityEngine.Object.FindFirstObjectByType(typeof(RVOSimulator)) as RVOSimulator;
 			if (rVOSimulator == null)
 			{
 				base.enabled = false;
@@ -134,7 +134,7 @@ namespace Pathfinding.Examples
 				return;
 			}
 			selection.Clear();
-			RVOExampleAgent[] array = UnityEngine.Object.FindObjectsOfType(typeof(RVOExampleAgent)) as RVOExampleAgent[];
+			RVOExampleAgent[] array = UnityEngine.Object.FindObjectsByType(typeof(RVOExampleAgent), FindObjectsInactive.Exclude) as RVOExampleAgent[];
 			for (int i = 0; i < array.Length; i++)
 			{
 				Vector2 vector3 = cam.WorldToScreenPoint(array[i].transform.position);

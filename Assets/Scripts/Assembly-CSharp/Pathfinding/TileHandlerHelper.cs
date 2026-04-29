@@ -76,7 +76,7 @@ namespace Pathfinding
 
 		private void Start()
 		{
-			if (UnityEngine.Object.FindObjectsOfType(typeof(TileHandlerHelper)).Length > 1)
+			if (UnityEngine.Object.FindObjectsByType(typeof(TileHandlerHelper), FindObjectsInactive.Exclude).Length > 1)
 			{
 				Debug.LogError("There should only be one TileHandlerHelper per scene. Destroying.");
 				UnityEngine.Object.Destroy(this);

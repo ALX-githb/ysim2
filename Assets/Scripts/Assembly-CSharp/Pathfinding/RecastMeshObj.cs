@@ -27,7 +27,7 @@ namespace Pathfinding
 		{
 			if (!Application.isPlaying)
 			{
-				RecastMeshObj[] array = UnityEngine.Object.FindObjectsOfType(typeof(RecastMeshObj)) as RecastMeshObj[];
+				RecastMeshObj[] array = UnityEngine.Object.FindObjectsByType(typeof(RecastMeshObj), FindObjectsInactive.Exclude) as RecastMeshObj[];
 				for (int i = 0; i < array.Length; i++)
 				{
 					array[i].RecalculateBounds();
@@ -40,7 +40,7 @@ namespace Pathfinding
 			}
 			if (Time.timeSinceLevelLoad == 0f)
 			{
-				RecastMeshObj[] array2 = UnityEngine.Object.FindObjectsOfType(typeof(RecastMeshObj)) as RecastMeshObj[];
+				RecastMeshObj[] array2 = UnityEngine.Object.FindObjectsByType(typeof(RecastMeshObj), FindObjectsInactive.Exclude) as RecastMeshObj[];
 				for (int j = 0; j < array2.Length; j++)
 				{
 					array2[j].Register();

@@ -35,7 +35,7 @@ namespace Pathfinding.Serialization
 				output.Append(v.ToString());
 			};
 			serializers[typeof(int)] = action;
-			action = action;
+			// action already assigned above
 			serializers[typeof(uint)] = action;
 			dictionary[typeFromHandle] = action;
 			serializers[typeof(string)] = delegate(object v)

@@ -106,7 +106,7 @@ static public class NGUITools
 		{
 			if (mListener == null || !NGUITools.GetActive(mListener))
 			{
-				AudioListener[] listeners = GameObject.FindObjectsByType(typeof(AudioListener), FindObjectsSortMode.None) as AudioListener[];
+				AudioListener[] listeners = GameObject.FindObjectsByType(typeof(AudioListener), FindObjectsInactive.Exclude) as AudioListener[];
 
 				if (listeners != null)
 				{
@@ -225,7 +225,7 @@ static public class NGUITools
 
 	static public T[] FindActive<T> () where T : Component
 	{
-		return GameObject.FindObjectsByType(typeof(T), FindObjectsSortMode.None) as T[];
+		return GameObject.FindObjectsByType(typeof(T), FindObjectsInactive.Exclude) as T[];
 	}
 
 	/// <summary>
@@ -1466,7 +1466,7 @@ static public class NGUITools
 
 	static public void Broadcast (string funcName)
 	{
-		GameObject[] gos = GameObject.FindObjectsByType(typeof(GameObject), FindObjectsSortMode.None) as GameObject[];
+		GameObject[] gos = GameObject.FindObjectsByType(typeof(GameObject), FindObjectsInactive.Exclude) as GameObject[];
 		for (int i = 0, imax = gos.Length; i < imax; ++i) gos[i].SendMessage(funcName, SendMessageOptions.DontRequireReceiver);
 	}
 
@@ -1476,7 +1476,7 @@ static public class NGUITools
 
 	static public void Broadcast (string funcName, object param)
 	{
-		GameObject[] gos = GameObject.FindObjectsByType(typeof(GameObject), FindObjectsSortMode.None) as GameObject[];
+		GameObject[] gos = GameObject.FindObjectsByType(typeof(GameObject), FindObjectsInactive.Exclude) as GameObject[];
 		for (int i = 0, imax = gos.Length; i < imax; ++i) gos[i].SendMessage(funcName, param, SendMessageOptions.DontRequireReceiver);
 	}
 

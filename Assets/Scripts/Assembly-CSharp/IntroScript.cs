@@ -122,7 +122,7 @@ public class IntroScript : MonoBehaviour
 		if (GameGlobals.LoveSick)
 		{
 			Camera.main.backgroundColor = new Color(0f, 0f, 0f, 1f);
-			GameObject[] array = Object.FindObjectsByType<GameObject>(FindObjectsSortMode.None);
+			GameObject[] array = Object.FindObjectsByType<GameObject>(FindObjectsInactive.Exclude);
 			GameObject[] array2 = array;
 			foreach (GameObject gameObject in array2)
 			{

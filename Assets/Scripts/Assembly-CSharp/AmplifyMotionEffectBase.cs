@@ -671,7 +671,7 @@ public class AmplifyMotionEffectBase : MonoBehaviour
 
 	public void UpdateActiveObjects()
 	{
-		GameObject[] array = UnityEngine.Object.FindObjectsByType(typeof(GameObject), FindObjectsSortMode.None) as GameObject[];
+		GameObject[] array = UnityEngine.Object.FindObjectsByType(typeof(GameObject), FindObjectsInactive.Exclude) as GameObject[];
 		for (int i = 0; i < array.Length; i++)
 		{
 			if (!m_activeObjects.ContainsKey(array[i]))

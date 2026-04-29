@@ -924,7 +924,7 @@ public class MissionModeScript : MonoBehaviour
 
 	private void ChangeAllText()
 	{
-		UILabel[] array = Object.FindObjectsByType<UILabel>(FindObjectsSortMode.None);
+		UILabel[] array = Object.FindObjectsByType<UILabel>(FindObjectsInactive.Exclude);
 		UILabel[] array2 = array;
 		foreach (UILabel uILabel in array2)
 		{
@@ -932,7 +932,7 @@ public class MissionModeScript : MonoBehaviour
 			uILabel.color = new Color(1f, 1f, 1f, a);
 			uILabel.trueTypeFont = Arial;
 		}
-		UISprite[] array3 = Object.FindObjectsByType<UISprite>(FindObjectsSortMode.None);
+		UISprite[] array3 = Object.FindObjectsByType<UISprite>(FindObjectsInactive.Exclude);
 		UISprite[] array4 = array3;
 		foreach (UISprite uISprite in array4)
 		{

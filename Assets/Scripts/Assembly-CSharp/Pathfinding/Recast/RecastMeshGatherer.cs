@@ -81,7 +81,7 @@ namespace Pathfinding.Recast
 			{
 				return;
 			}
-			MeshFilter[] meshFilters = UnityEngine.Object.FindObjectsOfType<MeshFilter>();
+			MeshFilter[] meshFilters = UnityEngine.Object.FindObjectsByType<MeshFilter>(FindObjectsInactive.Exclude);
 			List<MeshFilter> list = FilterMeshes(meshFilters, tagMask, mask);
 			Dictionary<Mesh, Vector3[]> dictionary = new Dictionary<Mesh, Vector3[]>();
 			Dictionary<Mesh, int[]> dictionary2 = new Dictionary<Mesh, int[]>();

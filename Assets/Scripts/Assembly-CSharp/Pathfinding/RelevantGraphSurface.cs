@@ -103,7 +103,7 @@ namespace Pathfinding
 
 		public static void FindAllGraphSurfaces()
 		{
-			RelevantGraphSurface[] array = Object.FindObjectsOfType(typeof(RelevantGraphSurface)) as RelevantGraphSurface[];
+			RelevantGraphSurface[] array = Object.FindObjectsByType(typeof(RelevantGraphSurface), FindObjectsInactive.Exclude) as RelevantGraphSurface[];
 			for (int i = 0; i < array.Length; i++)
 			{
 				array[i].OnDisable();

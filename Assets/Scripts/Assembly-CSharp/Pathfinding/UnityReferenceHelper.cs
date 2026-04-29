@@ -29,7 +29,7 @@ namespace Pathfinding
 				Debug.Log("Created new GUID - " + guid);
 				return;
 			}
-			UnityReferenceHelper[] array = Object.FindObjectsOfType(typeof(UnityReferenceHelper)) as UnityReferenceHelper[];
+			UnityReferenceHelper[] array = Object.FindObjectsByType(typeof(UnityReferenceHelper), FindObjectsInactive.Exclude) as UnityReferenceHelper[];
 			foreach (UnityReferenceHelper unityReferenceHelper in array)
 			{
 				if (unityReferenceHelper != this && guid == unityReferenceHelper.guid)

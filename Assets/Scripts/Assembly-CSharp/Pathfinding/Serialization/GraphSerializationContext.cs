@@ -113,7 +113,7 @@ namespace Pathfinding.Serialization
 			}
 			if (!string.IsNullOrEmpty(text3))
 			{
-				UnityReferenceHelper[] array = UnityEngine.Object.FindObjectsOfType(typeof(UnityReferenceHelper)) as UnityReferenceHelper[];
+				UnityReferenceHelper[] array = UnityEngine.Object.FindObjectsByType(typeof(UnityReferenceHelper), FindObjectsInactive.Exclude) as UnityReferenceHelper[];
 				for (int i = 0; i < array.Length; i++)
 				{
 					if (array[i].GetGUID() == text3)

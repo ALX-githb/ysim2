@@ -64,7 +64,7 @@ namespace Pathfinding.Examples
 		public void Start()
 		{
 			mesh = new Mesh();
-			RVOSimulator rVOSimulator = UnityEngine.Object.FindObjectOfType(typeof(RVOSimulator)) as RVOSimulator;
+			RVOSimulator rVOSimulator = UnityEngine.Object.FindFirstObjectByType(typeof(RVOSimulator)) as RVOSimulator;
 			if (rVOSimulator == null)
 			{
 				Debug.LogError("No RVOSimulator could be found in the scene. Please add a RVOSimulator component to any GameObject");

@@ -238,7 +238,7 @@ namespace Pathfinding
 			{
 				SearchPath();
 			}
-			usingGravity = !(gravity == Vector3.zero) && (!updatePosition || ((rigid == null || rigid.isKinematic) && (rigid2D == null || rigid2D.isKinematic)));
+			usingGravity = !(gravity == Vector3.zero) && (!updatePosition || ((rigid == null || rigid.isKinematic) && (rigid2D == null || rigid2D.bodyType == RigidbodyType2D.Kinematic)));
 			if (rigid == null && rigid2D == null && canMove)
 			{
 				Vector3 nextPosition;
@@ -502,7 +502,7 @@ namespace Pathfinding
 			{
 				FindComponents();
 			}
-			if (!(gravity == Vector3.zero) && (!updatePosition || ((rigid == null || rigid.isKinematic) && (rigid2D == null || rigid2D.isKinematic))) && (controller == null || !controller.enabled))
+			if (!(gravity == Vector3.zero) && (!updatePosition || ((rigid == null || rigid.isKinematic) && (rigid2D == null || rigid2D.bodyType == RigidbodyType2D.Kinematic))) && (controller == null || !controller.enabled))
 			{
 				Gizmos.color = GizmoColorRaycast;
 				Gizmos.DrawLine(position, position + base.transform.up * centerOffset);
@@ -517,10 +517,12 @@ namespace Pathfinding
 
 		protected override int OnUpgradeSerializedData(int version, bool unityThread)
 		{
+#pragma warning disable CS0618
 			if (unityThread && targetCompatibility != null)
 			{
 				target = targetCompatibility;
 			}
+#pragma warning restore CS0618
 			return 1;
 		}
 	}
