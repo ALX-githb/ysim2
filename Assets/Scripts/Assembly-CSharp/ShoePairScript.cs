@@ -10,7 +10,8 @@ public class ShoePairScript : MonoBehaviour
 
 	private void Start()
 	{
-		Police = GameObject.Find("Police").GetComponent<PoliceScript>();
+		GameObject policeObj = GameObject.Find("Police");
+		if (policeObj != null) Police = policeObj.GetComponent<PoliceScript>();
 		if (ClassGlobals.LanguageGrade + ClassGlobals.LanguageBonus < 1)
 		{
 			Prompt.enabled = false;

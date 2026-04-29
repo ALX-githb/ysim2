@@ -12,11 +12,13 @@ public class ShowerStoolScript : MonoBehaviour
 
 	private void Start()
 	{
-		Yandere = GameObject.Find("YandereChan").GetComponent<YandereScript>();
+		GameObject yanObj = GameObject.Find("YandereChan");
+		if (yanObj != null) Yandere = yanObj.GetComponent<YandereScript>();
 	}
 
 	private void Update()
 	{
+		if (Yandere == null) return;
 		if (Yandere.Schoolwear > 0 || Yandere.PickUp != null || Yandere.Dragging)
 		{
 			Prompt.Hide();

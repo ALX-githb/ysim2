@@ -16,7 +16,8 @@ public class BucketPourScript : MonoBehaviour
 
 	private void Start()
 	{
-		Yandere = GameObject.Find("YandereChan").GetComponent<YandereScript>();
+		GameObject yanObj = GameObject.Find("YandereChan");
+		if (yanObj != null) Yandere = yanObj.GetComponent<YandereScript>();
 		Prompt.Hide();
 		Prompt.enabled = false;
 		base.enabled = false;

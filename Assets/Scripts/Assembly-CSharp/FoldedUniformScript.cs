@@ -18,7 +18,8 @@ public class FoldedUniformScript : MonoBehaviour
 
 	private void Start()
 	{
-		Yandere = GameObject.Find("YandereChan").GetComponent<YandereScript>();
+		GameObject yanObj = GameObject.Find("YandereChan");
+		if (yanObj != null) Yandere = yanObj.GetComponent<YandereScript>();
 		if (Clean && Prompt.Button[0] != null)
 		{
 			Prompt.HideButton[0] = true;

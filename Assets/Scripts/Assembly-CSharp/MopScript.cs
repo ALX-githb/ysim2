@@ -24,7 +24,8 @@ public class MopScript : MonoBehaviour
 
 	private void Start()
 	{
-		Yandere = GameObject.Find("YandereChan").GetComponent<YandereScript>();
+		GameObject yanObj = GameObject.Find("YandereChan");
+		if (yanObj != null) Yandere = yanObj.GetComponent<YandereScript>();
 		HeadCollider.enabled = false;
 		UpdateBlood();
 	}

@@ -84,9 +84,10 @@ public class PickUpScript : MonoBehaviour
 
 	private void Start()
 	{
-		Yandere = GameObject.Find("YandereChan").GetComponent<YandereScript>();
-		Clock = GameObject.Find("Clock").GetComponent<ClockScript>();
-		if (!CanCollide)
+		GameObject obj;
+		obj = GameObject.Find("YandereChan"); if (obj != null) Yandere = obj.GetComponent<YandereScript>();
+		obj = GameObject.Find("Clock"); if (obj != null) Clock = obj.GetComponent<ClockScript>();
+		if (!CanCollide && Yandere != null)
 		{
 			Physics.IgnoreCollision(Yandere.GetComponent<Collider>(), MyCollider);
 		}

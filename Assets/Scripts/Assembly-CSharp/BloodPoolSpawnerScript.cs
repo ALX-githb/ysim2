@@ -41,13 +41,15 @@ public class BloodPoolSpawnerScript : MonoBehaviour
 	{
 		if (SceneManager.GetActiveScene().name == "SchoolScene")
 		{
-			GardenArea = GameObject.Find("GardenArea").GetComponent<Collider>();
-			NEStairs = GameObject.Find("NEStairs").GetComponent<Collider>();
-			NWStairs = GameObject.Find("NWStairs").GetComponent<Collider>();
-			SEStairs = GameObject.Find("SEStairs").GetComponent<Collider>();
-			SWStairs = GameObject.Find("SWStairs").GetComponent<Collider>();
+			GameObject obj;
+			obj = GameObject.Find("GardenArea"); if (obj != null) GardenArea = obj.GetComponent<Collider>();
+			obj = GameObject.Find("NEStairs"); if (obj != null) NEStairs = obj.GetComponent<Collider>();
+			obj = GameObject.Find("NWStairs"); if (obj != null) NWStairs = obj.GetComponent<Collider>();
+			obj = GameObject.Find("SEStairs"); if (obj != null) SEStairs = obj.GetComponent<Collider>();
+			obj = GameObject.Find("SWStairs"); if (obj != null) SWStairs = obj.GetComponent<Collider>();
 		}
-		BloodParent = GameObject.Find("BloodParent").transform;
+		GameObject bloodParentObj = GameObject.Find("BloodParent");
+		if (bloodParentObj != null) BloodParent = bloodParentObj.transform;
 		Positions = new Vector3[5];
 		Positions[0] = Vector3.zero;
 		Positions[1] = new Vector3(0.5f, 0.012f, 0f);

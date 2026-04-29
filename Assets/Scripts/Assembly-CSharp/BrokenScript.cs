@@ -48,12 +48,14 @@ public class BrokenScript : MonoBehaviour
 		HairPhysics[1].enabled = false;
 		PermanentAngleR = TwintailR.eulerAngles;
 		PermanentAngleL = TwintailL.eulerAngles;
-		Subtitle = GameObject.Find("EventSubtitle").GetComponent<UILabel>();
+		GameObject subtitleObj = GameObject.Find("EventSubtitle");
+		if (subtitleObj != null) Subtitle = subtitleObj.GetComponent<UILabel>();
 		Yandere = GameObject.Find("YandereChan");
 	}
 
 	private void Update()
 	{
+		if (Yandere == null) return;
 		if (!Done)
 		{
 			float num = Vector3.Distance(Yandere.transform.position, base.transform.root.position);

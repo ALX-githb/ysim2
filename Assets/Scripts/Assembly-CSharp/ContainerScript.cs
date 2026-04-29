@@ -38,11 +38,12 @@ public class ContainerScript : MonoBehaviour
 
 	public void Start()
 	{
-		GardenArea = GameObject.Find("GardenArea").GetComponent<Collider>();
-		NEStairs = GameObject.Find("NEStairs").GetComponent<Collider>();
-		NWStairs = GameObject.Find("NWStairs").GetComponent<Collider>();
-		SEStairs = GameObject.Find("SEStairs").GetComponent<Collider>();
-		SWStairs = GameObject.Find("SWStairs").GetComponent<Collider>();
+		GameObject obj;
+		obj = GameObject.Find("GardenArea"); if (obj != null) GardenArea = obj.GetComponent<Collider>();
+		obj = GameObject.Find("NEStairs"); if (obj != null) NEStairs = obj.GetComponent<Collider>();
+		obj = GameObject.Find("NWStairs"); if (obj != null) NWStairs = obj.GetComponent<Collider>();
+		obj = GameObject.Find("SEStairs"); if (obj != null) SEStairs = obj.GetComponent<Collider>();
+		obj = GameObject.Find("SWStairs"); if (obj != null) SWStairs = obj.GetComponent<Collider>();
 	}
 
 	private void Update()

@@ -12,7 +12,8 @@ public class ClothingScript : MonoBehaviour
 
 	private void Start()
 	{
-		Yandere = GameObject.Find("YandereChan").GetComponent<YandereScript>();
+		GameObject yanObj = GameObject.Find("YandereChan");
+		if (yanObj != null) Yandere = yanObj.GetComponent<YandereScript>();
 	}
 
 	private void Update()

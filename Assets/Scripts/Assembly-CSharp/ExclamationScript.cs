@@ -11,7 +11,8 @@ public class ExclamationScript : MonoBehaviour
 	private void Start()
 	{
 		base.transform.localScale = Vector3.zero;
-		Graphic.material.SetColor("_TintColor", new Color(0.5f, 0.5f, 0.5f, 0f));
+		if (Graphic != null)
+			Graphic.material.SetColor("_TintColor", new Color(0.5f, 0.5f, 0.5f, 0f));
 	}
 
 	private void Update()
@@ -21,7 +22,10 @@ public class ExclamationScript : MonoBehaviour
 		{
 			return;
 		}
-		base.transform.LookAt(Camera.main.transform);
+		if (Camera.main != null)
+			base.transform.LookAt(Camera.main.transform);
+		else
+			return;
 		if (Timer > 1.5f)
 		{
 			base.transform.localScale = Vector3.Lerp(base.transform.localScale, new Vector3(1f, 1f, 1f), Time.deltaTime * 10f);

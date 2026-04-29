@@ -8,11 +8,13 @@ public class SinkScript : MonoBehaviour
 
 	private void Start()
 	{
-		Yandere = GameObject.Find("YandereChan").GetComponent<YandereScript>();
+		GameObject yanObj = GameObject.Find("YandereChan");
+		if (yanObj != null) Yandere = yanObj.GetComponent<YandereScript>();
 	}
 
 	private void Update()
 	{
+		if (Yandere == null) return;
 		if (Yandere.PickUp != null)
 		{
 			if (Yandere.PickUp.Bucket != null)

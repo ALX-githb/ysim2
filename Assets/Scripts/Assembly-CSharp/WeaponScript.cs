@@ -108,8 +108,9 @@ public class WeaponScript : MonoBehaviour
 
 	private void Start()
 	{
-		Yandere = GameObject.Find("YandereChan").GetComponent<YandereScript>();
-		Physics.IgnoreCollision(Yandere.GetComponent<Collider>(), MyCollider);
+		GameObject yanObj = GameObject.Find("YandereChan");
+		if (yanObj != null) Yandere = yanObj.GetComponent<YandereScript>();
+		if (Yandere != null) Physics.IgnoreCollision(Yandere.GetComponent<Collider>(), MyCollider);
 		OriginalColor = Outline[0].color;
 		if (StartLow)
 		{
@@ -387,7 +388,8 @@ public class WeaponScript : MonoBehaviour
 				Yandere.RunAnim = "CyborgNinja_Run_Armed";
 			}
 			KinematicTimer = 0f;
-			AudioSource.PlayClipAtPoint(EquipClip, Camera.main.transform.position);
+			if (Camera.main != null)
+				AudioSource.PlayClipAtPoint(EquipClip, Camera.main.transform.position);
 		}
 		if (Yandere.EquippedWeapon == this && Yandere.Armed)
 		{

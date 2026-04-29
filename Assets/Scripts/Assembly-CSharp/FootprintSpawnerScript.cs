@@ -42,12 +42,13 @@ public class FootprintSpawnerScript : MonoBehaviour
 
 	private void Start()
 	{
-		GardenArea = GameObject.Find("GardenArea").GetComponent<Collider>();
-		PoolStairs = GameObject.Find("PoolStairs").GetComponent<Collider>();
-		NEStairs = GameObject.Find("NEStairs").GetComponent<Collider>();
-		NWStairs = GameObject.Find("NWStairs").GetComponent<Collider>();
-		SEStairs = GameObject.Find("SEStairs").GetComponent<Collider>();
-		SWStairs = GameObject.Find("SWStairs").GetComponent<Collider>();
+		GameObject obj;
+		obj = GameObject.Find("GardenArea"); if (obj != null) GardenArea = obj.GetComponent<Collider>();
+		obj = GameObject.Find("PoolStairs"); if (obj != null) PoolStairs = obj.GetComponent<Collider>();
+		obj = GameObject.Find("NEStairs"); if (obj != null) NEStairs = obj.GetComponent<Collider>();
+		obj = GameObject.Find("NWStairs"); if (obj != null) NWStairs = obj.GetComponent<Collider>();
+		obj = GameObject.Find("SEStairs"); if (obj != null) SEStairs = obj.GetComponent<Collider>();
+		obj = GameObject.Find("SWStairs"); if (obj != null) SWStairs = obj.GetComponent<Collider>();
 	}
 
 	private void Update()
@@ -56,7 +57,7 @@ public class FootprintSpawnerScript : MonoBehaviour
 		{
 			Debug.Log("UpThreshold: " + (Yandere.transform.position.y + UpThreshold) + " | DownThreshold: " + (Yandere.transform.position.y + DownThreshold) + " | CurrentHeight: " + base.transform.position.y);
 		}
-		CanSpawn = !GardenArea.bounds.Contains(base.transform.position) && !PoolStairs.bounds.Contains(base.transform.position) && !NEStairs.bounds.Contains(base.transform.position) && !NWStairs.bounds.Contains(base.transform.position) && !SEStairs.bounds.Contains(base.transform.position) && !SWStairs.bounds.Contains(base.transform.position);
+		CanSpawn = (GardenArea == null || !GardenArea.bounds.Contains(base.transform.position)) && (PoolStairs == null || !PoolStairs.bounds.Contains(base.transform.position)) && (NEStairs == null || !NEStairs.bounds.Contains(base.transform.position)) && (NWStairs == null || !NWStairs.bounds.Contains(base.transform.position)) && (SEStairs == null || !SEStairs.bounds.Contains(base.transform.position)) && (SWStairs == null || !SWStairs.bounds.Contains(base.transform.position));
 		if (!FootUp)
 		{
 			if (base.transform.position.y > Yandere.transform.position.y + UpThreshold)

@@ -104,7 +104,9 @@ public class DoorScript : MonoBehaviour
 	private void Start()
 	{
 		TrapSwing = 12.15f;
-		Yandere = GameObject.Find("YandereChan").GetComponent<YandereScript>();
+		GameObject yanObj = GameObject.Find("YandereChan");
+		if (yanObj != null)
+			Yandere = yanObj.GetComponent<YandereScript>();
 		if (Swinging)
 		{
 			OriginX[0] = Doors[0].transform.localPosition.z;
@@ -129,6 +131,7 @@ public class DoorScript : MonoBehaviour
 
 	private void Update()
 	{
+		if (Yandere == null) return;
 		if ((base.transform.position - Yandere.transform.position).sqrMagnitude <= 1f)
 		{
 			if (!Near)

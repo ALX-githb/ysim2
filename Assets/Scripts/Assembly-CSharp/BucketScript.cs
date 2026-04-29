@@ -84,7 +84,8 @@ public class BucketScript : MonoBehaviour
 		Gas.transform.localPosition = new Vector3(Gas.transform.localPosition.x, 0f, Gas.transform.localPosition.z);
 		Gas.transform.localScale = new Vector3(0.235f, 1f, 0.14f);
 		Gas.material.color = new Color(Gas.material.color.r, Gas.material.color.g, Gas.material.color.b, 0f);
-		Yandere = GameObject.Find("YandereChan").GetComponent<YandereScript>();
+		GameObject yanObj = GameObject.Find("YandereChan");
+		if (yanObj != null) Yandere = yanObj.GetComponent<YandereScript>();
 	}
 
 	private void Update()

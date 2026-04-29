@@ -48,7 +48,8 @@ public class TallLockerScript : MonoBehaviour
 
 	private void Awake()
 	{
-		Yandere = GameObject.Find("YandereChan").GetComponent<YandereScript>();
+		GameObject yanObj = GameObject.Find("YandereChan");
+		if (yanObj != null) Yandere = yanObj.GetComponent<YandereScript>();
 	}
 
 	private void Start()

@@ -157,9 +157,13 @@ public class PromptScript : MonoBehaviour
 		{
 			return;
 		}
-		PauseScreen = GameObject.Find("PauseScreen").GetComponent<PauseScreenScript>();
-		PromptParent = GameObject.Find("PromptParent").GetComponent<PromptParentScript>();
-		UICamera = GameObject.Find("UI Camera").GetComponent<Camera>();
+		GameObject psObj = GameObject.Find("PauseScreen");
+		if (psObj != null) PauseScreen = psObj.GetComponent<PauseScreenScript>();
+		GameObject ppObj = GameObject.Find("PromptParent");
+		if (ppObj != null) PromptParent = ppObj.GetComponent<PromptParentScript>();
+		GameObject uiCamObj = GameObject.Find("UI Camera");
+		if (uiCamObj != null) UICamera = uiCamObj.GetComponent<Camera>();
+		if (PromptParent == null) return;
 		if (Noisy)
 		{
 			Speaker = Object.Instantiate(SpeakerObject, base.transform.position, Quaternion.identity).GetComponent<UISprite>();
@@ -248,6 +252,7 @@ public class PromptScript : MonoBehaviour
 
 	private void Update()
 	{
+		if (PauseScreen == null || Yandere == null) return;
 		if (!PauseScreen.Show)
 		{
 			if (InView)
