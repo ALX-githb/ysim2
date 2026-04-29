@@ -46,19 +46,22 @@ jobs:
       - name: Download and extract Assets.zip
         run: |
           set -e
-          echo "==== Downloading Assets.zip ===="
           curl -sSL -o Assets.zip https://github.com/ALX-githb/ysim2/releases/download/v1.0-assets/Assets.zip
           ls -lh Assets.zip
-
-          echo "==== Extracting ===="
-          unzip -q -o Assets.zip
-
-          if [ ! -d "Assets" ]; then
-            echo "ERROR: Assets folder not created after extraction."
-            ls -la
-            exit 1
-          fi
-
+          python3 -c "
+          import zipfile, os
+          with zipfile.ZipFile('Assets.zip') as z:
+            for i in z.infolist():
+              i.filename = i.filename.replace(chr(92), '/')
+              if not i.filename or i.is_dir():
+                if i.filename: os.makedirs(i.filename, exist_ok=True)
+                continue
+              d = os.path.dirname(i.filename)
+              if d: os.makedirs(d, exist_ok=True)
+              with z.open(i) as s, open(i.filename, 'wb') as f: f.write(s.read())
+            print(f'Extracted {len(z.infolist())} entries')
+          "
+          ls Assets | head -n 5
           du -sh Assets
           rm Assets.zip
 
