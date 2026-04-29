@@ -47,24 +47,21 @@ jobs:
         run: |
           set -e
           echo "==== Downloading Assets.zip ===="
-          curl -L -o Assets.zip https://github.com/ALX-githb/ysim2/releases/download/v1.0-assets/Assets.zip
+          curl -sSL -o Assets.zip https://github.com/ALX-githb/ysim2/releases/download/v1.0-assets/Assets.zip
           ls -lh Assets.zip
 
-          echo "==== Extracting with 7z (handles PowerShell zips with backslash paths) ===="
-          7z x -y Assets.zip > /dev/null
+          echo "==== Extracting with 7z (silent) ===="
+          7z x -y -bb0 -bso0 -bsp0 Assets.zip
 
           echo "==== Verifying Assets folder ===="
           if [ ! -d "Assets" ]; then
-            echo "ERROR: Assets folder was not created. Showing top-level after extraction:"
+            echo "ERROR: Assets folder was not created. Top-level contents:"
             ls -la
             exit 1
           fi
 
-          echo "==== Assets folder size ===="
           du -sh Assets
-
-          echo "==== Sample of Assets contents ===="
-          ls Assets | head -n 20
+          echo "Assets folder created successfully."
 
           rm Assets.zip
 
