@@ -51,10 +51,13 @@ jobs:
           echo "Assets:"; du -sh Assets
           echo "ProjectSettings:"; ls ProjectSettings | head -n 5
           rm Assets.zip
-          # Restore ALL non-LFS git-tracked files (scripts, scenes, materials, settings)
-          # so that committed changes always take priority over the old zip contents.
-          git lfs ls-files -n > /tmp/lfs-files.txt 2>/dev/null || true
-          git ls-files | grep -vFf /tmp/lfs-files.txt | xargs git checkout -- 2>/dev/null || true
+          # Restore non-LFS text files (scripts) from git
+          git checkout -- "Assets/Scripts/" || true
+
+          # Pull LFS-tracked files that the user modifies (scenes, materials, settings).
+          # These overwrite the old zip versions with the latest committed content.
+          git lfs install --local
+          git lfs pull --include="Assets/Scenes/**,Assets/Material/**,ProjectSettings/**,UserSettings/**"
 
       # =====================================================================
       # 2b. Strip packages that need CocoaPods native frameworks
