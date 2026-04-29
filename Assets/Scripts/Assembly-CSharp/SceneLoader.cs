@@ -18,6 +18,23 @@ public class SceneLoader : MonoBehaviour
 
 	private void Start()
 	{
+		// Apply mobile memory budget BEFORE loading SchoolScene so all assets load at reduced size.
+		if (Application.isMobilePlatform)
+		{
+			QualitySettings.masterTextureLimit = 1;    // Half-res textures
+			QualitySettings.antiAliasing = 0;
+			QualitySettings.shadows = ShadowQuality.Disable;
+			QualitySettings.skinWeights = SkinWeights.TwoBones;
+			QualitySettings.lodBias = 0.5f;
+			QualitySettings.pixelLightCount = 1;
+			QualitySettings.realtimeReflectionProbes = false;
+			QualitySettings.billboardsFaceCameraPosition = false;
+			QualitySettings.softParticles = false;
+			Shader.globalMaximumLOD = 100;
+			// Force GC before heavy scene load
+			System.GC.Collect();
+			Resources.UnloadUnusedAssets();
+		}
 		Time.timeScale = 1f;
 		if (!SchoolGlobals.SchoolAtmosphereSet)
 		{

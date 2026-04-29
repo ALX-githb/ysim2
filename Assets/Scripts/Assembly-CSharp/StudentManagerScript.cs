@@ -1,4 +1,5 @@
 #pragma warning disable 618 // Unity-deprecated APIs (AIBase.target, AIPath.speed, WWW, GetInstanceID, CF2Input.GetKeyDown(string), Physics2D.OverlapPointNonAlloc) still functional; full migration would change behavior or require coroutine refactors.
+using System.Collections;
 using UnityEngine;
 
 public class StudentManagerScript : MonoBehaviour
@@ -394,6 +395,24 @@ public class StudentManagerScript : MonoBehaviour
 
 	private void Start()
 	{
+		// On mobile platforms, aggressively reduce memory footprint to prevent OOM crashes.
+		if (Application.isMobilePlatform)
+		{
+			QualitySettings.masterTextureLimit = 1;    // Half-res textures (saves ~50% VRAM)
+			QualitySettings.antiAliasing = 0;
+			QualitySettings.shadows = ShadowQuality.Disable;
+			QualitySettings.skinWeights = SkinWeights.TwoBones;
+			QualitySettings.lodBias = 0.5f;
+			OptionGlobals.ParticleCount = 1;
+			OptionGlobals.DisableOutlines = true;
+			OptionGlobals.DisableBloom = true;
+			OptionGlobals.DisableShadows = true;
+			OptionGlobals.DisableFarAnimations = true;
+			OptionGlobals.DisablePostAliasing = true;
+			OptionGlobals.LowDetailStudents = 5;
+			OptionGlobals.DrawDistance = 50;
+			OptionGlobals.DrawDistanceLimit = 50;
+		}
 		for (ID = 76; ID < 81; ID++)
 		{
 			if (StudentGlobals.GetStudentReputation(ID) > -67)
@@ -537,16 +556,7 @@ public class StudentManagerScript : MonoBehaviour
 			}
 			if (!TakingPortraits)
 			{
-				while (SpawnID < NPCsTotal + 1)
-				{
-					SpawnStudent(SpawnID);
-					SpawnID++;
-				}
-				Graffiti[1].SetActive(false);
-				Graffiti[2].SetActive(false);
-				Graffiti[3].SetActive(false);
-				Graffiti[4].SetActive(false);
-				Graffiti[5].SetActive(false);
+				StartCoroutine(SpawnAllStudentsCoroutine());
 			}
 		}
 		else
@@ -561,6 +571,44 @@ public class StudentManagerScript : MonoBehaviour
 				ErrorLabel.text = "The game cannot compile Students.JSON! There is a typo somewhere in the JSON file. The problem might be a missing quotation mark, a missing colon, a missing comma, or something else like that. Please find your typo and fix it, or revert to a backup of the JSON file. " + text;
 				ErrorLabel.enabled = true;
 			}
+		}
+	}
+
+	private IEnumerator SpawnAllStudentsCoroutine()
+	{
+		bool isMobile = Application.isMobilePlatform;
+		int batchCount = 0;
+		while (SpawnID < NPCsTotal + 1)
+		{
+			SpawnStudent(SpawnID);
+			SpawnID++;
+			batchCount++;
+			// Yield every 3 students to spread memory/CPU load across frames.
+			// This prevents iOS watchdog kills and allows GC to run.
+			if (batchCount % 3 == 0)
+			{
+				yield return null;
+				// Every 15 students on mobile, force memory cleanup
+				if (isMobile && batchCount % 15 == 0)
+				{
+					System.GC.Collect();
+					yield return Resources.UnloadUnusedAssets();
+				}
+			}
+		}
+		if (Graffiti != null && Graffiti.Length > 5)
+		{
+			Graffiti[1].SetActive(false);
+			Graffiti[2].SetActive(false);
+			Graffiti[3].SetActive(false);
+			Graffiti[4].SetActive(false);
+			Graffiti[5].SetActive(false);
+		}
+		// Final cleanup after all students spawned
+		if (isMobile)
+		{
+			System.GC.Collect();
+			yield return Resources.UnloadUnusedAssets();
 		}
 	}
 
