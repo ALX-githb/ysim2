@@ -27,7 +27,7 @@ on:
 jobs:
   build-ios:
     name: Build Unity iOS → Xcode → unsigned IPA
-    runs-on: macos-latest
+    runs-on: macos-14
 
     steps:
       # =====================================================================
@@ -82,6 +82,7 @@ jobs:
           targetPlatform: iOS
           buildName: YandereSimulator
           allowDirtyBuild: true
+          versioning: None
 
       # =====================================================================
       # 5. Show what GameCI produced (always runs so we can debug)
