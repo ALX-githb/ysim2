@@ -31,12 +31,12 @@ jobs:
 
     steps:
       # =====================================================================
-      # 1. Checkout code (without LFS - we'll download Assets.zip instead)
+      # 1. Checkout code (with LFS to get latest scenes, materials, settings)
       # =====================================================================
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          lfs: false
+          lfs: true
 
       # =====================================================================
       # 2. Download project zip (Assets + ProjectSettings + UserSettings)
@@ -51,13 +51,9 @@ jobs:
           echo "Assets:"; du -sh Assets
           echo "ProjectSettings:"; ls ProjectSettings | head -n 5
           rm Assets.zip
-          # Restore non-LFS text files (scripts) from git
-          git checkout -- "Assets/Scripts/" || true
-
-          # Pull LFS-tracked files that the user modifies (scenes, materials, settings).
-          # These overwrite the old zip versions with the latest committed content.
-          git lfs install --local
-          git lfs pull --include="Assets/Scenes/**,Assets/Material/**,ProjectSettings/**,UserSettings/**"
+          # Restore all git-tracked files (scripts, scenes, materials, settings)
+          # so committed changes always override the old zip contents.
+          git checkout -- . || true
 
       # =====================================================================
       # 2b. Strip packages that need CocoaPods native frameworks
