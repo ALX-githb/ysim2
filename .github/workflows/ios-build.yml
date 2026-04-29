@@ -51,6 +51,8 @@ jobs:
           echo "Assets:"; du -sh Assets
           echo "ProjectSettings:"; ls ProjectSettings | head -n 5
           rm Assets.zip
+          # Restore .cs scripts from git (zip has older versions, git has our fixes)
+          git checkout -- "Assets/Scripts/" || true
 
       # =====================================================================
       # 2b. Strip packages that need CocoaPods native frameworks
