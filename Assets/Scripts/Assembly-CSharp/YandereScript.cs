@@ -1261,6 +1261,18 @@ public class YandereScript : MonoBehaviour
 
 	private void Start()
 	{
+		try
+		{
+			StartInternal();
+		}
+		catch (System.Exception ex)
+		{
+			Debug.LogError("[YandereScript] Start failed: " + ex);
+		}
+	}
+
+	private void StartInternal()
+	{
 		MyRenderer.materials[2].SetFloat("_BlendAmount1", 0f);
 		CharacterAnimation = Character.GetComponent<Animation>();
 		GreyTarget = 1f - SchoolGlobals.SchoolAtmosphere;
