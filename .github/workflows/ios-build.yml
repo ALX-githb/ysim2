@@ -51,9 +51,22 @@ jobs:
           echo "Assets:"; du -sh Assets
           echo "ProjectSettings:"; ls ProjectSettings | head -n 5
           rm Assets.zip
-          # Restore git-tracked non-LFS files (scripts, scenes, materials, settings)
-          # so committed changes always override the old zip contents.
-          git checkout -- "Assets/Scripts/" "Assets/Scenes/" "Assets/Material/" "ProjectSettings/" || true
+          # Restore scripts (always regular git objects, never LFS)
+          git checkout -- "Assets/Scripts/" || true
+
+          # Restore only the specific scene/material/settings files that were
+          # migrated out of LFS. All other scenes/materials stay from the zip.
+          git checkout -- \
+            "Assets/Scenes/CalendarScene.unity" \
+            "Assets/Scenes/ChoiceScene.unity" \
+            "Assets/Scenes/HomeScene.unity" \
+            "Assets/Material/BlipMaterial.mat" \
+            "Assets/Material/Blood_Splatter.mat" \
+            "Assets/Material/SelectiveGrayscale.mat" \
+            "Assets/Material/Window_Glass_Mat.mat" \
+            "ProjectSettings/ProjectSettings.asset" \
+            "ProjectSettings/QualitySettings.asset" \
+            || true
 
       # =====================================================================
       # 2b. Strip packages that need CocoaPods native frameworks
