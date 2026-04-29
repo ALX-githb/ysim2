@@ -51,13 +51,9 @@ jobs:
           echo "Assets:"; du -sh Assets
           echo "ProjectSettings:"; ls ProjectSettings | head -n 5
           rm Assets.zip
-          # Restore non-LFS text files (scripts) from git
-          git checkout -- "Assets/Scripts/" || true
-
-          # Selectively pull only user-modified LFS files (scenes, materials, settings)
-          # to stay within GitHub LFS bandwidth limits (~few MB, not the full 1+ GB).
-          git lfs install --local
-          git lfs pull --include="Assets/Scenes/*.unity,Assets/Material/*.mat,ProjectSettings/*.asset" || echo "LFS pull skipped (bandwidth or connectivity issue)"
+          # Restore git-tracked non-LFS files (scripts, scenes, materials, settings)
+          # so committed changes always override the old zip contents.
+          git checkout -- "Assets/Scripts/" "Assets/Scenes/" "Assets/Material/" "ProjectSettings/" || true
 
       # =====================================================================
       # 2b. Strip packages that need CocoaPods native frameworks
