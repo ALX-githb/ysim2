@@ -3289,13 +3289,21 @@ public class StudentScript : MonoBehaviour
 								}
 								if (CharacterAnimation[ClubAnim].time >= 2f)
 								{
-									float value = Cosmetic.Goggles[StudentID].GetComponent<SkinnedMeshRenderer>().GetBlendShapeWeight(0) + Time.deltaTime * 200f;
-									Cosmetic.Goggles[StudentID].GetComponent<SkinnedMeshRenderer>().SetBlendShapeWeight(0, value);
+									SkinnedMeshRenderer smr = Cosmetic.Goggles[StudentID] != null ? Cosmetic.Goggles[StudentID].GetComponent<SkinnedMeshRenderer>() : null;
+									if (smr != null && smr.sharedMesh != null && smr.sharedMesh.blendShapeCount > 0)
+									{
+										float value = smr.GetBlendShapeWeight(0) + Time.deltaTime * 200f;
+										smr.SetBlendShapeWeight(0, value);
+									}
 								}
 								if ((double)CharacterAnimation[ClubAnim].time >= 6.1)
 								{
-									Cosmetic.Goggles[StudentID].GetComponent<SkinnedMeshRenderer>().SetBlendShapeWeight(0, 100f);
-									Cosmetic.MaleHair[Cosmetic.Hairstyle].GetComponent<SkinnedMeshRenderer>().SetBlendShapeWeight(0, 100f);
+									SkinnedMeshRenderer gSmr = Cosmetic.Goggles[StudentID] != null ? Cosmetic.Goggles[StudentID].GetComponent<SkinnedMeshRenderer>() : null;
+									if (gSmr != null && gSmr.sharedMesh != null && gSmr.sharedMesh.blendShapeCount > 0)
+										gSmr.SetBlendShapeWeight(0, 100f);
+									SkinnedMeshRenderer hSmr = Cosmetic.MaleHair[Cosmetic.Hairstyle] != null ? Cosmetic.MaleHair[Cosmetic.Hairstyle].GetComponent<SkinnedMeshRenderer>() : null;
+									if (hSmr != null && hSmr.sharedMesh != null && hSmr.sharedMesh.blendShapeCount > 0)
+										hSmr.SetBlendShapeWeight(0, 100f);
 									GameObject gameObject3 = UnityEngine.Object.Instantiate(BigWaterSplash, RightHand.transform.position, Quaternion.identity);
 									gameObject3.transform.eulerAngles = new Vector3(-90f, gameObject3.transform.eulerAngles.y, gameObject3.transform.eulerAngles.z);
 									SetSplashes(true);
@@ -3335,8 +3343,12 @@ public class StudentScript : MonoBehaviour
 								}
 								if (CharacterAnimation[ClubAnim].time >= 4.66666f)
 								{
-									float value2 = Cosmetic.Goggles[StudentID].GetComponent<SkinnedMeshRenderer>().GetBlendShapeWeight(0) - Time.deltaTime * 200f;
-									Cosmetic.Goggles[StudentID].GetComponent<SkinnedMeshRenderer>().SetBlendShapeWeight(0, value2);
+									SkinnedMeshRenderer exitSmr = Cosmetic.Goggles[StudentID] != null ? Cosmetic.Goggles[StudentID].GetComponent<SkinnedMeshRenderer>() : null;
+									if (exitSmr != null && exitSmr.sharedMesh != null && exitSmr.sharedMesh.blendShapeCount > 0)
+									{
+										float value2 = exitSmr.GetBlendShapeWeight(0) - Time.deltaTime * 200f;
+										exitSmr.SetBlendShapeWeight(0, value2);
+									}
 								}
 								if (CharacterAnimation[ClubAnim].time >= CharacterAnimation[ClubAnim].length)
 								{
@@ -3346,7 +3358,9 @@ public class StudentScript : MonoBehaviour
 									WalkAnim = OriginalWalkAnim;
 									MyRenderer.updateWhenOffscreen = false;
 									Character.transform.localPosition = new Vector3(0f, 0f, 0f);
-									Cosmetic.Goggles[StudentID].GetComponent<SkinnedMeshRenderer>().SetBlendShapeWeight(0, 0f);
+									SkinnedMeshRenderer resetSmr = Cosmetic.Goggles[StudentID] != null ? Cosmetic.Goggles[StudentID].GetComponent<SkinnedMeshRenderer>() : null;
+									if (resetSmr != null && resetSmr.sharedMesh != null && resetSmr.sharedMesh.blendShapeCount > 0)
+										resetSmr.SetBlendShapeWeight(0, 0f);
 									Destinations[Phase] = StudentManager.Clubs.List[StudentID].GetChild(ClubActivityPhase);
 									base.transform.position = new Vector3(Hips.position.x, 4f, Hips.position.z);
 									Physics.SyncTransforms();

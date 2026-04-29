@@ -486,13 +486,13 @@ public class CounselorScript : MonoBehaviour
 		if (Angry)
 		{
 			Anger = Mathf.Lerp(Anger, 100f, Time.deltaTime);
-			Face.SetBlendShapeWeight(1, Anger);
-			Face.SetBlendShapeWeight(5, Anger);
-			Face.SetBlendShapeWeight(9, Anger);
 		}
 		else
 		{
 			Anger = Mathf.Lerp(Anger, 0f, Time.deltaTime);
+		}
+		if (Face != null && Face.sharedMesh != null && Face.sharedMesh.blendShapeCount > 9)
+		{
 			Face.SetBlendShapeWeight(1, Anger);
 			Face.SetBlendShapeWeight(5, Anger);
 			Face.SetBlendShapeWeight(9, Anger);

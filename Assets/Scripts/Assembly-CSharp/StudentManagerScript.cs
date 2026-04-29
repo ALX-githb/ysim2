@@ -1133,8 +1133,12 @@ public class StudentManagerScript : MonoBehaviour
 						studentScript.SetSplashes(false);
 						studentScript.WalkAnim = studentScript.OriginalWalkAnim;
 						studentScript.Character.transform.localPosition = new Vector3(0f, 0f, 0f);
-						studentScript.Cosmetic.Goggles[studentScript.StudentID].GetComponent<SkinnedMeshRenderer>().SetBlendShapeWeight(0, 0f);
-						studentScript.Cosmetic.MaleHair[studentScript.Cosmetic.Hairstyle].GetComponent<SkinnedMeshRenderer>().SetBlendShapeWeight(0, 0f);
+						SkinnedMeshRenderer gogglesSmr = studentScript.Cosmetic.Goggles[studentScript.StudentID] != null ? studentScript.Cosmetic.Goggles[studentScript.StudentID].GetComponent<SkinnedMeshRenderer>() : null;
+						if (gogglesSmr != null && gogglesSmr.sharedMesh != null && gogglesSmr.sharedMesh.blendShapeCount > 0)
+							gogglesSmr.SetBlendShapeWeight(0, 0f);
+						SkinnedMeshRenderer hairSmr = studentScript.Cosmetic.MaleHair[studentScript.Cosmetic.Hairstyle] != null ? studentScript.Cosmetic.MaleHair[studentScript.Cosmetic.Hairstyle].GetComponent<SkinnedMeshRenderer>() : null;
+						if (hairSmr != null && hairSmr.sharedMesh != null && hairSmr.sharedMesh.blendShapeCount > 0)
+							hairSmr.SetBlendShapeWeight(0, 0f);
 					}
 				}
 				else if (ID != GymTeacherID && ID != NurseID)

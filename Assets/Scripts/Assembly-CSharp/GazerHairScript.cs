@@ -12,6 +12,7 @@ public class GazerHairScript : MonoBehaviour
 
 	private void Update()
 	{
+		if (MyMesh == null || MyMesh.sharedMesh == null) return;
 		for (ID = 0; ID < Weight.Length; ID++)
 		{
 			Weight[ID] = Mathf.MoveTowards(Weight[ID], TargetWeight[ID], Time.deltaTime * 100f);
@@ -19,7 +20,8 @@ public class GazerHairScript : MonoBehaviour
 			{
 				TargetWeight[ID] = Random.Range(0f, 100f);
 			}
-			MyMesh.SetBlendShapeWeight(ID, Weight[ID]);
+			if (ID < MyMesh.sharedMesh.blendShapeCount)
+				MyMesh.SetBlendShapeWeight(ID, Weight[ID]);
 		}
 	}
 }

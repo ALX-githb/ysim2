@@ -1159,7 +1159,9 @@ public class YandereScript : MonoBehaviour
 				MyRenderer.materials[2].SetFloat("_BlendAmount", 0f);
 			}
 			PreviousSanity = sanity;
-			Hairstyles[2].GetComponent<SkinnedMeshRenderer>().SetBlendShapeWeight(0, Sanity);
+			SkinnedMeshRenderer hairSmr = Hairstyles[2] != null ? Hairstyles[2].GetComponent<SkinnedMeshRenderer>() : null;
+		if (hairSmr != null && hairSmr.sharedMesh != null && hairSmr.sharedMesh.blendShapeCount > 0)
+			hairSmr.SetBlendShapeWeight(0, Sanity);
 		}
 	}
 

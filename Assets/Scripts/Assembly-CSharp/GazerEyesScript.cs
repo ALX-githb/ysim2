@@ -74,7 +74,8 @@ public class GazerEyesScript : MonoBehaviour
 			if (Blink[ID])
 			{
 				BlinkStrength[ID] = Mathf.MoveTowards(BlinkStrength[ID], 100f, Time.deltaTime * 1000f);
-				Eyes[ID].SetBlendShapeWeight(0, BlinkStrength[ID]);
+				if (Eyes[ID] != null && Eyes[ID].sharedMesh != null && Eyes[ID].sharedMesh.blendShapeCount > 0)
+					Eyes[ID].SetBlendShapeWeight(0, BlinkStrength[ID]);
 				if (BlinkStrength[ID] == 100f)
 				{
 					Blink[ID] = false;
@@ -83,7 +84,8 @@ public class GazerEyesScript : MonoBehaviour
 			else if (BlinkStrength[ID] > 0f)
 			{
 				BlinkStrength[ID] = Mathf.MoveTowards(BlinkStrength[ID], 0f, Time.deltaTime * 1000f);
-				Eyes[ID].SetBlendShapeWeight(0, BlinkStrength[ID]);
+				if (Eyes[ID] != null && Eyes[ID].sharedMesh != null && Eyes[ID].sharedMesh.blendShapeCount > 0)
+					Eyes[ID].SetBlendShapeWeight(0, BlinkStrength[ID]);
 			}
 		}
 		float axis = ControlFreak2.CF2Input.GetAxis("Vertical");
