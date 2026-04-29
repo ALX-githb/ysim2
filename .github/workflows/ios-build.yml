@@ -51,8 +51,10 @@ jobs:
           echo "Assets:"; du -sh Assets
           echo "ProjectSettings:"; ls ProjectSettings | head -n 5
           rm Assets.zip
-          # Restore scripts (always regular git objects, never LFS)
-          git checkout -- "Assets/Scripts/" || true
+          # Restore only .cs scripts (never LFS, always regular git objects).
+          # Do NOT restore .meta files — they are still LFS objects in git
+          # and would be written as pointer text, breaking Unity.
+          find Assets/Scripts -name "*.cs" -print0 | xargs -0 git checkout -- 2>/dev/null || true
 
           # Restore only the specific scene/material/settings files that were
           # migrated out of LFS. All other scenes/materials stay from the zip.
