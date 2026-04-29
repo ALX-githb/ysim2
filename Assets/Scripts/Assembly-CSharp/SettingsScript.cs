@@ -111,6 +111,7 @@ public class SettingsScript : MonoBehaviour
 				{
 					QualitySettings.antiAliasing = 2;
 				}
+				ResetCameraRenderTextures();
 				UpdateText();
 			}
 			else if (InputManager.TappedLeft)
@@ -123,6 +124,7 @@ public class SettingsScript : MonoBehaviour
 				{
 					QualitySettings.antiAliasing = 0;
 				}
+				ResetCameraRenderTextures();
 				UpdateText();
 			}
 			break;
@@ -306,6 +308,7 @@ public class SettingsScript : MonoBehaviour
 		OptionGlobals.ParticleCount = 1;
 		OptionGlobals.DisableOutlines = true;
 		QualitySettings.antiAliasing = 0;
+		ResetCameraRenderTextures();
 		OptionGlobals.DisablePostAliasing = true;
 		OptionGlobals.DisableBloom = true;
 		OptionGlobals.LowDetailStudents = 1;
@@ -328,5 +331,21 @@ public class SettingsScript : MonoBehaviour
 			QualityManager.UpdateOutlines();
 		}
 		UpdateText();
+	}
+
+	private void ResetCameraRenderTextures()
+	{
+		foreach (Camera cam in Camera.allCameras)
+		{
+			if (cam.targetTexture != null)
+			{
+				RenderTexture rt = cam.targetTexture;
+				cam.targetTexture = null;
+				rt.Release();
+				rt.antiAliasing = QualitySettings.antiAliasing > 0 ? QualitySettings.antiAliasing : 1;
+				rt.Create();
+				cam.targetTexture = rt;
+			}
+		}
 	}
 }
