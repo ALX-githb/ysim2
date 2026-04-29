@@ -1641,26 +1641,40 @@ public class CosmeticScript : MonoBehaviour
 		}
 	}
 
+	private void SafeSetBlendShapeWeight(int index, float value)
+	{
+		if (BlendshapesRenderer != null && BlendshapesRenderer.sharedMesh != null &&
+			index >= 0 && index < BlendshapesRenderer.sharedMesh.blendShapeCount)
+		{
+			BlendshapesRenderer.SetBlendShapeWeight(index, value);
+		}
+	}
+
 	public void EyeTypeCheck()
 	{
+		if (BlendshapesRenderer == null)
+		{
+			return;
+		}
+
 		if (StudentGlobals.FemaleUniform == 1 && !(EyeType == "Gentle"))
 		{
 			int GentleEye = 12;
-			BlendshapesRenderer.SetBlendShapeWeight(GentleEye, 100f);
+			SafeSetBlendShapeWeight(GentleEye, 100f);
 		}
 
 		else if (StudentGlobals.FemaleUniform == 1 && !(EyeType == "MO"))
 		{
 			int MOEye = 9;
-			BlendshapesRenderer.SetBlendShapeWeight(MOEye, 100f);
+			SafeSetBlendShapeWeight(MOEye, 100f);
 		}
 
 		else if (StudentGlobals.FemaleUniform == 1 && !(EyeType == "Raibaru"))
 		{
 			int MO2 = 9;
 			int Gentle2 = 12;
-			BlendshapesRenderer.SetBlendShapeWeight(MO2, 100f);
-			BlendshapesRenderer.SetBlendShapeWeight(Gentle2, 100f);
+			SafeSetBlendShapeWeight(MO2, 100f);
+			SafeSetBlendShapeWeight(Gentle2, 100f);
 		}
 
 		else if (StudentGlobals.FemaleUniform == 1 && !(EyeType == "Default"))
@@ -1668,15 +1682,15 @@ public class CosmeticScript : MonoBehaviour
 			int MO3 = 9;
 			int Gentle3 = 12;
 			int ThinEye2 = 8;
-			BlendshapesRenderer.SetBlendShapeWeight(MO3, 0f);
-			BlendshapesRenderer.SetBlendShapeWeight(Gentle3, 0f);
-			BlendshapesRenderer.SetBlendShapeWeight(ThinEye2, 0f);
+			SafeSetBlendShapeWeight(MO3, 0f);
+			SafeSetBlendShapeWeight(Gentle3, 0f);
+			SafeSetBlendShapeWeight(ThinEye2, 0f);
 		}
 
 		else if (StudentGlobals.FemaleUniform == 1 && !(EyeType == "Rival1"))
 		{
 			int ThinEye = 8;
-			BlendshapesRenderer.SetBlendShapeWeight(ThinEye, 50f);
+			SafeSetBlendShapeWeight(ThinEye, 50f);
 		}
 	}
 }

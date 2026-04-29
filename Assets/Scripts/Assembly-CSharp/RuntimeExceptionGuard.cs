@@ -31,9 +31,12 @@ internal static class RuntimeExceptionGuard
         if (type != LogType.Exception) return;
         if (string.IsNullOrEmpty(stackTrace)) return;
 
-        // Only care about NullReferenceException — those usually indicate
-        // unassigned inspector refs in a specific script.
-        if (condition == null || !condition.Contains("NullReferenceException")) return;
+        // Catch NullReferenceException and UnassignedReferenceException —
+        // both usually indicate unassigned inspector refs in a specific script.
+        if (condition == null) return;
+        if (!condition.Contains("NullReferenceException") &&
+            !condition.Contains("UnassignedReferenceException") &&
+            !condition.Contains("IndexOutOfRangeException")) return;
 
         Match m = _scriptRegex.Match(stackTrace);
         if (!m.Success) return;
