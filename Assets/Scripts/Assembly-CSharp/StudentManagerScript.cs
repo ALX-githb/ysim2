@@ -326,6 +326,8 @@ public class StudentManagerScript : MonoBehaviour
 
 	public bool FirstUpdate;
 
+	public bool SpawningComplete;
+
 	public bool MissionMode;
 
 	public bool PinningDown;
@@ -563,6 +565,10 @@ public class StudentManagerScript : MonoBehaviour
 			{
 				StartCoroutine(SpawnAllStudentsCoroutine());
 			}
+			else
+			{
+				SpawningComplete = true;
+			}
 		}
 		else
 		{
@@ -622,6 +628,7 @@ public class StudentManagerScript : MonoBehaviour
 			System.GC.Collect();
 			yield return Resources.UnloadUnusedAssets();
 		}
+		SpawningComplete = true;
 	}
 
 	public void SetAtmosphere()
@@ -666,7 +673,7 @@ public class StudentManagerScript : MonoBehaviour
 		if (!TakingPortraits)
 		{
 			Frame++;
-			if (!FirstUpdate)
+			if (!FirstUpdate && SpawningComplete)
 			{
 				QualityManager.UpdateOutlines();
 				FirstUpdate = true;

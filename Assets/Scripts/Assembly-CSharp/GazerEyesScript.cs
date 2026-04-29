@@ -34,14 +34,18 @@ public class GazerEyesScript : MonoBehaviour
 
 	private void Start()
 	{
-		GetComponent<Animation>()["Eyeballs_Run"].speed = 0f;
-		GetComponent<Animation>()["Eyeballs_Walk"].speed = 0f;
-		GetComponent<Animation>()["Eyeballs_Idle"].speed = 0f;
+		Animation anim = GetComponent<Animation>();
+		if (anim == null) return;
+		if (anim["Eyeballs_Run"] != null) anim["Eyeballs_Run"].speed = 0f;
+		if (anim["Eyeballs_Walk"] != null) anim["Eyeballs_Walk"].speed = 0f;
+		if (anim["Eyeballs_Idle"] != null) anim["Eyeballs_Idle"].speed = 0f;
 	}
+
+	private Animation _cachedAnim;
 
 	private void Update()
 	{
-		StudentManager.UpdateStudents();
+		if (StudentManager != null) StudentManager.UpdateStudents();
 		if (!Attacking)
 		{
 			AnimTime += Time.deltaTime;
@@ -58,9 +62,13 @@ public class GazerEyesScript : MonoBehaviour
 		{
 			AnimTime = Mathf.Lerp(AnimTime, 144f, Time.deltaTime * 1.44f * 5f);
 		}
-		GetComponent<Animation>()["Eyeballs_Run"].time = AnimTime;
-		GetComponent<Animation>()["Eyeballs_Walk"].time = AnimTime;
-		GetComponent<Animation>()["Eyeballs_Idle"].time = AnimTime;
+		if (_cachedAnim == null) _cachedAnim = GetComponent<Animation>();
+		if (_cachedAnim != null)
+		{
+			if (_cachedAnim["Eyeballs_Run"] != null) _cachedAnim["Eyeballs_Run"].time = AnimTime;
+			if (_cachedAnim["Eyeballs_Walk"] != null) _cachedAnim["Eyeballs_Walk"].time = AnimTime;
+			if (_cachedAnim["Eyeballs_Idle"] != null) _cachedAnim["Eyeballs_Idle"].time = AnimTime;
+		}
 		for (ID = 0; ID < Eyes.Length; ID++)
 		{
 			if (BlinkStrength[ID] == 0f)
@@ -90,24 +98,25 @@ public class GazerEyesScript : MonoBehaviour
 		}
 		float axis = ControlFreak2.CF2Input.GetAxis("Vertical");
 		float axis2 = ControlFreak2.CF2Input.GetAxis("Horizontal");
-		if (!Yandere.CanMove)
+		if (Yandere == null || !Yandere.CanMove)
 		{
 			return;
 		}
+		if (_cachedAnim == null) return;
 		if (axis != 0f || axis2 != 0f)
 		{
 			if (ControlFreak2.CF2Input.GetButton("LB"))
 			{
-				GetComponent<Animation>().CrossFade("Eyeballs_Run", 1f);
+				_cachedAnim.CrossFade("Eyeballs_Run", 1f);
 			}
 			else
 			{
-				GetComponent<Animation>().CrossFade("Eyeballs_Walk", 1f);
+				_cachedAnim.CrossFade("Eyeballs_Walk", 1f);
 			}
 		}
 		else
 		{
-			GetComponent<Animation>().CrossFade("Eyeballs_Idle", 1f);
+			_cachedAnim.CrossFade("Eyeballs_Idle", 1f);
 		}
 	}
 
