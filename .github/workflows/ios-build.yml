@@ -33,15 +33,24 @@ jobs:
 
     steps:
       # =====================================================================
-      # 1. Checkout code
+      # 1. Checkout code (without LFS - we'll download Assets.zip instead)
       # =====================================================================
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          lfs: true
+          lfs: false
 
       # =====================================================================
-      # 2. Cache Unity Library folder
+      # 2. Download Assets.zip from GitHub Release
+      # =====================================================================
+      - name: Download Assets.zip
+        run: |
+          curl -L -o Assets.zip https://github.com/ALX-githb/ysim2/releases/download/v1.0-assets/Assets.zip
+          unzip -q Assets.zip
+          rm Assets.zip
+
+      # =====================================================================
+      # 3. Cache Unity Library folder
       #    Key includes hashes of Assets, Packages, ProjectSettings
       #    so cache invalidates when those change. Restore-keys allow
       #    partial matches when exact key misses.
@@ -56,7 +65,7 @@ jobs:
             Library-
 
       # =====================================================================
-      # 3. Build Unity iOS Xcode project
+      # 4. Build Unity iOS Xcode project
       #    Unity Personal: UNITY_LICENSE = .ulf file contents (XML).
       # =====================================================================
       - name: Build Unity iOS Xcode project
@@ -72,7 +81,7 @@ jobs:
           allowDirtyBuild: true
 
       # =====================================================================
-      # 4. Show what GameCI produced (always runs so we can debug)
+      # 5. Show what GameCI produced (always runs so we can debug)
       # =====================================================================
       - name: List build output
         if: always()
@@ -85,7 +94,7 @@ jobs:
           find . -name "*.xcodeproj" -type d 2>/dev/null || true
 
       # =====================================================================
-      # 5a. Install CocoaPods dependencies
+      # 6a. Install CocoaPods dependencies
       #     Unity Ads / Purchasing / Analytics generate a Podfile that needs
       #     to be installed before xcodebuild can link their frameworks.
       # =====================================================================
@@ -110,7 +119,7 @@ jobs:
           fi
 
       # =====================================================================
-      # 5b. Compile the Xcode workspace (with Pods) → unsigned .app
+      # 6b. Compile the Xcode workspace (with Pods) → unsigned .app
       # =====================================================================
       - name: Build .app with xcodebuild (unsigned)
         run: |
@@ -159,7 +168,7 @@ jobs:
           fi
 
       # =====================================================================
-      # 6. Wrap the .app into an unsigned .ipa
+      # 7. Wrap the .app into an unsigned .ipa
       #    .ipa = a zip with Payload/<App>.app inside
       #
       # IMPORTANT: Strip ALL _CodeSignature folders (including nested ones in
@@ -199,7 +208,7 @@ jobs:
           ls -lh YandereSimulator-unsigned.ipa
 
       # =====================================================================
-      # 7. Upload as a downloadable artifact
+      # 8. Upload as a downloadable artifact
       # =====================================================================
       - name: Upload IPA artifact
         uses: actions/upload-artifact@v4
